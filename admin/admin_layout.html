@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>어드민레이아웃</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> <!--AOS 애니메이션-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> <!--스와이퍼-->
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.css" />
+<link rel="stylesheet" href="./css/admin.css" />
+<link rel="stylesheet" href="./css/custom.css" />
+<link rel="stylesheet" href="./css/admin.css" />
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script src="./js/admin.js"></script>
+</head>
+
+<body>
+<div class="admin_common">
+  <!----======== 관리자 레이아웃 상단    ========---->
+  <section id="admin_header_wrap">
+    <div id="admin_top_area">
+      <div class="left">
+        <div class="logo_area">
+          <img class="logo" src="./img/logo.png">
+        </div>
+        <div class="admin_nav">
+          <!--안쓰는 메뉴는 class="d_none"-->
+          <!--TypeA : 교사, 팀장등급은 [교사별 회원관리] 페이지 활성화 -->
+          <ul>
+            <li><a href="./member.html">회원관리</a></li>
+            <li><a href="./textbook.html">교재수량</a></li>
+          </ul>
+          <!--TypeB :  운영자 등급은 [운영 관리] 페이지 활성화-->
+          <ul>
+            <li><a href="./teacher.html">교사관리</a></li>
+            <li><a href="./statistics_teacher.html">교사별 통계</a></li>
+            <li><a href="./statistics.html">전체통계</a></li>
+          </ul> 
+        </div>
+      </div>
+      <div class="user_area">
+        <p class="welcome"><b>[종로지국] 김하연</b>교사님 안녕하세요.</p>
+        <button onclick="location.href='login.html'" type="button">로그아웃</button>
+        <button onclick="location.href=''" style="background:#ed6d46" type="button">하연교육</button>
+      </div>
+    </div>
+  </section>
+  <!----======== 관리자 레이아웃 상단 끝 ========---->
+  <!----======== 내용부분 ========---->
+  <section id="admin_contents_wrap">
+  </section>
+  <!----======== 내용부분 끝 ========---->
+  <!----======== 관리자 레이아웃 하단    ========---->
+  <section id="admin_footer_wrap">
+    <div></div>
+  </section>
+  <!----======== 관리자 레이아웃 하단 끝 ========---->
+</div>
+</body>
+</html>

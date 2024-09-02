@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>회원관리</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> <!--AOS 애니메이션-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> <!--스와이퍼-->
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.css" />
+<link rel="stylesheet" href="./css/admin.css" />
+<link rel="stylesheet" href="./css/custom.css" />
+<link rel="stylesheet" href="./css/admin.css" />
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script src="./js/admin.js"></script>
+</head>
+
+<body>
+<div class="admin_common">
+<!----======== 관리자 레이아웃 상단    ========---->
+<section id="admin_header_wrap">
+    <div id="admin_top_area">
+    <div class="left">
+        <div class="logo_area">
+        <img class="logo" src="./img/logo.png">
+        </div>
+        <div class="admin_nav">
+        <!--TypeA : 교사, 팀장등급은 [교사별 회원관리] 페이지 활성화 -->
+        <ul>
+            <li><a href="./member.html">회원관리</a></li>
+            <li><a href="./textbook.html">교재수량</a></li>
+        </ul>
+        <!--TypeB :  운영자 등급은 [운영 관리] 페이지 활성화-->
+        <ul class="d_none">
+            <li><a href="./teacher.html">교사관리</a></li>
+            <li><a href="./statistics_teacher.html">교사별 통계</a></li>
+            <li><a href="./statistics.html">전체통계</a></li>
+        </ul> 
+        </div>
+    </div>
+    <div class="user_area">
+        <p class="welcome"><b>[종로지국] 김하연</b>교사님 안녕하세요.</p>
+        <button onclick="location.href='login.html'" type="button">로그아웃</button>
+        <button onclick="location.href=''" style="background:#ed6d46" type="button">하연교육</button>
+    </div>
+    </div>
+</section>
+<!----======== 관리자 레이아웃 상단 끝 ========---->
+<!----======== 내용부분 ========---->
+<section id="admin_contents_wrap">
+    <p class="title">회원관리</p>
+    <article class="board">
+        <div class="filter_wrap2">
+            <div class="filter_wrap nobt">
+                <div>
+                    <p class="name">회원 이름</p>
+                    <input type="text" placeholder="회원 이름 입력"> 
+                </div>
+                <div>
+                    <p class="name">학교</p>
+                    <input type="text" placeholder="학교 입력"> 
+                </div>
+                <div>
+                    <p class="name">단계</p>
+                    <select style="width:208px">
+                        <option selected disabled>단계선택</option>
+                        <option>사이언스펀</option>
+                        <option>사이언스탭1</option>
+                        <option>사이언스필2</option>
+                        <option>사이언스맵3</option>
+                        <option>사이언스런4</option>
+                        <option>사이언스업5</option>
+                        <option>사이언스올6</option>
+                        <option>사이언스탑</option>
+                        <option>통합1</option>
+                        <option>통합2</option>
+                        <option>기타</option>
+                    </select> 
+                </div>
+                <div>
+                    <p class="name">학생상태</p>
+                    <select style="width:208px">
+                        <option selected disabled>학생 상태 선택</option>
+                        <option>재학</option>
+                        <option>휴회</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="btn_area">
+                <button><i class="fa fa-search" aria-hidden="true"></i>검색</button>
+                <button><i class="fa fa-repeat" aria-hidden="true"></i>초기화</button>
+            </div>
+        </div>
+    </article>
+    <article id="search_result">
+        <div class="btn_area">
+            <button onclick="open_modal('#memeber_add')">회원등록</button>
+            <button class="green"><i class="fa fa-download" aria-hidden="true"></i>엑셀 다운로드</button>
+        </div>
+        <table  class="table_defalt">
+            <thead>
+                <tr>
+                    <th>등록일</th>
+                    <th width="160px">이름</th>
+                    <th width="160px">학생상태</th>
+                    <th width="160px">학교</th>
+                    <th width="160px">단계</th>
+                    <th width="200px">학부모 전화번호</th>
+                    <th width="300px">주소</th>
+                    <th width="300px">비고</th>
+                    <th width="160px">최종 확인 상태</th>
+                    <th width="120px">관리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-06-25</td>
+                    <td>이하연</td>
+                    <td>재학</td>
+                    <td>종로인삼</td>
+                    <td>사이언스맵3</td>
+                    <td>010-1234-5678</td>
+                    <td>서울시 종로구</td>
+                    <td>6세</td>
+                    <td>2024.02.13.11:56</td>
+                    <td><button class="in_btn"  onclick="open_modal('#memeber_edit')">수정</button></td>
+                </tr>
+                <tr>
+                    <td>2024-06-25</td>
+                    <td>이하연</td>
+                    <td>재학</td>
+                    <td>종로인삼</td>
+                    <td>사이언스맵3</td>
+                    <td>010-1234-5678</td>
+                    <td>서울시 종로구</td>
+                    <td>6세</td>
+                    <td>2024.02.13.11:56</td>
+                    <td><button class="in_btn" onclick="open_modal('#memeber_edit')">수정</button></td>
+                </tr>
+                <tr>
+                    <td>2024-06-25</td>
+                    <td>이하연</td>
+                    <td>재학</td>
+                    <td>종로인삼</td>
+                    <td>사이언스맵3</td>
+                    <td>010-1234-5678</td>
+                    <td>서울시 종로구</td>
+                    <td>6세</td>
+                    <td>2024.02.13.11:56</td>
+                    <td><button class="in_btn" onclick="open_modal('#memeber_edit')">수정</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="page_wrap">
+            <ul class="paging_btn">
+            <li class="side_left"><a><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+            <li><a class="on">1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li class="side_right"><a><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </article>
+</section>
+<!----======== 내용부분 끝 ========---->
+<!--모달-->
+<article id="memeber_add" class="fullpage_modal member_modal">
+    <div class="board">
+        <a class="circle_btn"  onclick="close_modal()"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <p class="title">회원등록</p>
+        <form class="form01">
+            <div class="label_wrap mt_10">
+                <label>
+                    <p class="label_name required">회원이름</p>
+                    <input type="text" required placeholder="회원 이름 입력">
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+                <label>
+                    <p class="label_name required">학교</p>
+                    <input type="text" required placeholder="학교 입력">
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+            </div>
+            <div class="label_wrap mt_10">
+                <label>
+                    <p class="label_name required">단계</p>
+                    <select>
+                        <option selected disabled>단계선택</option>
+                        <option>사이언스펀</option>
+                        <option>사이언스탭1</option>
+                        <option>사이언스필2</option>
+                        <option>사이언스맵3</option>
+                        <option>사이언스런4</option>
+                        <option>사이언스업5</option>
+                        <option>사이언스올6</option>
+                        <option>사이언스탑</option>
+                        <option>통합1</option>
+                        <option>통합2</option>
+                        <option>기타</option>
+                    </select>
+                    <p class="warnning-txt">옵션을 선택해 주세요.</p>
+                </label>
+                <label>
+                    <p class="label_name required">학생 상태</p>
+                    <select>
+                        <option selected disabled>학생 상태 선택</option>
+                        <option>재학</option>
+                        <option>휴회</option>
+                    </select>
+                    <p class="warnning-txt">옵션을 선택해 주세요.</p>
+                </label>
+            </div>
+            <div class="label_wrap mt_10">
+                <label>
+                    <p class="label_name required">휴대폰번호</p>
+                    <div class="tel_number">
+                        <input type="number"> - <input type="number"> - <input type="number">
+                    </div>
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+                <label>
+                    <p class="label_name required">주소</p>
+                    <input type="text" required placeholder="주소 입력(동까지 입력)">
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+            </div>
+            <label>
+                <p class="label_name required">비고</p>
+                <input type="text" required placeholder="비고 입력">
+                <p class="warnning-txt">텍스트를 입력해주세요.</p>
+            </label>
+        </form>
+        <div class="btn_area">
+            <button onclick="close_modal()"> 취소</button>
+            <button type="submit">등록</button>
+        </div>
+        </div>
+    </article>
+</article>
+
+<article id="memeber_edit" class="fullpage_modal member_modal">
+    <div class="board">
+        <a class="circle_btn"  onclick="close_modal()"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <p class="title">회원수정</p>
+        <form class="form01">
+            <div class="label_wrap mt_10">
+                <label>
+                    <p class="label_name required">회원이름</p>
+                    <input type="text" required value="이하연">
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+                <label>
+                    <p class="label_name required">학교</p>
+                    <input type="text" required value="종로인삼">
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+            </div>
+            <div class="label_wrap mt_10">
+                <label>
+                    <p class="label_name required">단계</p>
+                    <select>
+                        <option disabled>단계선택</option>
+                        <option>사이언스펀</option>
+                        <option>사이언스탭1</option>
+                        <option>사이언스필2</option>
+                        <option selected >사이언스맵3</option>
+                        <option>사이언스런4</option>
+                        <option>사이언스업5</option>
+                        <option>사이언스올6</option>
+                        <option>사이언스탑</option>
+                        <option>통합1</option>
+                        <option>통합2</option>
+                        <option>기타</option>
+                    </select>
+                    <p class="warnning-txt">옵션을 선택해 주세요.</p>
+                </label>
+                <label>
+                    <p class="label_name required">학생 상태</p>
+                    <select>
+                        <option disabled>학생 상태 선택</option>
+                        <option selected >재학</option>
+                        <option>휴회</option>
+                    </select>
+                    <p class="warnning-txt">옵션을 선택해 주세요.</p>
+                </label>
+            </div>
+            <div class="label_wrap mt_10">
+                <label>
+                    <p class="label_name required">휴대폰번호</p>
+                    <div class="tel_number">
+                        <input type="number" value="010"> - <input type="number" value="1234" > - <input type="number" value="5678">
+                    </div>
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+                <label>
+                    <p class="label_name required">주소</p>
+                    <input type="text" required value="서울시 서대문구 충현동">
+                    <p class="warnning-txt">텍스트를 입력해주세요.</p>
+                </label>
+            </div>
+            <label>
+                <p class="label_name required">비고</p>
+                <input type="text" required value="6세 ">
+                <p class="warnning-txt">텍스트를 입력해주세요.</p>
+            </label>
+        </form>
+        <div class="btn_area">
+            <button onclick="close_modal()"> 취소</button>
+            <button type="submit">수정</button>
+        </div>
+        </div>
+    </article>
+</article>
+
+<script>
+    function open_modal(modal_id){
+    $(modal_id).addClass('on');
+    }
+    $('.modal_close').on("click",function(){
+        $('.fullpage_modal').removeClass('on');
+    })
+    function close_modal(){
+        $('.fullpage_modal').removeClass('on');
+    }
+</script>
+<!----======== 관리자 레이아웃 하단    ========---->
+<section id="admin_footer_wrap">
+    <div></div>
+</section>
+<!----======== 관리자 레이아웃 하단 끝 ========---->
+</div>
+</body>
+</html>
