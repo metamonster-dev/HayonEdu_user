@@ -1,0 +1,48 @@
+/* 하연교육 디자인 에셋*/
+
+:root {
+    /*하연교육 색상표*/
+    --main:#FF9922;
+    --main2:#FF8522;
+    --blue:#5492FF;
+    --green:#93CA45;
+    --green2:#6CAC11;
+    --black:#000000;
+    --gray1:#555555;
+    --gray2:#777777;
+    --gray3:#999999;
+    --wh_gray:#F8F8F8;
+    --yellow:#FFF194;
+    --border1:#dddddd;
+}
+
+*{font-family:'Pretendard';}
+h1{font-size:0;}
+h1 a{font-size:0}/*로고 타이틀 - soundOlny*/
+h2{font-size:46px;font-weight:700;line-height:55.2px;color:var(--black)}
+h4{font-size:32px;font-weight:700;line-height:42px;color:var(--black)}
+P{font-size:20px;font-weight:500;line-height:24px;color:var(--gray1);}
+
+/*input*/
+input{width:100%;height:46px;line-height:46px;padding:0 16px;border:1px solid var(--border1);color:var(--black);font-size:14px;font-weight:500;border-radius:4px;}
+input:focus{border:1px solid var(--main2);}
+input::placeholder{color:var(--gray3)}
+input:disabled{background:#eee;color:var(--gray2);}
+
+/*input[type='checkbox']*/
+label input[type='checkbox']{display:none;}
+label:has(input[type='checkbox']){position:relative;width:24px;height:24px;border-radius:4px;border:1px solid #aaa;background:url('../assets/icons/check.svg')no-repeat center #fff;color:#DDDDDD;padding:0}
+label:has(input[type='checkbox']:checked){position:relative;;border:1px solid var(--main2);background:url('../assets/icons/check_on.svg')no-repeat center var(--main2);color:#fff;}
+
+/*input[type='radio']*/
+input[type="radio"]{width:24px;height:24px;border:1px solid #aaa;padding:0;border-radius:50%;}
+input[type="radio"]:checked{background:#fff;border:7px solid var(--main2)}
+input[type="radio"]:disabled{background:#fff;border:7px solid var(--border1)}
+
+/*button*/
+button.h56{height:56px;line-height:56px;border-radius:4px;text-align:center;font-weight:700;font-size:20px;min-width:240px;}
+button.h46{height:46px;line-height:46px;border-radius:4px;text-align:center;font-weight:700;font-size:14px;min-width:200px;}
+button.h40{height:40px;line-height:40px;border-radius:4px;text-align:center;font-weight:700;font-size:14px;min-width:100px;}
+button.type01{background:var(--main2);color:#fff;}
+button.type02{background:#fff;border:1px solid #aaa;color:var(--black)}
+button.type03{background:#fff;border:1px solid  var(--main2);color:var(--main2)}
