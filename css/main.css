@@ -9,7 +9,7 @@
 /*=============================================================*/
 /*                         Main_banner1                        */
 /*=============================================================*/
-#Main_banner1{height:100vh;background:url(../assets/images/main/main01_bg.jpg)no-repeat center;overflow:hidden;}
+#Main_banner1{background:url(../assets/images/main/main01_bg.jpg)no-repeat center;overflow:hidden;}
 #Main_banner1 .visual_wrap{position:relative;min-width:1800px;height:100%;overflow:hidden;}
 #Main_banner1 .txt_area{width:1400px;margin:286px auto}
 #Main_banner1 .txt_area .txt01{font-size:70px;line-height:86px;font-weight:800;color:#fff;}
@@ -21,9 +21,47 @@
 #Main_banner1 .particles.p02{top:650px;right:740px;z-index:9;}
 #Main_banner1 #ScrollDown{display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;bottom:60px;left:50%;transform:translateX(-50%);;}
 #Main_banner1 #ScrollDown p{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
+.particles.p03{z-index:999;right:300px;transform:translateY(-70px);}
 
 /*=============================================================*/
 /*                         Main_banner2                        */
 /*=============================================================*/
-#Main_banner2{height:100vh;background:url(../assets/images/main/main02_bg.jpg)no-repeat center;overflow:hidden;}
-#Main_banner2 
+#Main_banner2{background:url(../assets/images/main/main02_bg.jpg)no-repeat top center;overflow:hidden;}
+#Main_banner2 .tit_area{margin:130px auto 80px}
+#Main_banner2 .tit_area .sub_tit{color:var(--yellow)}
+#Main_banner2 .tit_area .tit{color:#fff}
+#Main_banner2 ul{display:flex;margin-bottom:130px;justify-content:center;align-items:center;gap:30px}
+#Main_banner2 ul li{width:327px;height:420px;padding:64px 0;border-radius:20px;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;background:#fff;}
+#Main_banner2 ul li .item_circle{width:180px;height:180px;border-radius:50%;display:flex;justify-content:center;align-items:center;margin-bottom:40px}
+#Main_banner2 ul li:nth-child(1) .item_circle{background:#FFEDDF;}
+#Main_banner2 ul li:nth-child(2) .item_circle{background:#ECF3FF;}
+#Main_banner2 ul li:nth-child(3) .item_circle{background:#E6F5D0;}
+#Main_banner2 ul li:nth-child(4) .item_circle{background:#FFF1D6;}
+#Main_banner2 ul li p{font-size:26px;line-height:36px;text-align:center;font-weight:700;}
+#Main_banner2 ul li:nth-child(1) p{color:var(--main)}
+#Main_banner2 ul li:nth-child(2) p{color:var(--blue)}
+#Main_banner2 ul li:nth-child(3) p{color:var(--green)}
+#Main_banner2 ul li:nth-child(4) p{color:var(--main2)}
+#Main_banner2 .particles.p04{top:130px;left:215px}
+/*=============================================================*/
+/*                         Main_banner3                        */
+/*=============================================================*/
+#Main_banner3{background:url(../assets/images/main/bg_line_snow.svg)no-repeat top left;overflow:hidden;}
+#Main_banner3 .tit_area{margin:130px auto 80px}
+#Main_banner3 .tit_area .sub_tit{color:var(--main2)}
+#Main_banner3 .tit_area .tit{color:#000}
+#Main_banner3 ul{display:flex;justify-content:center;gap:40px}
+#Main_banner3 ul li{text-align:center;}
+#Main_banner3 ul li .item_circle{display:flex;justify-content:center;align-items:center;}
+#Main_banner3 ul li img{max-width:inherit;height:100%;transition:.5s;}
+#Main_banner3 ul li:nth-child(1) img{height:110%;transform:translate(50px, -11px)}
+#Main_banner3 ul li:nth-child(1):hover img{transform:translate(50px, -11px) scale(1.2)}
+#Main_banner3 ul li:nth-child(2) img{height:100%;}
+#Main_banner3 ul li:nth-child(2):hover img{transform:scale(1.2);}
+#Main_banner3 ul li:nth-child(3) img{height:140%;transform: translate(130px, -71px);}
+#Main_banner3 ul li:nth-child(3) img{height:140%;transform: translate(130px, -71px);}
+#Main_banner3 ul li .item_circle{width:440px;height:440px;border-radius:50%;overflow:hidden;margin-bottom:40px}
+#Main_banner3 ul li .tit{font-size:40px;font-weight:700;margin-bottom:16px}
+#Main_banner3 ul li:nth-child(1) .tit{color:var(--main2)}
+#Main_banner3 ul li:nth-child(2) .tit{color:var(--green)}
+#Main_banner3 ul li:nth-child(3) .tit{color:var(--blue)}
