@@ -21,7 +21,7 @@ h1{font-size:0;}
 h1 a{font-size:0}/*로고 타이틀 - soundOlny*/
 h2{font-size:46px;font-weight:700;line-height:55.2px;color:var(--black)}
 h4{font-size:32px;font-weight:700;line-height:42px;color:var(--black)}
-P{font-size:24px;font-weight:500;line-height:24px;color:var(--gray1);}
+P{font-size:24px;font-weight:500;color:var(--gray1);}
 
 /*PC요소&모바일요소*/
 .pc_only_b{display:block;}
@@ -71,7 +71,7 @@ header .header_wraper_pc nav ul li a{font-size:18px;line-height:21px;color:var(-
     /* 하연교육 디자인 에셋(모바일)*/
     h2{font-size:28px;font-weight:700;line-height:40px;color:var(--black)}
     h4{font-size:22px;font-weight:700;line-height:36px;color:var(--black)}
-    P{font-size:15px;font-weight:500;line-height:24px;color:var(--gray1);}
+    P{font-size:15px;font-weight:500;color:var(--gray1);}
 
     /*PC요소&모바일요소*/
     .pc_only_b{display:none;}

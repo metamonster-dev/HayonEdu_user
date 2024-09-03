@@ -1,0 +1,29 @@
+/*메인공통*/
+.full_wrap{width:100%;position:relative;}
+.tit_area{display:flex;flex-direction: column;justify-content:center;align-items:center;}
+.tit_area .sub_tit{font-size:26px;font-weight:700;margin-bottom:16px}
+.tit_area .tit{font-size:56px;line-height:72px;font-weight:800;text-align:center;}
+.particles{position:absolute}
+
+
+/*=============================================================*/
+/*                         Main_banner1                        */
+/*=============================================================*/
+#Main_banner1{height:100vh;background:url(../assets/images/main/main01_bg.jpg)no-repeat center;overflow:hidden;}
+#Main_banner1 .visual_wrap{position:relative;min-width:1800px;height:100%;overflow:hidden;}
+#Main_banner1 .txt_area{width:1400px;margin:286px auto}
+#Main_banner1 .txt_area .txt01{font-size:70px;line-height:86px;font-weight:800;color:#fff;}
+#Main_banner1 .txt_area .txt01 span{color:var(--yellow)}
+#Main_banner1 .txt_area .txt02_area{margin-top:60px}
+#Main_banner1 .txt_area .txt02{font-size:26px;line-height:36px;font-weight:700;color:#fff;}
+#Main_banner1 .img01_box{position:absolute;right:12%;top:55%;transform:translateY(-50%);}
+#Main_banner1 .particles.p01{width:92px;top:200px;right:190px;z-index:9;}
+#Main_banner1 .particles.p02{top:650px;right:740px;z-index:9;}
+#Main_banner1 #ScrollDown{display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;bottom:60px;left:50%;transform:translateX(-50%);;}
+#Main_banner1 #ScrollDown p{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
+
+/*=============================================================*/
+/*                         Main_banner2                        */
+/*=============================================================*/
+#Main_banner2{height:100vh;background:url(../assets/images/main/main02_bg.jpg)no-repeat center;overflow:hidden;}
+#Main_banner2 
