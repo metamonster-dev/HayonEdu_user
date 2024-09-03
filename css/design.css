@@ -46,3 +46,16 @@ button.h40{height:40px;line-height:40px;border-radius:4px;text-align:center;font
 button.type01{background:var(--main2);color:#fff;}
 button.type02{background:#fff;border:1px solid #aaa;color:var(--black)}
 button.type03{background:#fff;border:1px solid  var(--main2);color:var(--main2)}
+
+
+/*=============================================================*/
+/*                      header - GNB(pc)                       */
+/*=============================================================*/
+header{width:100%;height:90px;;}
+header .header_wraper{width:1400px;height:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+header .header_wraper nav ul{display:flex;gap:80px;}
+header .header_wraper nav ul li a{font-size:18px;line-height:21px;color:var(--black);font-weight:600;}
+header .header_wraper .login_menu{display:flex;justify-content:flex-start;align-items:center;gap:12px}
+header .header_wraper .login_menu button{height:37px;line-height:37px;border-radius:50px;padding:0 24px;font-weight:700;}
+header .header_wraper .login_menu button.type02{color:var(--gray1)}
+/*=============================================================*/
