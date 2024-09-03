@@ -21,7 +21,13 @@ h1{font-size:0;}
 h1 a{font-size:0}/*로고 타이틀 - soundOlny*/
 h2{font-size:46px;font-weight:700;line-height:55.2px;color:var(--black)}
 h4{font-size:32px;font-weight:700;line-height:42px;color:var(--black)}
-P{font-size:20px;font-weight:500;line-height:24px;color:var(--gray1);}
+P{font-size:24px;font-weight:500;line-height:24px;color:var(--gray1);}
+
+/*PC요소&모바일요소*/
+.pc_only_b{display:block;}
+.pc_only_f{display:flex;}
+.m_only_b{display:none;}
+.m_only_f{display:none;}
 
 /*input*/
 input{width:100%;height:46px;line-height:46px;padding:0 16px;border:1px solid var(--border1);color:var(--black);font-size:14px;font-weight:500;border-radius:4px;}
@@ -51,11 +57,32 @@ button.type03{background:#fff;border:1px solid  var(--main2);color:var(--main2)}
 /*=============================================================*/
 /*                      header - GNB(pc)                       */
 /*=============================================================*/
-header{width:100%;height:90px;;}
-header .header_wraper{width:1400px;height:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
-header .header_wraper nav ul{display:flex;gap:80px;}
-header .header_wraper nav ul li a{font-size:18px;line-height:21px;color:var(--black);font-weight:600;}
-header .header_wraper .login_menu{display:flex;justify-content:flex-start;align-items:center;gap:12px}
-header .header_wraper .login_menu button{height:37px;line-height:37px;border-radius:50px;padding:0 24px;font-weight:700;}
-header .header_wraper .login_menu button.type02{color:var(--gray1)}
+header{width:100%;height:90px;}
+header .header_wraper_m{display:none;}
+header .header_wraper_pc{display:flex;width:1400px;height:100%;margin:0 auto;justify-content:space-between;align-items:center;}
+header .header_wraper_pc nav ul{display:flex;gap:80px;}
+header .header_wraper_pc nav ul li a{font-size:18px;line-height:21px;color:var(--black);font-weight:600;}
+.login_menu{display:flex;justify-content:flex-start;align-items:center;gap:12px}
+.login_menu button{height:37px;line-height:37px;border-radius:50px;padding:0 24px;font-weight:700;}
+.login_menu button.type02{color:var(--gray1)}
 /*=============================================================*/
+
+@media (max-width: 1020px) {
+    /* 하연교육 디자인 에셋(모바일)*/
+    h2{font-size:28px;font-weight:700;line-height:40px;color:var(--black)}
+    h4{font-size:22px;font-weight:700;line-height:36px;color:var(--black)}
+    P{font-size:15px;font-weight:500;line-height:24px;color:var(--gray1);}
+
+    /*PC요소&모바일요소*/
+    .pc_only_b{display:none;}
+    .pc_only_f{display:none;}
+    .m_only_b{display:block;}
+    .m_only_f{display:flex;}
+
+    /*=============================================================*/
+    /*                      header - GNB(M)                       */
+    /*=============================================================*/
+    header{height:64px;}
+    header .header_wraper_pc{display:none;}
+    header .header_wraper_m{display:flex;width:100%;height:100%;padding:0 16px;justify-content:space-between;align-items:center;}
+}
