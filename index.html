@@ -230,7 +230,6 @@
                 start: "top 75%", // 애니메이션 시작 지점 (뷰포트 기준)
                 end: "bottom 25%", // 애니메이션 종료 지점 (뷰포트 기준)
                 toggleActions: "play reverse play reverse", // 스크롤 애니메이션의 재생 및 역재생 설정
-                markers: false, // 디버깅용 마커 표시 (원하는 경우 true로 변경)
             }
         });
 
@@ -258,7 +257,6 @@
                 start: "top 75%", // 애니메이션 시작 지점 (뷰포트 기준)
                 end: "bottom 25%", // 애니메이션 종료 지점 (뷰포트 기준)
                 toggleActions: "play reverse play reverse", // 스크롤 방향에 따른 재생 및 역재생 설정
-                markers: false, // 디버깅용 마커 표시 (원하는 경우 true로 변경)
             },
             opacity: 0, // 시작 시 투명도
             y: 50, // 시작 시 y축 위치 (아래에서 위로 이동)
@@ -266,8 +264,22 @@
             ease: "power1.out", // 애니메이션 이징 효과
             delay: index * 0.5 // 각 요소에 대해 순차적으로 지연 시간 추가
         });
+        });
 
-    });
+        gsap.from(".img01_box", {
+        scrollTrigger: {
+            trigger: ".img01_box", // 애니메이션을 트리거할 요소를 .img01_box로 설정
+            start: "top 80%", // 애니메이션이 시작될 지점 (뷰포트 기준)
+            end: "top 30%", // 애니메이션이 종료될 지점 (뷰포트 기준)
+            toggleActions: "play reverse play reverse", // 스크롤 방향에 따른 재생 및 역재생 설정
+        },
+        opacity: 0, // 시작 시 투명도
+        scale: 0.8, // 시작 시 확대/축소 비율
+        y: 0, // 시작 시 y축 위치 (위에서 아래로 이동)
+        duration: 1, // 애니메이션 지속 시간
+        ease: "power1.out" // 애니메이션 이징 효과
+        });
+
     });
     </script>
     <!--==========(PC애니메이션)==========-->
