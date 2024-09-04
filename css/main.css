@@ -5,8 +5,6 @@
 .tit_area .sub_tit{font-size:26px;font-weight:700;margin-bottom:16px}
 .tit_area .tit{font-size:56px;line-height:72px;font-weight:800;text-align:center;}
 .particles{position:absolute;z-index:99;}
-
-
 /*=============================================================*/
 /*                         Main_banner1                        */
 /*=============================================================*/
@@ -60,6 +58,7 @@
 #Main_banner3 .tit_area .tit{color:#000}
 #Main_banner3 .main03_list01{display:flex;justify-content:center;gap:40px}
 #Main_banner3 .main03_list01 li{text-align:center;}
+#Main_banner3 .main03_list01 li p{font-size:26px;line-height:34px;color:var(--gray2);font-weight:700;}
 #Main_banner3 .main03_list01 li .item_circle{display:flex;justify-content:center;align-items:center;}
 #Main_banner3 .main03_list01 li img{max-width:inherit;height:100%;transition:.6s;}
 #Main_banner3 .main03_list01 li:nth-child(1) img{height:110%;transform:translate(54px, -3px)}
@@ -105,7 +104,7 @@
 #Main_banner4 .Latest_news .subject{margin:24px auto 8px;font-size:24px;font-weight:700;color:var(--black)}
 #Main_banner4 .Latest_news .date{font-size:16px;line-height:22px;color:var(--gray2)}
 /*=============================================================*/
-/*                         Main_banner5                       */
+/*                         Main_banner5                        */
 /*=============================================================*/
 #Main_banner5{position:relative;background:url(../assets/images/main/bg_line_snow.jpg)no-repeat top left;padding:130px 0;}
 #Main_banner5 .tit_area{margin-bottom:60px}
@@ -124,3 +123,58 @@
 #Main_banner5 .banner_wraper .readMore{margin-top:24px;font-size:18px;color:var(--gray2);display:flex;align-items:center;}
 #Main_banner5 .banner_wraper .readMore::after{content:'';display:inline-block;width:32px;height:32px;margin-left:16px;background:url(../assets/icons/icon_readMore.svg)no-repeat center;}
 #Main_banner5 .particles.p09{top:161px;right:276px;}
+
+
+@media (max-width: 1020px) {
+    /*메인공통*/
+    #Index_wrapper{min-width:inherit;}
+    .tit_area .sub_tit{font-size:18px;line-height:21px;margin-bottom:8px}
+    .tit_area .tit{font-size:26px;line-height:36px;}
+    /*=============================================================*/
+    /*                         Main_banner1                        */
+    /*=============================================================*/
+    #Main_banner1{min-height:736px;background:url(../assets/images/main/main01_bg_m.jpg)no-repeat center #5492ff;background-size:cover;}
+    #Main_banner1 .visual_wrap{height:100%;}
+    #Main_banner1 .txt_area{margin:60px 0 0 40px}
+    #Main_banner1 .txt_area .txt01{font-size:30px;line-height:40px;}
+    #Main_banner1 .txt_area .txt02_area{margin-top:24px}
+    #Main_banner1 .txt_area .txt02{font-size:18px;line-height:24px;}
+    #Main_banner1 .img01_box{transform: translate(20%, -30%);}
+    #Main_banner1 .particles.p01{top:290px;right:20px;width:80px;}
+    #Main_banner1 .particles.p02{top:570px;right:214px;width:74px;}
+    /*=============================================================*/
+    /*                         Main_banner2                        */
+    /*=============================================================*/
+    #Main_banner2{background:url(../assets/images/main/main02_bg_m.jpg)no-repeat center;background-size:cover;}
+    #Main_banner2 .tit_area{margin:60px 0 40px}
+    #Main_banner2 ul{flex-direction:column;padding:0 16px;gap:16px;margin-bottom:60px}
+    #Main_banner2 ul li{width:100%;height:fit-content;flex-direction:row;padding:15px 16px;justify-content:flex-start;align-items:center;gap:16px}
+    #Main_banner2 ul li .item_circle{width:90px;height:90px;margin-bottom:0}
+    #Main_banner2 ul li .item_circle img{width:48px;}
+    #Main_banner2 ul li p{text-align:left;font-size:18px;line-height:26px;}
+    #Main_banner2 .particles.p04{top:24px;left:-20px;width:78px;}
+    /*=============================================================*/
+    /*                         Main_banner3                        */
+    /*=============================================================*/
+    #Main_banner3{background:none;margin-bottom:60px;}
+    #Main_banner3 .b01{margin-bottom:0}
+    #Main_banner3 .tit_area{margin:60px auto 40px}
+    #Main_banner3 .main03_list01{flex-direction:column;padding:0 30px}
+    #Main_banner3 .main03_list01 li p{font-size:18px;line-height:26px;color:var(--gray2);font-weight:700;}
+    #Main_banner3 .main03_list01 li .item_circle{position:relative;width:100%;height:auto;margin-bottom:24px}
+    #Main_banner3 .main03_list01 li .item_circle::after{display: block;content:'';padding-bottom:100%}
+    #Main_banner3 .main03_list01 li .item_circle img{position: absolute;top: 0;left: 0;object-fit: cover;width:100%;height:auto;}
+    #Main_banner3 .main03_list01 li:nth-child(1) img{transform:translate(56px, 50px) scale(1.5)}
+    #Main_banner3 .main03_list01 li:nth-child(1):hover img{transform:translate(56px, 50px) scale(1.55)}
+    #Main_banner3 .main03_list01 li:nth-child(2) img{transform:translate(-66px, 74px) scale(1.8)}
+    #Main_banner3 .main03_list01 li:nth-child(2):hover img{transform:translate(-66px, 74px) scale(1.85)}
+    #Main_banner3 .main03_list01 li:nth-child(3) img{transform:translate(90px, -18px) scale(2.25)}
+    #Main_banner3 .main03_list01 li:nth-child(3):hover img{transform:translate(90px, -18px) scale(2.3);height:auto;}
+    #Main_banner3 .main03_list01 li .tit{font-size:24px;margin-bottom:8px}
+    #Main_banner3 .particles.p05{top:1200px;right:30px;width: 114px;}
+    #Main_banner3 .particles.p06{top:440px;left:-10px;width:110px;}
+    #Main_banner3 .b02{width:100%;}
+
+}
+
+
