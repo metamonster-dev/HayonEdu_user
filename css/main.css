@@ -1,5 +1,5 @@
 /*메인공통*/
-body{min-width:1800px;overflow:hidden;position:relative}
+#Index_wrapper{min-width:1800px;overflow:hidden;position:relative}
 .full_wrap{width:100%;position:relative;}
 .tit_area{display:flex;flex-direction: column;justify-content:center;align-items:center;}
 .tit_area .sub_tit{font-size:26px;font-weight:700;margin-bottom:16px}
@@ -18,7 +18,7 @@ body{min-width:1800px;overflow:hidden;position:relative}
 #Main_banner1 .txt_area .txt02_area{margin-top:60px}
 #Main_banner1 .txt_area .txt02{font-size:26px;line-height:36px;font-weight:700;color:#fff;}
 #Main_banner1 .img01_box{position:absolute;right:12%;top:55%;transform:translateY(-50%);}
-#Main_banner1 .particles.p01{width:92px;top:200px;right:190px;z-index:9;}
+#Main_banner1 .particles.p01{top:200px;right:190px;z-index:9;}
 #Main_banner1 .particles.p02{top:650px;right:740px;z-index:9;}
 #Main_banner1 #ScrollDown{display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;bottom:60px;left:50%;transform:translateX(-50%);;}
 #Main_banner1 #ScrollDown p{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
@@ -52,7 +52,7 @@ body{min-width:1800px;overflow:hidden;position:relative}
 /*=============================================================*/
 /*                         Main_banner3                        */
 /*=============================================================*/
-#Main_banner3{background:url(../assets/images/main/bg_line_snow.svg)no-repeat 102% 71%;overflow:hidden;}
+#Main_banner3{background:url(../assets/images/main/bg_line_snow.svg)no-repeat 102% 71%;overflow:hidden;padding-bottom:130px}
 #Main_banner3 .banner_contetns{overflow:hidden;}
 #Main_banner3 .b01{background:url(../assets/images/main/bg_line_snow.jpg)no-repeat top left;margin-bottom:130px}
 #Main_banner3 .tit_area{margin:130px auto 80px}
@@ -75,11 +75,48 @@ body{min-width:1800px;overflow:hidden;position:relative}
 #Main_banner3 .main03_list01 li:nth-child(3) .tit{color:var(--blue)}
 #Main_banner3 .particles.p05{top:310px;right:210px}
 #Main_banner3 .particles.p06{top:670px;left:160px}
-#Main_banner3 .review_wraper{width:1400px;padding:80px;margin:0 auto;background:var(--main2);display:flex;justify-content:center;align-items:center;flex-direction:column;gap:66.5px}
-#Main_banner3 .review_wraper .tit{font-size:56px;font-weight:800;color:#fff;}
+#Main_banner3 .b02{position:relative}
+#Main_banner3 .review_wraper{width:1400px;padding:80px;margin:0 auto;background:var(--main2);display:flex;justify-content:center;align-items:center;flex-direction:column;gap:66.5px;border-radius:20px;}
+#Main_banner3 .review_wraper .tit{position:relative;font-size:56px;font-weight:800;color:#fff;}
+#Main_banner3 .review_wraper .tit::before{content:'';display:block;width:50px;height:100px;background:url(../assets/images/main/leaf.svg)no-repeat center;position:absolute;top:-16.5px;left:-87.5px}
+#Main_banner3 .review_wraper .tit::after{content:'';display:block;width:50px;height:100px;background:url(../assets/images/main/leaf.svg)no-repeat center;position:absolute;top:-16.5px;right:-87.5px;transform:scale(-1, 1);}
 #Main_banner3 .review_wraper .tit span{color:var(--yellow)}
 #Main_banner3 .review_wraper .main03_list02{display:flex;gap:30px}
 #Main_banner3 .review_wraper .main03_list02 li{width:393px;padding:30px 40px;display:flex;justify-content: flex-start;align-items:flex-start;flex-direction:column;background:#fff;border-radius:20px;}
 #Main_banner3 .review_wraper .main03_list02 li .txt_review{margin:20px 0;font-size:24px;line-height:34px;font-weight:700;color:#555}
 #Main_banner3 .review_wraper .main03_list02 li .btm_txt{width:100%;;display:flex;justify-content:space-between;align-items:center;}
-#Main_banner3 .review_wraper .main03_list02 li .btm_txt p{font-size:18px;}
+#Main_banner3 .review_wraper .main03_list02 li .btm_txt p{font-size:18px;color:#999999}
+#Main_banner3 .review_wraper .main03_list02 li .btm_txt .location_tag{padding:0 8px;height:27px;line-height:27px;font-size:16px;font-weight:700;color:#FF8522;background:#FFEDDF;border-radius:4px;}
+#Main_banner3 .particles.p07{top:50px;right:400px;}
+#Main_banner3 .particles.p08{top:233px;left:362px;}
+/*=============================================================*/
+/*                         Main_banner4                        */
+/*=============================================================*/
+#Main_banner4{background:#FFFAEC;overflow:hidden;padding:130px 0;display:flex;flex-direction:column;align-items:center;}
+#Main_banner4 .tit_area{margin-bottom:60px}
+#Main_banner4 .tit_area .sub_tit{color:var(--main2)}
+#Main_banner4 .tit_area .tit{color:var(--black)}
+#Main_banner4 .Latest_news ul{display:flex;gap:31px}
+#Main_banner4 .Latest_news ul li{width:446px;}
+#Main_banner4 .Latest_news .subject{margin:24px auto 8px;font-size:24px;font-weight:700;color:var(--black)}
+#Main_banner4 .Latest_news .date{font-size:16px;line-height:22px;color:var(--gray2)}
+/*=============================================================*/
+/*                         Main_banner5                       */
+/*=============================================================*/
+#Main_banner5{position:relative;background:url(../assets/images/main/bg_line_snow.jpg)no-repeat top left;padding:130px 0;}
+#Main_banner5 .tit_area{margin-bottom:60px}
+#Main_banner5 .tit_area .sub_tit{color:var(--green)}
+#Main_banner5 .tit_area .tit{color:var(--black)}
+#Main_banner5 .banner_wraper{width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:stretch}
+#Main_banner5 .banner_wraper .left_area{display:flex;flex-direction:column;gap:30px}
+#Main_banner5 .banner_wraper .left_area a{background:#F8F8F8;display:flex;justify-content:space-between;}
+#Main_banner5 .banner_wraper a{width:685px;padding:60px;border-radius:20px;}
+#Main_banner5 .banner_wraper > a{background:var(--green);display:flex;justify-content:space-between;flex-direction:column;}
+#Main_banner5 .banner_wraper > a .tit{color:#fff;line-height:60px;}
+#Main_banner5 .banner_wraper .tit{position:relative;font-size:40px;font-weight:700;color:var(--black);display:flex;align-items:center;gap:16px;}
+#Main_banner5 .banner_wraper .tit::after{display:inline-block;padding:0 8px;height:27px;line-height:27px;background:#fff;border-radius:4px;font-size:14px}
+#Main_banner5 .banner_wraper .tit.student::after{content:'회원';color:var(--main2);border:1px solid var(--main2)}
+#Main_banner5 .banner_wraper .tit.teacher::after{content:'교사';color:var(--green);border:1px solid var(--green)}
+#Main_banner5 .banner_wraper .readMore{margin-top:24px;font-size:18px;color:var(--gray2);display:flex;align-items:center;}
+#Main_banner5 .banner_wraper .readMore::after{content:'';display:inline-block;width:32px;height:32px;margin-left:16px;background:url(../assets/icons/icon_readMore.svg)no-repeat center;}
+#Main_banner5 .particles.p09{top:161px;right:276px;}
