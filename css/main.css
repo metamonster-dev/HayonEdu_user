@@ -75,7 +75,7 @@
 #Main_banner3 .main03_list01 li:nth-child(3) .tit{color:var(--blue)}
 #Main_banner3 .particles.p05{top:310px;right:210px}
 #Main_banner3 .particles.p06{top:670px;left:160px}
-#Main_banner3 .b02{position:relative}
+#Main_banner3 .b02{width:1800px;margin:0 auto;position:relative}
 #Main_banner3 .review_wraper{width:1400px;padding:80px;margin:0 auto;background:var(--main2);display:flex;justify-content:center;align-items:center;flex-direction:column;gap:66.5px;border-radius:20px;}
 #Main_banner3 .review_wraper .tit{position:relative;font-size:56px;font-weight:800;color:#fff;}
 #Main_banner3 .review_wraper .tit::before{content:'';display:block;width:50px;height:100px;background:url(../assets/images/main/leaf.svg)no-repeat center;position:absolute;top:-16.5px;left:-87.5px}
@@ -83,8 +83,8 @@
 #Main_banner3 .review_wraper .tit span{color:var(--yellow)}
 #Main_banner3 .review_wraper .swiper{width:100%;}
 #Main_banner3 .b02 .swiper-button-next::after,#Main_banner3 .b02 .swiper-button-prev::after{display:none;}
-#Main_banner3 .b02 .swiper-button-next{top:700px;right:11.5%;width:fit-content} 
-#Main_banner3 .b02 .swiper-button-prev{top:700px;left:11.5%;width:fit-content}
+#Main_banner3 .b02 .swiper-button-next{top:700px;right:9.15%;width:fit-content} 
+#Main_banner3 .b02 .swiper-button-prev{top:700px;left:9.15%;width:fit-content}
 #Main_banner3 .review_wraper .main03_list02{display:flex;width:100%;}
 #Main_banner3 .review_wraper .main03_list02 li{width:393px;padding:30px 40px;display:flex;justify-content: flex-start;align-items:flex-start;flex-direction:column;background:#fff;border-radius:20px;}
 #Main_banner3 .review_wraper .main03_list02 li .txt_review{margin:20px 0;font-size:24px;line-height:34px;font-weight:700;color:#555}
