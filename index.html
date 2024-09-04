@@ -113,7 +113,7 @@
             </article>
             <div class="review_wraper">
                 <p class="tit">하연교육과 함께한 <span>후기</span></p>
-                <div class="review_swiper swiper">
+                <div class="review_swiper swiper pc_only_b">
                     <ul class="main03_list02 swiper-wrapper">
                         <li class="swiper-slide">
                             <img src="./assets/images/main/main03_emoji01.png" alt="웃는 이모지">
@@ -159,12 +159,71 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="review_swiper2 swiper m_only_b">
+                    <ul class="main03_list02 swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="./assets/images/main/main03_emoji01.png" alt="웃는 이모지">
+                            <p class="txt_review">
+                                아이들이 너무 좋아해요!<br/>
+                                다녀오면 오늘 배운 내용 모두 쏟아내고 잠들어요! 200% 만족이에요!
+                            </p>
+                            <div class="btm_txt">
+                                <p>이ㅇㅇ 어머님</p>
+                                <p class="location_tag">구로디지털점</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./assets/images/main/main03_emoji02.png" alt="웃는 이모지">
+                            <p class="txt_review">
+                                아이들이 과학에 대한 자신감이 대단해요! 선생님과 함께 참여하고 토론도 하는 과정이 있어서 너무 좋은것 같아요!
+                            </p>
+                            <div class="btm_txt">
+                                <p>홍ㅇㅇ 어머님</p>
+                                <p class="location_tag">송파점</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./assets/images/main/main03_emoji01.png" alt="웃는 이모지">
+                            <p class="txt_review">
+                                아이들이 너무 좋아해요!<br/>
+                                다녀오면 오늘 배운 내용 모두 쏟아내고 잠들어요! 200% 만족이에요!
+                            </p>
+                            <div class="btm_txt">
+                                <p>김ㅇㅇ 어머님</p>
+                                <p class="location_tag">목동점</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./assets/images/main/main03_emoji02.png" alt="웃는 이모지">
+                            <p class="txt_review">
+                                아이들이 과학에 대한 자신감이 대단해요! 선생님과 함께 참여하고 토론도 하는 과정이 있어서 너무 좋은것 같아요!
+                            </p>
+                            <div class="btm_txt">
+                                <p>홍ㅇㅇ 어머님</p>
+                                <p class="location_tag">송파점</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="swiper-button-next"><img src="./assets/icons/swiper_next.png" alt="리뷰 다음으로 넘기기"></div>
                 <div class="swiper-button-prev"><img src="./assets/icons/swiper_prev.png" alt="리뷰 이전으로 넘기기"></div>
                 <script>
                     var swiper = new Swiper(".review_swiper", {
                     slidesPerView: 3,
                     spaceBetween: 30,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+
+                    var swiper = new Swiper(".review_swiper2", {
+                    slidesPerView: 1.15,
+                    spaceBetween: 16,
+                    centeredSlides: true,
                     loop: true,
                     navigation: {
                         nextEl: ".swiper-button-next",

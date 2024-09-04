@@ -85,7 +85,7 @@
 #Main_banner3 .b02 .swiper-button-next{top:700px;right:9.15%;width:fit-content} 
 #Main_banner3 .b02 .swiper-button-prev{top:700px;left:9.15%;width:fit-content}
 #Main_banner3 .review_wraper .main03_list02{display:flex;width:100%;}
-#Main_banner3 .review_wraper .main03_list02 li{width:393px;padding:30px 40px;display:flex;justify-content: flex-start;align-items:flex-start;flex-direction:column;background:#fff;border-radius:20px;}
+#Main_banner3 .review_wraper .main03_list02 li{padding:30px 40px;display:flex;justify-content: flex-start;align-items:flex-start;flex-direction:column;background:#fff;border-radius:20px;}
 #Main_banner3 .review_wraper .main03_list02 li .txt_review{margin:20px 0;font-size:24px;line-height:34px;font-weight:700;color:#555}
 #Main_banner3 .review_wraper .main03_list02 li .btm_txt{width:100%;;display:flex;justify-content:space-between;align-items:center;}
 #Main_banner3 .review_wraper .main03_list02 li .btm_txt p{font-size:18px;color:#999999}
@@ -174,8 +174,14 @@
     #Main_banner3 .particles.p05{top:1200px;right:30px;width: 114px;}
     #Main_banner3 .particles.p06{top:440px;left:-10px;width:110px;}
     #Main_banner3 .b02{width:100%;padding:0 16px}
-    #Main_banner3 .review_wraper{width:100%;}
-
+    #Main_banner3 .review_wraper{width:100%;padding:43px 0}
+    #Main_banner3 .review_wraper .tit{font-size:22px;}
+    #Main_banner3 .review_wraper .tit::before{width:30px;height:60px;top:-13px;left:-30px}
+    #Main_banner3 .review_wraper .tit::after{width:30px;height:60px;top:-13px;right:-30px}
+    #Main_banner3 .review_swiper2{overflow:none;}
+    #Main_banner3 .review_wraper .main03_list02 li{padding:24px;display:flex;justify-content: flex-start;align-items:flex-start;flex-direction:column;background:#fff;border-radius:20px;}
+    #Main_banner3 .review_swiper2 .swiper-slide {opacity:.5;}
+    #Main_banner3 .review_swiper2 .swiper-slide-active{opacity:1;}
 }
 
 
