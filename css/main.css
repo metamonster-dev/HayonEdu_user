@@ -180,8 +180,9 @@
     #Main_banner3 .review_wraper .tit::after{width:30px;height:60px;top:-13px;right:-30px}
     #Main_banner3 .review_swiper2{overflow:none;}
     #Main_banner3 .review_wraper .main03_list02 li{padding:24px;display:flex;justify-content: flex-start;align-items:flex-start;flex-direction:column;background:#fff;border-radius:20px;}
-    #Main_banner3 .review_swiper2 .swiper-slide {opacity:.5;}
-    #Main_banner3 .review_swiper2 .swiper-slide-active{opacity:1;}
+    #Main_banner3 .review_swiper2 .swiper-slide{opacity:.5;}
+    #Main_banner3 .review_swiper2 .swiper-slide-active{opacity:1}
+
 }
 
 
