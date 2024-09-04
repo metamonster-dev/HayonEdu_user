@@ -296,6 +296,23 @@
             delay: index * 0.5 // 각 요소에 대해 순차적으로 지연 시간 추가
         });
         });
+        
+        // .main03_list02의 모든 li 요소에 대한 애니메이션 설정
+        gsap.utils.toArray(".main03_list02 li").forEach(function(item, index) {
+            gsap.from(item, {
+                scrollTrigger: {
+                    trigger: item, // 각 li 요소를 트리거로 설정
+                    start: "top 80%", // 요소가 뷰포트의 80% 지점에 들어올 때 애니메이션 시작
+                    toggleActions: "play none none none", // 뷰포트에 들어올 때만 애니메이션 실행
+                    markers: false, // 디버깅용 마커 표시 (개발 시 true, 배포 시 false로 변경)
+                },
+                opacity: 0, // 시작 시 투명도
+                x: 100, // 시작 시 x축 위치 (오른쪽에서 시작)
+                duration: 0.8, // 애니메이션 지속 시간
+                ease: "power2.out", // 애니메이션 이징 효과
+                delay: index * 0.25 // 각 요소에 대해 0.25초씩 지연 시간 추가
+            });
+        });
 
         // .particles 요소들을 배열로 선택하고 각각에 애니메이션 설정
         gsap.utils.toArray(".particles").forEach(function(particle) {
@@ -315,7 +332,7 @@
                 markers: true,
             });
         });
-
+        
     });
     </script>
     <!--==========(PC애니메이션)==========-->
