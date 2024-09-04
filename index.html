@@ -280,6 +280,23 @@
         ease: "power1.out" // 애니메이션 이징 효과
         });
 
+        // #Main_banner3 ul의 모든 li 요소에 대한 애니메이션 설정
+        gsap.utils.toArray(".main03_list01 li").forEach(function(item, index) {
+        gsap.from(item, {
+            scrollTrigger: {
+                trigger: "#Main_banner3 ul", // 애니메이션을 트리거할 부모 요소
+                start: "top 75%", // 애니메이션 시작 지점 (뷰포트 기준)
+                end: "bottom 25%", // 애니메이션 종료 지점 (뷰포트 기준)
+                toggleActions: "play reverse play reverse", // 스크롤 방향에 따른 재생 및 역재생 설정
+            },
+            opacity: 0, // 시작 시 투명도
+            y: 50, // 시작 시 y축 위치 (아래에서 위로 이동)
+            duration: 0.8, // 애니메이션 지속 시간
+            ease: "power1.out", // 애니메이션 이징 효과
+            delay: index * 0.5 // 각 요소에 대해 순차적으로 지연 시간 추가
+        });
+        });
+
     });
     </script>
     <!--==========(PC애니메이션)==========-->
