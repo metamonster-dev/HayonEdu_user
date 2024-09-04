@@ -1,5 +1,5 @@
 /*메인공통*/
-#Index_wrapper{width:1800px;overflow:hidden;position:relative;margin:0 auto}
+#Index_wrapper{min-width:1860px;width:100%;overflow:hidden;position:relative;margin:0 auto}
 .full_wrap{width:100%;position:relative;}
 .tit_area{display:flex;flex-direction: column;justify-content:center;align-items:center;}
 .tit_area .sub_tit{font-size:26px;font-weight:700;margin-bottom:16px}
