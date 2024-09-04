@@ -268,9 +268,9 @@
 
         gsap.from(".img01_box", {
         scrollTrigger: {
-            trigger: ".img01_box", // 애니메이션을 트리거할 요소를 .img01_box로 설정
+            trigger: "#Main_banner1", // 애니메이션을 트리거할 요소를 .img01_box로 설정
             start: "top 80%", // 애니메이션이 시작될 지점 (뷰포트 기준)
-            end: "top 30%", // 애니메이션이 종료될 지점 (뷰포트 기준)
+            end: "bottom 30%", // 애니메이션이 종료될 지점 (뷰포트 기준)
             toggleActions: "play reverse play reverse", // 스크롤 방향에 따른 재생 및 역재생 설정
         },
         opacity: 0, // 시작 시 투명도
@@ -295,6 +295,25 @@
             ease: "power1.out", // 애니메이션 이징 효과
             delay: index * 0.5 // 각 요소에 대해 순차적으로 지연 시간 추가
         });
+        });
+
+        // .particles 요소들을 배열로 선택하고 각각에 애니메이션 설정
+        gsap.utils.toArray(".particles").forEach(function(particle) {
+            gsap.from(particle, {
+                scrollTrigger: {
+                    trigger: particle, // 각 .particles 요소를 트리거로 설정
+                    start: "top 100%", // 요소가 뷰포트의 80% 지점에 들어올 때 애니메이션 시작
+                    end: "bottom 0%", // 요소가 뷰포트의 20% 지점에 나갈 때 애니메이션 종료
+                    toggleActions: "play reverse play reverse",// 뷰포트에 들어올 때 애니메이션 재생, 나갈 때 리셋
+                    markers: false, // 디버깅용 마커 표시 (개발 시 true, 배포 시 false로 변경)
+                },
+                opacity: 0, // 시작 시 투명도
+                scale: 0.5, // 시작 시 크기 축소
+                y: 100, // 시작 시 아래로부터 y축 위치
+                duration: 0.6, // 애니메이션 지속 시간
+                ease: "back.out(1.7)", // 튀어나오는 애니메이션 이징 효과
+                markers: true,
+            });
         });
 
     });
