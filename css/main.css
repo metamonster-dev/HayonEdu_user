@@ -173,7 +173,8 @@
     #Main_banner3 .main03_list01 li .tit{font-size:24px;margin-bottom:8px}
     #Main_banner3 .particles.p05{top:1200px;right:30px;width: 114px;}
     #Main_banner3 .particles.p06{top:440px;left:-10px;width:110px;}
-    #Main_banner3 .b02{width:100%;}
+    #Main_banner3 .b02{width:100%;padding:0 16px}
+    #Main_banner3 .review_wraper{width:100%;}
 
 }
 
