@@ -12,7 +12,7 @@
 /*=============================================================*/
 #Main_banner1{background:url(../assets/images/main/main01_bg.jpg)no-repeat center;overflow:hidden;}
 #Main_banner1 .visual_wrap{position:relative;height:100%;overflow:hidden;}
-#Main_banner1 .txt_area{width:1400px;margin:286px auto}
+#Main_banner1 .txt_area{width:1400px;margin:286px auto;}
 #Main_banner1 .txt_area .txt01{font-size:70px;line-height:86px;font-weight:800;color:#fff;}
 #Main_banner1 .txt_area .txt01 span{color:var(--yellow)}
 #Main_banner1 .txt_area .txt02_area{margin-top:60px}

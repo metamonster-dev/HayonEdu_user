@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="./css/main.css" /> <!--메인CSS-->
 <!-- JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="./js/common.js"></script>
+
 </head>
 <body>
 <div id="Index_wrapper">
@@ -29,7 +32,7 @@
                     <p class="txt02">STEAM 융합과학교육</p>
                 </div>
             </div>
-            <div class="img01_box">
+            <div class="img01_box"  data-aos="zoom-in-up">
                 <img src="./assets/images/main/main01_img01.png" alt="하연과학 메인이미지" >
             </div>
             <img src="./assets/images/main/main01_particles01.png" class="particles p01" alt="전구파티클">
@@ -213,7 +216,60 @@
             </a>
         </div>
     </section>
+    
+    <!--(PC애니메이션)-->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // GSAP와 ScrollTrigger 플러그인 등록
+        gsap.registerPlugin(ScrollTrigger);
 
+        // 타임라인 생성
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#Main_banner1 .txt_area", // 애니메이션을 트리거할 요소
+                start: "top 75%", // 애니메이션 시작 지점 (뷰포트 기준)
+                end: "bottom 25%", // 애니메이션 종료 지점 (뷰포트 기준)
+                toggleActions: "play reverse play reverse", // 스크롤 애니메이션의 재생 및 역재생 설정
+                markers: false, // 디버깅용 마커 표시 (원하는 경우 true로 변경)
+            }
+        });
+
+        // #Main_banner1 .txt01 요소에 애니메이션 적용
+        tl.from("#Main_banner1 .txt01", {
+            opacity: 0, // 시작 시 투명도
+            y: -50, // 시작 시 y축 위치 (아래에서 위로 이동)
+            duration: 1.2, // 애니메이션 지속 시간
+            ease: "power1.out" // 애니메이션 이징 효과
+        });
+
+        // #Main_banner1 .txt02_area 요소에 애니메이션 적용
+        tl.from("#Main_banner1 .txt02_area", {
+            opacity: 0, // 시작 시 투명도
+            y: 50, // 시작 시 y축 위치 (위에서 아래로 이동)
+            duration: 1.2, // 애니메이션 지속 시간
+            ease: "power1.out", // 애니메이션 이징 효과
+        });
+
+        // #Main_banner2 ul의 모든 li 요소에 대한 애니메이션 설정
+        gsap.utils.toArray("#Main_banner2 ul li").forEach(function(item, index) {
+        gsap.from(item, {
+            scrollTrigger: {
+                trigger: "#Main_banner2 ul", // 애니메이션을 트리거할 부모 요소
+                start: "top 75%", // 애니메이션 시작 지점 (뷰포트 기준)
+                end: "bottom 25%", // 애니메이션 종료 지점 (뷰포트 기준)
+                toggleActions: "play reverse play reverse", // 스크롤 방향에 따른 재생 및 역재생 설정
+                markers: false, // 디버깅용 마커 표시 (원하는 경우 true로 변경)
+            },
+            opacity: 0, // 시작 시 투명도
+            y: 50, // 시작 시 y축 위치 (아래에서 위로 이동)
+            duration: 0.8, // 애니메이션 지속 시간
+            ease: "power1.out", // 애니메이션 이징 효과
+            delay: index * 0.5 // 각 요소에 대해 순차적으로 지연 시간 추가
+        });
+    });
+    });
+    
+    </script>
 </div>
 </body>
 </html>
