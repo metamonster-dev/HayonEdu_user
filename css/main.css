@@ -1,5 +1,5 @@
 /*메인공통*/
-#Index_wrapper{min-width:1800px;width:100%;overflow:hidden;position:relative;margin:0 auto;z-index:-1;}
+#Index_wrapper{min-width:1800px;width:100%;overflow:hidden;position:relative;margin:0 auto;}
 .full_wrap{width:100%;position:relative;}
 .tit_area{display:flex;flex-direction: column;justify-content:center;align-items:center;}
 .tit_area .sub_tit{font-size:26px;font-weight:700;margin-bottom:16px}
@@ -144,7 +144,7 @@
     #Main_banner1 .txt_area .txt02{font-size:18px;line-height:24px;}
     #Main_banner1 .img01_box{transform: translate(20%, -30%);}
     #Main_banner1 .particles.p01{top:290px;right:20px;width:80px;}
-    #Main_banner1 .particles.p02{top:570px;right:214px;width:74px;}
+    #Main_banner1 .particles.p02{top:570px;right:inherit;left:34%;width:74px;}
     /*=============================================================*/
     /*                         Main_banner2                        */
     /*=============================================================*/
