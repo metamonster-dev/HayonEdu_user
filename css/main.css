@@ -101,6 +101,9 @@
 #Main_banner4 .tit_area .tit{color:var(--black)}
 #Main_banner4 .Latest_news ul{display:flex;gap:31px}
 #Main_banner4 .Latest_news ul li{width:446px;}
+#Main_banner4 .Latest_news ul li .img_area{overflow:hidden;border-radius:20px;}
+#Main_banner4 .Latest_news img{transition:.6s;}
+#Main_banner4 .Latest_news li:hover img{scale:1.05;}
 #Main_banner4 .Latest_news .subject{margin:24px auto 8px;font-size:24px;font-weight:700;color:var(--black)}
 #Main_banner4 .Latest_news .date{font-size:16px;line-height:22px;color:var(--gray2)}
 /*=============================================================*/
