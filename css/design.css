@@ -65,7 +65,25 @@ header .header_wraper_pc nav ul li a{font-size:18px;line-height:21px;color:var(-
 .login_menu{display:flex;justify-content:flex-start;align-items:center;gap:12px}
 .login_menu button{height:37px;line-height:37px;border-radius:50px;padding:0 24px;font-weight:700;}
 .login_menu button.type02{color:var(--gray1)}
+
 /*=============================================================*/
+/*                         footer (pc)                         */
+/*=============================================================*/
+footer{background:#1B1A1E;padding:60px 0}
+footer .txt_area{opacity:.5;display:flex;flex-direction:column;gap:10px;}
+footer .txt_area p,footer .txt_area address{font-size:14px;font-weight:700;color:#fff;text-decoration: none;font-style: normal;}
+footer .footer_wraper{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;}
+footer .ft_nav{display:flex;gap:16px;margin-bottom:42px}
+footer .ft_nav li a{font-size:16px;font-weight:700;color:#fff;display:flex;align-items:center;gap:16px}
+footer .ft_nav li:not(:last-child) a::after{content:'';display:inline-block;width:4px;height:4px;border-radius:50%;background:#4B4B4B;}
+footer .ft_nav li.org a{color:var(--main2)}
+footer .ft_right{padding:20px;border: 1px solid #FFFFFF0D;background: #FFFFFF0D;border-radius:10px;}
+footer .ft_right .txt01{font-size:14px;font-weight:700;color:var(--main2)}
+footer .ft_right a{display:block;font-size:26px;font-weight:700;color:var(--main2);margin:4px 0 16px}
+footer .ft_right p:not(.txt01){font-size:14px;line-height:22px;color:#fff;opacity:.5;}
+footer .txt_area p span{padding-left:16px}
+footer .add_wrap{display:flex;gap:16px;}
+
 
 @media (max-width: 1020px) {
     /* 하연교육 디자인 에셋(모바일)*/
@@ -86,4 +104,16 @@ header .header_wraper_pc nav ul li a{font-size:18px;line-height:21px;color:var(-
     header .header_wraper_pc{display:none;}
     header .header_wraper_m{display:flex;width:100%;height:100%;padding:0 16px;justify-content:space-between;align-items:center;}
     
+    /*=============================================================*/
+    /*                         footer (pc)                         */
+    /*=============================================================*/
+    footer{padding:24px 16px 40px}
+    footer .footer_wraper{flex-direction: column-reverse;}
+    footer .ft_nav{flex-wrap:wrap;margin:32px 0;gap:8px}
+    footer .ft_nav li a{font-size:13px;gap:8px}
+    footer .txt_area p, footer .txt_area address{font-size:13px}
+    footer .add_wrap{flex-direction:column;gap:8px}
+    footer .txt_area p span{padding-left:8px}
+    footer .txt_area{gap:8px}
+
 }
