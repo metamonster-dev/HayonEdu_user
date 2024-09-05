@@ -106,24 +106,31 @@
     </ul>
     <script>
         $('#Fullmenu').hide();
+        var menuTimeout;
+
         // PC 메뉴에 마우스를 올렸을 때 Fullmenu를 슬라이드 다운
         $('.header_wraper_pc nav').hover(
             function() {
+                clearTimeout(menuTimeout); // 이전에 설정된 타임아웃을 제거
                 $('#Fullmenu').stop(true, true).slideDown();
             },
             function() {
-                // Fullmenu 외부로 마우스가 나가면 Fullmenu를 슬라이드 업
-                $('#Fullmenu').stop(true, true).slideUp();
+                menuTimeout = setTimeout(function() {
+                    $('#Fullmenu').stop(true, true).slideUp();
+                }, 200); // 300ms 딜레이 후에 슬라이드 업
             }
         );
 
         // Fullmenu에 마우스를 올리면 유지, 나가면 슬라이드 업
         $('#Fullmenu').hover(
             function() {
+                clearTimeout(menuTimeout); // 마우스를 올리면 타임아웃 제거
                 $(this).stop(true, true).slideDown();
             },
             function() {
-                $(this).stop(true, true).slideUp();
+                menuTimeout = setTimeout(function() {
+                    $('#Fullmenu').stop(true, true).slideUp();
+                }, 200); // 300ms 딜레이 후에 슬라이드 업
             }
         );
         $('.depth2_option').hide();
