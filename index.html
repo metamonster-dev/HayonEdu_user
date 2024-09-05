@@ -104,7 +104,7 @@
             </ul>
         </div>
         <div class="banner_contetns b02">
-            <img src="./assets/images/main/main03_particles03.png"  class="particles p07" alt="오렌지파티클">
+            <img src="./assets/images/main/main03_particles03.png"  class="particles p07 pc_only_b" alt="오렌지파티클">
             <img src="./assets/images/main/main03_particles04.png"  class="particles p08" alt="트로피파티클">
             <article class="tit_area">
                 <p class="sub_tit">만족도 높은 학부모 리뷰</p>
@@ -220,15 +220,36 @@
                     },
                     });
 
-                    var swiper = new Swiper(".review_swiper2", {
-                    slidesPerView: 1.15,
-                    spaceBetween: 16,
-                    centeredSlides: true,
-                    loop: true,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var swiper = new Swiper('.review_swiper2', {
+                            slidesPerView: 1.2,
+                            centeredSlides: true,
+                            spaceBetween: 16,
+                            loop: true,      
+                            on: {
+                                slideChange: function () {
+                                    updateOpacity(this);  // 슬라이드 변경 시 opacity 업데이트
+                                }
+                            },
+                            navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        });
+
+                        // 중앙 슬라이드의 opacity 업데이트 함수
+                        function updateOpacity(swiper) {
+                            // 모든 슬라이드에서 'active-slide' 클래스를 제거
+                            swiper.slides.forEach(function(slide) {
+                                slide.classList.remove('active-slide');
+                            });
+
+                            // 현재 활성 슬라이드에 'active-slide' 클래스 추가
+                            swiper.slides[swiper.activeIndex].classList.add('active-slide');
+                        }
+
+                        // 초기 로드 시 중앙 슬라이드 설정
+                        updateOpacity(swiper);
                     });
                 </script>
             </div>
@@ -263,7 +284,7 @@
     </section>
 
     <section id="Main_banner5" class="full_wrap">
-        <img src="./assets/images/main/main05_particles01.png"  class="particles p09" alt="초록파티클">
+        <img src="./assets/images/main/main05_particles01.png"  class="particles p09 pc_only_b" alt="초록파티클">
         <article class="tit_area">
             <p class="sub_tit">우리 아이 미래를 위한 첫걸음!</p>
             <P class="tit pc_only_b">창의력과 사고력을 키우는 통합 교육 솔루션</P>
@@ -276,7 +297,7 @@
                         <p class="tit student">교육 상담 문의하기</p>
                         <p class="readMore">바로가기</p>
                     </div>
-                    <div class="img_area">
+                    <div class="img_area pc_only_b">
                         <img src="./assets/images/main/main05_img01.png" alt="교육상담 문의하기">
                     </div>
                 </a>
@@ -285,7 +306,7 @@
                         <p class="tit teacher">개설 상담 문의하기</p>
                         <p class="readMore">바로가기</p>
                     </div>
-                    <div class="img_area">
+                    <div class="img_area pc_only_b">
                         <img src="./assets/images/main/main05_img02.png" alt="개설상담 문의하기">
                     </div>
                 </a>
@@ -369,8 +390,8 @@
         gsap.from(item, {
             scrollTrigger: {
                 trigger: "#Main_banner3 ul", // 애니메이션을 트리거할 부모 요소
-                start: "top 75%", // 애니메이션 시작 지점 (뷰포트 기준)
-                end: "bottom 25%", // 애니메이션 종료 지점 (뷰포트 기준)
+                start: "top 85%", // 애니메이션 시작 지점 (뷰포트 기준)
+                end: "bottom 15%", // 애니메이션 종료 지점 (뷰포트 기준)
                 toggleActions: "play reverse play reverse", // 스크롤 방향에 따른 재생 및 역재생 설정
             },
             opacity: 0, // 시작 시 투명도

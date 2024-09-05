@@ -1,3 +1,6 @@
-window.addEventListener('resize', function() {
-    location.reload(); // 창 크기 조절 시 페이지 새로고침
-});
+//PC에서 뷰포트 조정시 화면 리로드
+if (!/Mobi|Android/i.test(navigator.userAgent)) {
+    window.addEventListener('resize', function() {
+        location.reload();
+    });
+}
