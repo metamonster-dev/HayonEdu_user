@@ -76,7 +76,8 @@ header .header_wraper_pc nav ul li a{font-size:18px;line-height:21px;color:var(-
 #Fullmenu .full_menu_wraper ul > li:nth-child(2) .depth2{transform:translateX(-8px);}
 #Fullmenu .full_menu_wraper ul > li:nth-child(4) .depth2{transform:translateX(-8px);}
 #Fullmenu .full_menu_wraper ul > li:nth-child(5) .depth2{transform:translateX(-14px);}
-
+#Fullmenu .full_menu_wraper .depth2 a{font-size:16px;font-weight:600;color:#555}
+#Fullmenu .full_menu_wraper .depth2 a:hover{color:var(--main2);border-bottom:1px solid var(--main2);}
 
 /*=============================================================*/
 /*                      header - LNB(pc)                       */
