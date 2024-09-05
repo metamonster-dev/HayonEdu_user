@@ -1,4 +1,5 @@
 /*메인공통*/
+#LNB{display:none;}
 #Index_wrapper{min-width:1800px;width:100%;overflow:hidden;position:relative;margin:0 auto;}
 .full_wrap{width:100%;position:relative;}
 .tit_area{display:flex;flex-direction: column;justify-content:center;align-items:center;}
