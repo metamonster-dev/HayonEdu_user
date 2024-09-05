@@ -616,20 +616,25 @@
                 });
             });
     
+            gsap.utils.toArray(".main03_list02 li").forEach(function(item) {
+                item.style.willChange = "transform, opacity";
+            });
+
             gsap.utils.toArray(".main03_list02 li").forEach(function(item, index) {
-                gsap.from(item, {
-                    scrollTrigger: {
-                        trigger: item,
-                        start: "top 50%",
-                        toggleActions: "play none none none",
-                        markers: true,
-                    },
-                    opacity: 0,
-                    x: 100,
-                    duration: 0.8,
-                    ease: "power2.out",
-                    delay: index * 0.10
-                });
+                gsap.fromTo(item, 
+                    { xPercent: 20 }, // 애니메이션 시작 상태
+                    {
+                        xPercent: 0, // x 대신 xPercent 사용
+                        scrollTrigger: {
+                            trigger:'.b02',
+                            start: "top 75%", // 시작점을 조정하여 애니메이션이 더 부드럽게 시작되도록
+                            toggleActions: "play none none none",
+                        },
+                        duration: 0.3, // duration을 줄여서 애니메이션이 더 빠르게 수행되도록
+                        ease: "power2.out",
+                        delay: index * 0.05 // delay를 줄여서 전체 애니메이션이 빠르게 처리되도록
+                    }
+                );
             });
     
             gsap.utils.toArray(".particles").forEach(function(particle) {
