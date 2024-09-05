@@ -19,30 +19,56 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-<header>
-    <div class="header_wraper_pc">
-        <h1><a href="#">(주)하연교육<img src="../assets/images/logo.svg" alt="하연교육 로고"></a></h1>
-        <nav>
-            <ul>
-                <li><a>회사소개</a></li>
-                <li><a>하연과학</a></li>
-                <li><a>커뮤니티</a></li>
-                <li><a>개설문의</a></li>
-                <li><a>교사전용</a></li>
+    <header>
+        <div class="header_wraper_pc">
+            <h1><a href="#">(주)하연교육<img src="../assets/images/logo.svg" alt="하연교육 로고"></a></h1>
+            <nav>
+                <ul>
+                    <li><a>회사소개</a></li>
+                    <li><a>하연과학</a></li>
+                    <li><a>커뮤니티</a></li>
+                    <li><a>개설문의</a></li>
+                    <li><a>교사전용</a></li>
+                </ul>
+            </nav>
+            <ul class="login_menu">
+                <!-- (분기처리) 비로그인시 - 로그인 / 로그인시 - 로그아웃 -->
+                <li><button class="type02">로그인</button></li>
+                <!-- (분기처리) 비로그인시 - 회원가입 / 로그인시 - 마이페이지 -->
+                <li><button class="type01">회원가입</button></li>
             </ul>
-        </nav>
-        <ul class="login_menu">
-            <!-- (분기처리) 비로그인시 - 로그인 / 로그인시 - 로그아웃 -->
-            <li><button class="type02">로그인</button></li>
-            <!-- (분기처리) 비로그인시 - 회원가입 / 로그인시 - 마이페이지 -->
-            <li><button class="type01">회원가입</button></li>
+        </div>
+        <div class="header_wraper_m">
+            <h1><a href="#">(주)하연교육<img src="../assets/images/logo.svg" alt="하연교육 로고"></a></h1>
+            <a class="m_menu"><img src="../assets/icons/icon_mmenu.svg"></a>
+        </div>
+    </header>
+    <div id="LNB">
+        <ul class="Lnb_wraper">
+            <li><span class="soundOnly">홈으로</span><img src="../assets/icons/icon_home.svg"></li>
+            <li class="depth1">하연과학</li>
+            <li class="depth2">
+                하연과학 소개
+                <ul class="depth2_option">
+                    <li>CEO 인사말</li>
+                    <li>사훈 및 CI소개</li>
+                    <li>회사연혁</li>
+                    <li>보도자료</li>
+                    <li>오시는 길</li>
+                </ul>
+            </li>
         </ul>
+        <script>
+            $('.depth2_option').hide();
+            $('.depth2').click(function(event) {
+                $('.depth2_option').slideToggle(); // depth2_option을 슬라이드 토글
+                $(this).toggleClass('active');
+            });
+            $('.depth2_option').click(function(event) {
+            event.stopPropagation();
+            });
+        </script>
     </div>
-    <div class="header_wraper_m">
-        <h1><a href="#">(주)하연교육<img src="../assets/images/logo.svg" alt="하연교육 로고"></a></h1>
-        <a class="m_menu"><img src="../assets/icons/icon_mmenu.svg"></a>
-    </div>
-</header>
 
 <div id="Index_wrapper">
     <section id="Main_banner1" class="full_wrap">

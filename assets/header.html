@@ -42,6 +42,31 @@
         <a class="m_menu"><img src="../assets/icons/icon_mmenu.svg"></a>
     </div>
 </header>
-
+<div id="LNB">
+    <ul class="Lnb_wraper">
+        <li><span class="soundOnly">홈으로</span><img src="../assets/icons/icon_home.svg"></li>
+        <li class="depth1">하연과학</li>
+        <li class="depth2">
+            하연과학 소개
+            <ul class="depth2_option">
+                <li>CEO 인사말</li>
+                <li>사훈 및 CI소개</li>
+                <li>회사연혁</li>
+                <li>보도자료</li>
+                <li>오시는 길</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $('.depth2_option').hide();
+        $('.depth2').click(function(event) {
+            $('.depth2_option').slideToggle(); // depth2_option을 슬라이드 토글
+            $(this).toggleClass('active');
+        });
+        $('.depth2_option').click(function(event) {
+        event.stopPropagation();
+        });
+    </script>
+</div>
 </body>
 </html>
