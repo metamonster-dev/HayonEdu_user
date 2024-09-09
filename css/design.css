@@ -16,19 +16,26 @@
     --border1:#dddddd;
 }
 
+/*기본 텍스트 스타일*/
 *{font-family:'Pretendard';}
 h1{font-size:0;}
 h1 a{font-size:0}/*로고 타이틀 - soundOlny*/
 h2{font-size:46px;font-weight:700;line-height:55.2px;color:var(--black)}
 h4{font-size:32px;font-weight:700;line-height:42px;color:var(--black)}
+h5{font-size:24px;font-weight:700;line-height:28.8px;color:var(--black);}
 P{font-size:24px;font-weight:500;color:var(--gray1);}
+.comment{font-size:14px;line-height:22px;font-weight:500;color:#555;text-align:left;}
+.comment.listType::before{display:inline-block;content:'';width:4px;min-width:4px;height:4px;background:#999;margin-right:8px;transform:translateY(-3px);}
 .soundOnly{font-size:0;display:none;}
+.required{position:relative;display:inline;}
+.required::after{position:absolute;top:0;right:-16px;content:'*';color:var(--main2);width:10px;height:10px;}
+.important{color:var(--main2)}
 
 /*PC요소&모바일요소*/
-.pc_only_b{display:block;}
-.pc_only_f{display:flex;}
-.m_only_b{display:none;}
-.m_only_f{display:none;}
+.pc_only_b{display:block !important;;}
+.pc_only_f{display:flex !important;;}
+.m_only_b{display:none !important;}
+.m_only_f{display:none !important;}
 
 /*input*/
 input{width:100%;height:46px;line-height:46px;padding:0 16px;border:1px solid var(--border1);color:var(--black);font-size:14px;font-weight:500;border-radius:4px;}
@@ -38,8 +45,12 @@ input:disabled{background:#eee;color:var(--gray2);}
 
 /*input[type='checkbox']*/
 label input[type='checkbox']{display:none;}
-label:has(input[type='checkbox']){position:relative;width:24px;height:24px;border-radius:4px;border:1px solid #aaa;background:url('../assets/icons/check.svg')no-repeat center #fff;color:#DDDDDD;padding:0}
+label:has(input[type='checkbox']){display:block;position:relative;width:24px;height:24px;border-radius:4px;border:1px solid #aaa;background:url('../assets/icons/check.svg')no-repeat center #fff;color:#DDDDDD;padding:0}
 label:has(input[type='checkbox']:checked){position:relative;;border:1px solid var(--main2);background:url('../assets/icons/check_on.svg')no-repeat center var(--main2);color:#fff;}
+.label_chk_wrap p{font-size:16px;font-weight:500;color:#555;}
+.label_chk_wrap .allceck{font-size:20px;font-weight:500;color:#000;}
+.label_chk_wrap span{font-size:16px;font-weight:500;color:var(--main2)}
+
 
 /*input[type='radio']*/
 input[type="radio"]{width:24px;height:24px;border:1px solid #aaa;padding:0;border-radius:50%;}
@@ -47,14 +58,38 @@ input[type="radio"]:checked{background:#fff;border:7px solid var(--main2)}
 input[type="radio"]:disabled{background:#fff;border:7px solid var(--border1)}
 
 /*button*/
-button.h56{height:56px;line-height:56px;border-radius:4px;text-align:center;font-weight:700;font-size:20px;min-width:240px;}
-button.h46{height:46px;line-height:46px;border-radius:4px;text-align:center;font-weight:700;font-size:14px;min-width:200px;}
-button.h40{height:40px;line-height:40px;border-radius:4px;text-align:center;font-weight:700;font-size:14px;min-width:100px;}
+button.h56{height:56px;line-height:56px;border-radius:4px;text-align:center;font-weight:700;font-size:20px;width:100%;}
+button.h46{height:46px;line-height:46px;border-radius:4px;text-align:center;font-weight:700;font-size:14px;width:100%;}
+button.h40{height:40px;line-height:40px;border-radius:4px;text-align:center;font-weight:700;font-size:14px;width:100%;}
 button.type01{background:var(--main2);color:#fff;}
 button.type02{background:#fff;border:1px solid #aaa;color:var(--black)}
 button.type03{background:#fff;border:1px solid  var(--main2);color:var(--main2)}
 
+/*중앙영역*/
+.md_contents{display:flex;justify-content:center;align-items:center;flex-direction:column;}
+.mx_600{max-width:600px;}
 
+/*영역*/
+.btn_area{width:100%;;display:flex;justify-content:center;align-items:center;gap:24px}
+.label_chk_wrap{display:flex;align-items:center;gap:8px}
+.tit_area{display:flex;justify-content:space-between;align-items:flex-start;width:100%;padding-bottom:24px;border-bottom:1px solid #000;}
+
+/*form_table*/
+.form_table{width:100%;}
+.form_table th, td{padding:12px 0}
+.form_table th{text-align:left;}
+.form_table th p{font-size:16px;font-weight:500;color:#000}
+.form_table .flex_box{display:flex;align-items:center;}
+.form_table .flex_box:has(button){gap:8px}
+.form_table .flex_box input:not([type="radio"],[type="checkbox"]){width:292px}
+.form_table .flex_box button{width:150px;}
+.form_table .flex_box.address{flex-wrap:wrap;gap:8px}
+.form_table .flex_box.address .full{width:100%;}
+.form_table tr:has(.address) td > .flex_box:first-child{margin-bottom:8px}
+.form_table tr:has(.address) th{vertical-align : top;padding-top:24px}
+.form_table tr:has(.authen) th{vertical-align : top;padding-top:24px}
+.form_table th.top{vertical-align : top;}
+.form_table .authen .flex_box:not(:first-child){margin-top:8px}
 /*=============================================================*/
 /*                      header - GNB(pc)                       */
 /*=============================================================*/
@@ -115,15 +150,28 @@ footer .add_wrap{display:flex;gap:16px;}
 
 @media (max-width: 1020px) {
     /* 하연교육 디자인 에셋(모바일)*/
-    h2{font-size:28px;font-weight:700;line-height:40px;color:var(--black)}
+    h2{font-size:30px;font-weight:700;line-height:40px;color:var(--black)}
     h4{font-size:22px;font-weight:700;line-height:36px;color:var(--black)}
+    h5{font-size:18px;}
     P{font-size:15px;font-weight:500;color:var(--gray1);}
-
+    .label_chk_wrap .allceck{font-size:15px;line-height:18px;}
+    .comment.listType{display:flex;}
+    .comment.listType::before{transform: translateY(9px);}
     /*PC요소&모바일요소*/
-    .pc_only_b{display:none;}
-    .pc_only_f{display:none;}
-    .m_only_b{display:block;}
-    .m_only_f{display:flex;}
+    .pc_only_b{display:none !important;}
+    .pc_only_f{display:none !important;}
+    .m_only_b{display:block !important;;}
+    .m_only_f{display:flex !important;;}
+
+    /*중앙영역*/
+    .md_contents{padding:0 16px}
+    /*영역*/
+    .btn_area{gap:8px}
+    .tit_area{padding-bottom:16px;border-bottom:1px solid #000;}
+
+    /*form_table*/
+    .form_table .flex_box button{min-width:100px;width:100px;}
+    .m_only_b .form_table th{padding-top:24px}
 
     /*=============================================================*/
     /*                      header - GNB(M)                       */

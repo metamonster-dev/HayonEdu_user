@@ -1,0 +1,106 @@
+/*회원가입*/
+.signupcommon .signup_step{display:flex;gap:100px;margin:60px auto 40px}
+.signupcommon .signup_step li{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#999;}
+.signupcommon .signup_step li span{display:flex;justify-content:center;align-items:center;width:46px;height:46px;border-radius:50%;font-size:20px;font-weight:700;color:#999;border:1px solid #ddd}
+.signupcommon .signup_step li.on{color:var(--main2)}
+.signupcommon .signup_step li.on span{color:#fff;background:var(--main2);border:none}
+.signupcommon .signup_step li:not(:last-child)::after{position:absolute;top:32.5px;left:88px;content:'';width:20px;height:6px;background:url(../assets/images/login/signup_step.png)no-repeat center;}
+.signup_form{width:100%;}
+.signupcommon .gray_box{width:100%;margin-top:60px;padding:40px;background:#F8F8F8;border-radius:10px;}
+.signupcommon .gray_box input:not(.last_input){margin-bottom:8px}
+.signupcommon .gray_box button{margin:24px auto;}
+.signupcommon .last_input{margin-bottom:0}
+
+#Signup01{margin:100px auto 170px}
+#Signup01 .label_chk_wrap:has(.allceck){margin:40px 0 24px;}
+#Signup01 .box_area{padding:40px;border:1px solid #ddd;border-radius:10px;}
+#Signup01 .box_area .txt_box{width:100%;margin:16px auto 24px;padding:24px;background:#F8F8F8;color:#555;font-size:14px;line-height:22px;font-weight:500;border-radius:4px;overflow-y:scroll;}
+#Signup01 .btn_area{margin-top:40px}
+#Signup01 .comment{margin-top:24px}
+
+#Signup02{margin:100px auto 193px}
+#Signup02 .tit_area{margin-bottom:40px}
+#Signup02 .life_member .flex_box{gap:24px}
+#Signup02 .flex_box label:has(input[type="radio"]){display:flex;justify-content:center;gap:8px;color:#555}
+#Signup02 .flex_box .comment{margin-left:8px}
+#Signup02 .life_member .comment{margin-top:19px}
+#Signup02 tr:last-child th, #Signup02 tr:last-child td{padding-bottom:0}
+#Signup02 .btn_area{margin-top:40px}
+
+#Signup03{margin:100px auto 200px}
+#Signup03 .box_area{width:100%;display:flex;padding:80px 0;justify-content:center;align-items:center;flex-direction:column;border:1px solid #ddd;border-radius:10px;}
+#Signup03 .box_area .txt01{font-size:32px;font-weight:700;line-height:38.4px;color:var(--black);margin:24px auto 16px}
+#Signup03 .box_area .txt02{font-size:20px;font-weight:500;line-height:22px;color:#555;}
+#Signup03 .btn_area{margin-top:40px}
+
+/*로그인*/
+#Login{margin:100px auto 200px}
+#Login .gray_box .label_chk_wrap{margin:16px 0 24px;font-size:16px;font-weight:500;color:#555;}
+#Login .login_btm{margin-top:24px;display:flex;justify-content:center;align-items:center;gap:12px}
+#Login .login_btm a{font-size:14px;font-weight:500;color:#555}
+#Login .login_btm li{display:flex;align-items:center;gap:12px}
+#Login .login_btm li:not(:first-child)::before{content:'';display:inline-block;width:1px;height:12px;background:#DDD;}
+
+/*아이디 찾기*/
+#Find_Id{margin:100px auto 200px}
+#Find_Id > .gray_box{margin-top:60px !important}
+#Find_Id .btm_box{width:100%;margin-top:24px;padding:35px 40px;border:1px solid;border-radius:10px;border:1px solid #ddd;display:flex;justify-content:space-between;align-items:center;}
+#Find_Id .btm_box .txt01{font-size:20px;font-weight:500;color:#000}
+#Find_Id .btm_box button{width:150px;}
+#Find_Id .box_area{width:100%;margin:60px 0 40px;padding:24px;border:1px solid #ddd}
+#Find_Id .txt01{font-size:20px;font-weight:700;text-align:center;color:#000}
+#Find_Id .gray_box{width:100%;;margin-top:24px;padding:24px;background:#F8F8F8;border-radius:4px;text-align:center;}
+#Find_Id .user_id{font-size:18px;color:#000;margin-bottom:8px}
+#Find_Id .txt02{font-size:14px;line-height:22px;font-weight:500;color:#555;}
+
+/*비밀번호 찾기*/
+#Find_Pass{margin:100px auto 200px}
+
+
+
+@media (max-width: 1020px) {
+    /*회원가입 (모바일)*/
+    .signupcommon .signup_step{margin:40px auto;gap:68px}
+    .signupcommon .signup_step li:not(:last-child)::after{top:32.5px;left:72px}
+    .signupcommon .gray_box{margin-top:40px;padding:24px;background:#F8F8F8;}
+
+    #Signup01 {margin:60px auto 100px}
+    #Signup01 .box_area{padding:24px}
+    #Signup01 .label_chk_wrap:has(.allceck){margin:24px 0;}
+    #Signup01 .box_area .txt_box{padding:16px;font-size:13px;line-height:20px;}
+    #Signup01 .comment{margin-top:16px}
+
+    #Signup02{margin:60px auto 100px}
+    #Signup02 .flex_box label:has(input[type="radio"]){font-size:14px;line-height:22px;color:#555;font-weight:500;}
+    #Signup02 .tit_area{margin-bottom:0}
+    #Signup02 td{padding:0;width:100%;}
+    #Signup02 th{padding:24px 0 8px}
+    #Signup02 .form_table .flex_box input:not([type="radio"],[type="checkbox"]){width:100%;}
+    #Signup02 .life_member .flex_box{gap:24px}
+    #Signup02 .life_member .comment{margin-top:8px}
+
+    #Signup03 {margin:60px auto 100px}
+    #Signup03 .box_area {padding:40px 0}
+    #Signup03 .box_area .txt01{font-size:22px;line-height:26.4px;margin:24px auto 8px}
+    #Signup03 .box_area .txt02{font-size:15px;line-height:22px;}
+
+    /*로그인*/
+    #Login{margin:60px auto 100px}
+    #Login .gray_box .label_chk_wrap{margin:17px 0 25px;font-size:14px;}
+
+    /*아이디 찾기*/
+    #Find_Id{margin:60px auto 100px}
+    #Find_Id > .gray_box{margin-top:40px !important}
+    #Find_Id .btm_box{padding:24px}
+    #Find_Id .btm_box .txt01{font-size:15px}
+    #Find_Id .btm_box button{padding:0 16px;}
+    #Find_Id .box_area{margin:40px auto 35px}
+    #Find_Id .txt01{font-size:15px}
+    #Find_Id .gray_box{margin-top:16px}
+    #Find_Id .user_id{font-size:15px}
+    #Find_Id .txt02{font-size:13px;line-height:22px;}
+
+    /*비밀번호 찾기*/
+    #Find_Pass{margin:60px auto 100px}
+    
+}
