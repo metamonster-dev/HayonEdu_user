@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no" />
+<title>하연교육 어드민 퍼블리싱가이드</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> <!--AOS 애니메이션-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> <!--스와이퍼-->
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.css" />
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/custom.css" />
+<link rel="stylesheet" href="./css/style.css" />
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script src="./js/admin.js"></script>
+</head>
+
+<body>
+<div class="admin_common">
+<!----======== 관리자 레이아웃 상단    ========---->
+<section id="admin_header_wrap">
+    <div id="admin_top_area">
+        <button onclick="window.open('https://miber.co.kr/')">하연교육 홈페이지</button>
+    </div>
+    <div id="admin_side_area">
+    <div class="logo_area">
+        <h1>하연교육 어드민 <br/>퍼블리싱 가이드</h1>
+    </div>
+    <div class="side_btm_area">
+        <!--메뉴-->
+        <ul id="adm_nav">
+        <!--DEPTH 1-->
+        <li class="adm_nav_depth2_group">
+            <p class="adm_nav_depth1"><span><i class="fa fa-question before" aria-hidden="true"></i>기본환경</span> <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+            <!--DEPTH 2-->
+            <ul class="adm_nav_depth2_ul">
+                <li><a href="menu0101.html">프로젝트 환경</a></li>
+                <li><a href="menu0102.html">디렉토리 설명</a></li>
+            </ul>
+        </li>
+        <!--DEPTH 1-->
+        <li class="adm_nav_depth2_group">
+            <p class="adm_nav_depth1"><span><i class="fa fa-code before" aria-hidden="true"></i>퍼블리싱 링크</span> <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+            <!--DEPTH 2-->
+            <ul class="adm_nav_depth2_ul">
+                <li><a href="menu0201.html">화면별 링크</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <button class="aside_btn">메타몬스터 퍼블리싱 가이드 보기</button>
+    </div>
+    <script>
+    $('.adm_nav_depth1').click(function() {
+    $(this).siblings('.adm_nav_depth2_ul').slideToggle();
+    $(this).parent().siblings().find('.adm_nav_depth2_ul').slideUp();
+    $('.adm_nav_depth1').removeClass('on');
+    $(this).toggleClass('on');
+    });
+    </script>
+</section>
+<!----======== 관리자 레이아웃 상단 끝 ========---->
+<!----======== 내용부분 ========---->
+<section id="admin_contents_wrap">
+    <p class="title">기본환경 / 디렉토리</p>
+    <table>
+        <tr>
+            <th colspan="3" width="20%">폴더명/파일명</th>
+            <th colspan="3">설명</th>
+        </tr>
+        <tr>
+            <td rowspan="4">admin</td>
+            <td rowspan="2">CSS</td>
+            <td>admin.css</td>
+            <td>디자인 적용 스타일</td>
+        </tr>
+        <tr>
+            <td>common.css</td>
+            <td>공통 스타일 / 기본세팅</td>
+        </tr>
+        <tr>
+            <td>js</td>
+            <td>admin.js</td>
+            <td>admin공통 스크립트 - <b>유효성 및 데이터 관련 기능들은 퍼블용으로 참고만 해주세요</b></td>
+        </tr>
+        <tr>
+            <td colspan="2">admin_layout.html</td>
+            <td>어드민 공통UI</td>
+        </tr>
+        <tr>
+            <td rowspan="100">(user)</td>
+            <td rowspan="7">assets</td>
+            <td></td>
+            <td>공통UI 및 디자인 요소</td>
+        </tr>
+        <tr>
+            <td>fonts</td>
+            <td>폰트 (사용x)</td>
+        </tr>
+        <tr>
+            <td>icons</td>
+            <td>아이콘</td>
+        </tr>
+        <tr>
+            <td>images</td>
+            <td>이미지</td>
+        </tr>
+        <tr>
+            <td>assets.html</td>
+            <td>사용자 디자인 에셋</td>
+        </tr>
+        <tr>
+            <td>header.html</td>
+            <td>pc/모바일 공통 헤더</td>
+        </tr>
+        <tr>
+            <td>footer.html</td>
+            <td>pc/모바일 공통 푸터</td>
+        </tr>
+        <tr>
+            <td>Js</td>
+            <td>common.js</td>
+            <td>사용자 공통<td>
+        </tr>
+        <tr>
+            <td rowspan="7">CSS</td>
+            <td>common.css</td>
+            <td>공통 스타일 / 기본세팅</td>
+        </tr>
+        <tr>
+            <td>design.css</td>
+            <td>하연교육 공통디자인</td>
+        </tr>
+        <tr>
+            <td>main.css</td>
+            <td>메인CSS</td>
+        </tr>
+        <tr></tr>
+            <td>login.css</td>
+            <td>로그인 - 회원가입 CSS</td>
+        </tr>
+    </table>
+    <p class="title mt_40">공통 head</p>
+    <div class="board">
+        <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div><div style="line-height:130%">8</div><div style="line-height:130%">9</div><div style="line-height:130%">10</div><div style="line-height:130%">11</div><div style="line-height:130%">12</div><div style="line-height:130%">13</div><div style="line-height:130%">14</div><div style="line-height:130%">15</div><div style="line-height:130%">16</div><div style="line-height:130%">17</div><div style="line-height:130%">18</div><div style="line-height:130%">19</div><div style="line-height:130%">20</div><div style="line-height:130%">21</div><div style="line-height:130%">22</div><div style="line-height:130%">23</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">head</span><span style="color:#f0f0f0">&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">meta</span>&nbsp;<span style="color:#a8ff58">charset</span>=<span style="color:#ffd500">"UTF-8"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">meta</span>&nbsp;<span style="color:#a8ff58">http-equiv</span>=<span style="color:#ffd500">"X-UA-Compatible"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">content</span>=<span style="color:#ffd500">"IE=edge"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">meta</span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"viewport"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">content</span>=<span style="color:#ffd500">"width=device-width,&nbsp;initial-scale=1,&nbsp;shrink-to-fit=no"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">title</span><span style="color:#f0f0f0">&gt;</span>하연교육&nbsp;어드민<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">title</span><span style="color:#f0f0f0">&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#999999">&lt;!--&nbsp;Bootstrap&nbsp;--&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">integrity</span>=<span style="color:#ffd500">"sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">crossorigin</span>=<span style="color:#ffd500">"anonymous"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#999999">&lt;!--&nbsp;CSS&nbsp;--&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#999999">&lt;!--폰트어썸--&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"https://unpkg.com/aos@2.3.1/dist/aos.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span>&nbsp;<span style="color:#999999">&lt;!--AOS&nbsp;애니메이션--&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span>&nbsp;<span style="color:#999999">&lt;!--스와이퍼--&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"./css/common.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"./css/custom.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"./css/admin.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#999999">&lt;!--&nbsp;JS&nbsp;--&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://unpkg.com/aos@2.3.1/dist/aos.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span>&nbsp;<span style="color:#999999">&lt;!--AOS&nbsp;애니메이션--&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span><span style="color:#999999">&lt;!--스와이퍼--&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span><span style="color:#999999">&lt;!--echarts(그래프)--&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">'https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.14/index.global.min.js'</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span>&nbsp;<span style="color:#999999">&lt;!--캘린더(전체)--&gt;</span></div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"./js/admin.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">head</span>></td></tr></table></div>
+    </div>
+</section>
+<!----======== 내용부분 끝 ========---->
+<!----======== 관리자 레이아웃 하단    ========---->
+<section id="admin_footer_wrap">
+</section>
+<!----======== 관리자 레이아웃 하단 끝 ========---->
+</div>
+</body>
+</html>

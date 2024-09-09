@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no" />
+<title>하연교육 어드민 퍼블리싱가이드</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> <!--AOS 애니메이션-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> <!--스와이퍼-->
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.css" />
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/custom.css" />
+<link rel="stylesheet" href="./css/style.css" />
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script src="./js/admin.js"></script>
+</head>
+
+<body>
+<div class="admin_common">
+<!----======== 관리자 레이아웃 상단    ========---->
+<section id="admin_header_wrap">
+    <div id="admin_top_area">
+        <button onclick="window.open('https://miber.co.kr/')">하연교육 홈페이지</button>
+    </div>
+    <div id="admin_side_area">
+    <div class="logo_area">
+        <h1>하연교육 어드민 <br/>퍼블리싱 가이드</h1>
+    </div>
+    <div class="side_btm_area">
+        <!--메뉴-->
+        <ul id="adm_nav">
+        <!--DEPTH 1-->
+        <li class="adm_nav_depth2_group">
+            <p class="adm_nav_depth1"><span><i class="fa fa-question before" aria-hidden="true"></i>기본환경</span> <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+            <!--DEPTH 2-->
+            <ul class="adm_nav_depth2_ul">
+                <li><a href="menu0101.html">프로젝트 환경</a></li>
+                <li><a href="menu0102.html">디렉토리</a></li>
+            </ul>
+        </li>
+        <!--DEPTH 1-->
+        <li class="adm_nav_depth2_group">
+            <p class="adm_nav_depth1"><span><i class="fa fa-code before" aria-hidden="true"></i>퍼블리싱 링크</span> <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+            <!--DEPTH 2-->
+            <ul class="adm_nav_depth2_ul">
+                <li><a href="menu0201.html">화면별 링크</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <button class="aside_btn">메타몬스터 퍼블리싱 가이드 보기</button>
+    </div>
+    <script>
+    $('.adm_nav_depth1').click(function() {
+    $(this).siblings('.adm_nav_depth2_ul').slideToggle();
+    $(this).parent().siblings().find('.adm_nav_depth2_ul').slideUp();
+    $('.adm_nav_depth1').removeClass('on');
+    $(this).toggleClass('on');
+    });
+    </script>
+</section>
+<!----======== 관리자 레이아웃 상단 끝 ========---->
+<!----======== 내용부분 ========---->
+<section id="admin_contents_wrap">
+    <p class="title">퍼블리싱 링크(ADMIN)</p>
+    <table class="publ_link">
+        <thead>
+            <tr>
+                <th width="80px">번호</th>
+                <th width="20%">화면구분</th>
+                <th>화면명</th>
+                <th>링크</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="count"></td>
+                <td>관리자 로그인</td>
+                <td>관리자 로그인</td>
+                <td><a href="./admin/login.html">./admin/login.html</a></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="space"></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>레이아웃</td>
+                <td>레이아웃</td>
+                <td><a target="_blank" href="./admin/admin_layout.html">./admin_layout.html</a></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="space"></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td rowspan="2">교사 메뉴</td>
+                <td>회원관리</td>
+                <td><a target="_blank" href="./admin/member.html">./admin/member.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>교재수량</td>
+                <td><a target="_blank" href="./admin/textbook.html">./admin/textbook.html</a></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="space"></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td rowspan="3">운영자 메뉴</td>
+                <td>교사관리</td>
+                <td><a target="_blank" href="./admin/teacher.html">./admin/teacher.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>교사별 통계</td>
+                <td><a target="_blank" href="./admin/statistics_teacher.html">./admin/statistics_teacher.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>전체통계</td>
+                <td><a target="_blank" href="./admin/statistics.html">./admin/statistics.html</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="title mt_100">퍼블리싱 링크(사용자)</p>
+    <table class="publ_link">
+        <thead>
+            <tr>
+                <th width="80px">번호</th>
+                <th width="20%">화면구분</th>
+                <th>화면명</th>
+                <th>링크</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="count"></td>
+                <td rowspan="4">공통UI</td>
+                <td>header</td>
+                <td><a href="../assets/header.html" target="_blank">../assets/header.html</a></td>
+            </tr>
+            <tr></tr>
+                <td class="count"></td>
+                <td>footer</td>
+                <td><a href="../assets/footer.html" target="_blank">../assets/fotter.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>디자인 에셋</td>
+                <td><a href="../assets/assets.html" target="_blank">../assets/assets.html</a></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="space"></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>메인</td>
+                <td>index</td>
+                <td><a href="../index.html" target="_blank">../index.html</a></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="space"></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td rowspan="10">로그인/회원가입</td>
+                <td>로그인</td>
+                <td><a href="../login/login.html" target="_blank">../login/login.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>회원가입1</td>
+                <td><a href="../login/signup01.html" target="_blank">../login/signup01.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>회원가입2</td>
+                <td><a href="../login/signup02.html" target="_blank">../login/signup02.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>회원가입3</td>
+                <td><a href="../login/signup03.html" target="_blank">../login/signup03.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>아이디 찾기1</td>
+                <td><a href="../login/find_id01.html" target="_blank">../login/find_id01.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>아이디 찾기2</td>
+                <td><a href="../login/find_id02.html" target="_blank">../login/find_id02.html</a></td>
+            </tr>
+            <tr></tr>
+                <td class="count"></td>
+                <td>비밀번호 찾기1</td>
+                <td><a href="../login/find_pass01.html" target="_blank">../login/find_pass01.html</a></td>
+            </tr>
+            <tr>
+                <td class="count"></td>
+                <td>비밀번호 찾기2</td>
+                <td><a href="../login/find_pass02.html" target="_blank">../login/find_pass02.html</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <script>
+    // 각 테이블에서 .count 엘리먼트에 순서를 매기는 함수
+    function updateCounts() {
+        $('.publ_link').each(function() {
+            $(this).find('.count').each(function(index) {
+                $(this).text(index + 1);
+            });
+        });
+    }
+    // 페이지 로드 시 각 테이블에 순서를 매김
+    updateCounts();
+    </script>
+</section>
+<!----======== 내용부분 끝 ========---->
+<!----======== 관리자 레이아웃 하단    ========---->
+<section id="admin_footer_wrap">
+</section>
+<!----======== 관리자 레이아웃 하단 끝 ========---->
+</div>
+</body>
+</html>
