@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>오시는 길</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <!-- JS -->
+    <script src="../js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 임시 HEADER | 프론트 연동 시 삭제 -->
+    <div id="header_temp_area"></div>
+
+    <!-- CONTENTS -->
+    <div class="sub_title">
+      <div class="inner">
+        <h2>오시는 길</h2>
+      </div>
+    </div>
+    <section class="location_con01">
+      <div class="inner">
+        <div class="map_area">
+          <div
+            id="daumRoughmapContainer1725950548788"
+            class="root_daum_roughmap root_daum_roughmap_landing"
+          ></div>
+          <script
+            charset="UTF-8"
+            class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+          ></script>
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              timestamp: "1725950548788",
+              key: "2kmhm",
+              mapWidth: "100%",
+              mapHeight: "400",
+            }).render();
+          </script>
+        </div>
+        <div class="text_area">
+          <dl data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <dt>
+              <img
+                src="../assets/images/page/location_icon01.svg"
+                alt="주소 icon"
+              />
+              <h5>주소</h5>
+            </dt>
+            <dd>
+              <p>
+                서울특별시 종로구 삼일대로32길 36 <br />(익선동 30-6)
+                운현신화타워 505호
+              </p>
+            </dd>
+          </dl>
+          <dl data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <dt>
+              <img
+                src="../assets/images/page/location_icon02.svg"
+                alt="오시는 길 icon"
+              />
+              <h5>오시는 길</h5>
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <p>안국역 (3호선) 4번 출구 도보 150m</p>
+                </li>
+                <li>
+                  <p>
+                    종로 3가역 (1호선, 3호선, 5호선) 6번 출구 창덕궁 방면 도보
+                    200m
+                  </p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <dt>
+              <img
+                src="../assets/images/page/location_icon03.svg"
+                alt="연락처 icon"
+              />
+              <h5>연락처</h5>
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <p>전화 02-741-3001</p>
+                </li>
+                <li><p>팩스 02-766-6773</p></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- // CONTENTS -->
+
+    <!-- 임시 FOOTER | 프론트 연동 시 삭제 -->
+    <div id="footer_temp_area"></div>
+    <script>
+      $("#header_temp_area").load("../assets/header.html");
+      $("#footer_temp_area").load("../assets/footer.html");
+    </script>
+  </body>
+</html>

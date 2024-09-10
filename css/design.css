@@ -12,18 +12,23 @@
     --gray2:#777777;
     --gray3:#999999;
     --wh_gray:#F8F8F8;
+    --white:#ffffff;
     --yellow:#FFF194;
     --border1:#dddddd;
+    --border2:#d9d9d9;
+    --border3:#e4eaf2;
+    --border4:#aaaaaa;
 }
 
 /*기본 텍스트 스타일*/
 *{font-family:'Pretendard';}
 h1{font-size:0;}
 h1 a{font-size:0}/*로고 타이틀 - soundOlny*/
-h2{font-size:46px;font-weight:700;line-height:55.2px;color:var(--black)}
-h4{font-size:32px;font-weight:700;line-height:42px;color:var(--black)}
-h5{font-size:24px;font-weight:700;line-height:28.8px;color:var(--black);}
-P{font-size:24px;font-weight:500;color:var(--gray1);}
+h2{font-size:46px;font-weight:700;line-height:55.2px;color:var(--black);letter-spacing:-0.03rem;}
+h3{font-size:40px;font-weight:700;line-height:60px;color:var(--black);letter-spacing:-0.03rem;}
+h4{font-size:32px;font-weight:700;line-height:42px;color:var(--black);letter-spacing:-0.03rem;}
+h5{font-size:24px;font-weight:700;line-height:28.8px;color:var(--black);letter-spacing:-0.03rem;}
+P{font-size:24px;font-weight:500;line-height:1.5;color:var(--gray1);letter-spacing:-0.03rem;}
 .comment{font-size:14px;line-height:22px;font-weight:500;color:#555;text-align:left;}
 .comment.listType::before{display:inline-block;content:'';width:4px;min-width:4px;height:4px;background:#999;margin-right:8px;transform:translateY(-3px);}
 .soundOnly{font-size:0;display:none;}
@@ -135,7 +140,7 @@ header .header_wraper_pc nav ul li a{font-size:18px;line-height:21px;color:var(-
 footer{background:#1B1A1E;padding:60px 0}
 footer .txt_area{opacity:.5;display:flex;flex-direction:column;gap:10px;}
 footer .txt_area p,footer .txt_area address{font-size:14px;font-weight:700;color:#fff;text-decoration: none;font-style: normal;}
-footer .footer_wraper{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;}
+footer .inner{display:flex;justify-content:space-between;}
 footer .ft_nav{display:flex;gap:16px;margin-bottom:42px}
 footer .ft_nav li a{font-size:16px;font-weight:700;color:#fff;display:flex;align-items:center;gap:16px}
 footer .ft_nav li:not(:last-child) a::after{content:'';display:inline-block;width:4px;height:4px;border-radius:50%;background:#4B4B4B;}
@@ -148,9 +153,10 @@ footer .txt_area p span{padding-left:16px}
 footer .add_wrap{display:flex;gap:16px;}
 
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
     /* 하연교육 디자인 에셋(모바일)*/
     h2{font-size:30px;font-weight:700;line-height:40px;color:var(--black)}
+    h3{font-size:24px;font-weight:700;line-height:36px;color:var(--black)}
     h4{font-size:22px;font-weight:700;line-height:36px;color:var(--black)}
     h5{font-size:18px;}
     P{font-size:15px;font-weight:500;color:var(--gray1);}
@@ -197,8 +203,8 @@ footer .add_wrap{display:flex;gap:16px;}
     /*=============================================================*/
     /*                         footer (M)                         */
     /*=============================================================*/
-    footer{padding:24px 16px 40px}
-    footer .footer_wraper{flex-direction: column-reverse;}
+    footer{padding:24px 0 40px}
+    footer .inner{flex-direction: column-reverse;}
     footer .ft_nav{flex-wrap:wrap;margin:32px 0;gap:8px}
     footer .ft_nav li a{font-size:13px;gap:8px}
     footer .txt_area p, footer .txt_area address{font-size:13px}
