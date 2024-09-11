@@ -4,9 +4,13 @@
     /*하연교육 색상표*/
     --main:#FF9922;
     --main2:#FF8522;
+    --main3:#FFA438;
+    --main4: #FF7F1E;
     --blue:#5492FF;
+    --blue2:#EEF4FF;
     --green:#93CA45;
     --green2:#6CAC11;
+    --green3:#ABCD03;
     --black:#000000;
     --gray1:#555555;
     --gray2:#777777;
@@ -18,6 +22,57 @@
     --border2:#d9d9d9;
     --border3:#e4eaf2;
     --border4:#aaaaaa;
+    --border5:#eeeeee;
+
+    --point1:#5492FF;
+    --point2:#68BCF9;
+    --point3:#CC7DF1;
+    --point4:#93CA45;
+    --point5:#FFB72D;
+    --point6:#FFF4D7;
+    --point7:#FFEFE0;
+    --point8:#FF5C00;
+    --point9:#E8F8FF;
+    --point10:#0094FF;
+    --point11:#DEEBFF;
+    --point12:#F6E4FF;
+    --point13:#EDFCD7;
+    --point14:#638F25;
+}
+
+/*폰트-어그로체*/
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.ttf') format("truetype");
+    font-display: swap;
 }
 
 /*기본 텍스트 스타일*/

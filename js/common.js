@@ -12,6 +12,18 @@ $(document).ready(function () {
     checkbox.prop("checked", !checkbox.prop("checked"));
   });
 
+  // TAB
+  $(".tabs button").on("click", function () {
+    const idx = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".sub_contents > div")
+      .eq(idx)
+      .addClass("on")
+      .siblings()
+      .removeClass("on");
+    AOS.init();
+  });
+
   // SELECT CUSTOM
   $(".select_wrap > button").on("click", function () {
     $(this).next("ul").toggleClass("on");

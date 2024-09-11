@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>기본구성</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <!-- JS -->
+    <script src="../js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 임시 HEADER | 프론트 연동 시 삭제 -->
+    <div id="header_temp_area"></div>
+
+    <!-- CONTENTS -->
+    <div class="inner">
+      <div class="sub_title">
+        <h2>기본구성</h2>
+      </div>
+      <div class="tabs sub_tab_style01">
+        <button type="button" class="active">교재 소개</button>
+        <button type="button">단계 소개</button>
+      </div>
+    </div>
+    <div class="sub_contents">
+      <div class="on">
+        <section class="default_con01">
+          <div class="inner">
+            <div class="img_area">
+              <img
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                src="../assets/images/page/default_img01.png"
+                alt="교재 이미지"
+              />
+            </div>
+            <div class="text_area">
+              <ul>
+                <li>
+                  <h5>
+                    <i></i>
+                    과학 탐구의 9단계 여정
+                  </h5>
+                  <p>과학의 기본부터 심화까지 9단계로 체계적으로 학습</p>
+                </li>
+                <li>
+                  <h5>
+                    <i></i>
+                    최신 교육과정 반영
+                  </h5>
+                  <p>
+                    현행 교육과정과 완벽히 연계된 교재로 학습 목표 달성을 도움
+                  </p>
+                </li>
+                <li>
+                  <h5>
+                    <i></i>
+                    풍부한 실험 기회
+                  </h5>
+                  <p>연간 80여 개의 실험을 통해 과학 탐구를 깊이 있게 경험</p>
+                </li>
+                <li>
+                  <h5>
+                    <i></i>
+                    자율적인 실험 환경
+                  </h5>
+                  <p>개인 실험 키트로 학생들이 스스로 실험을 주도</p>
+                </li>
+                <li>
+                  <h5>
+                    <i></i>
+                    다양한 학습 자료 제공
+                  </h5>
+                  <p>
+                    이론과 실습을 균형 있게 다룬 풍부한 학습 자료로 학습 효과를
+                    극대화
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section class="default_con02">
+          <div class="inner">
+            <dl class="color01" onclick="handleMoveSection('sec01')">
+              <dt>6,7세</dt>
+              <dd>사이언스 펀 FUN</dd>
+            </dl>
+            <dl class="color02" onclick="handleMoveSection('sec02')">
+              <dt>1학년</dt>
+              <dd>사이언스 탭 TAP</dd>
+            </dl>
+            <dl class="color02" onclick="handleMoveSection('sec02')">
+              <dt>2학년</dt>
+              <dd>사이언스 필 FILL</dd>
+            </dl>
+            <dl class="color03" onclick="handleMoveSection('sec03')">
+              <dt>3학년</dt>
+              <dd>사이언스 맵 MAP</dd>
+            </dl>
+            <dl class="color03" onclick="handleMoveSection('sec03')">
+              <dt>4학년</dt>
+              <dd>사이언스 런 RUN</dd>
+            </dl>
+            <dl class="color04" onclick="handleMoveSection('sec04')">
+              <dt>5학년</dt>
+              <dd>사이언스 업 UP</dd>
+            </dl>
+            <dl class="color05" onclick="handleMoveSection('sec05')">
+              <dt>6학년</dt>
+              <dd>사이언스 올 ALL</dd>
+            </dl>
+            <dl class="color06" onclick="handleMoveSection('sec06')">
+              <dt>중등</dt>
+              <dd>사이언스 탑 TOP</dd>
+            </dl>
+            <dl class="color06" onclick="handleMoveSection('sec06')">
+              <dt>중고등</dt>
+              <dd>통합과학</dd>
+            </dl>
+          </div>
+        </section>
+        <section class="default_con03">
+          <div class="inner">
+            <dl data-sec="sec01">
+              <dt class="color01">사이언스 FUN (6,7세)</dt>
+              <dd>
+                <div
+                  class="circle type01 color01"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
+                >
+                  <p>사이언스펀</p>
+                  <span>FUN</span>
+                </div>
+                <ul>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      src="../assets/images/page/default_step01_img01.png"
+                      alt="워크북"
+                    />
+                    <span>워크북</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="../assets/images/page/default_step01_img02.png"
+                      alt="실험지"
+                    />
+                    <span>실험지</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="../assets/images/page/default_step01_img03.png"
+                      alt="실험재료"
+                    />
+                    <span>실험재료</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      src="../assets/images/page/default_step01_img04.png"
+                      alt="실험기구상자"
+                    />
+                    <span>실험기구상자</span>
+                  </li>
+                </ul>
+              </dd>
+              <dd>
+                <p>
+                  - 과학에 첫발을 내딛는 7세 학생들을 위한 단계로, 상위 학년
+                  교과 내용을 기초로 한 다양한 응용 실험을 통해 과학에 대한
+                  흥미를 높입니다.
+                </p>
+              </dd>
+            </dl>
+            <dl data-sec="sec02">
+              <dt class="color02">사이언스 TAP / 사이언스 FILL (1~2학년)</dt>
+              <dd>
+                <div
+                  class="circle type02 color02"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
+                >
+                  <p>사이언스탭</p>
+                  <span>TAP</span>
+                  <p>사이언스필</p>
+                  <span>FILL</span>
+                </div>
+                <ul>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      src="../assets/images/page/default_step02_img01.png"
+                      alt="워크북"
+                    />
+                    <span>워크북</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="../assets/images/page/default_step02_img02.png"
+                      alt="실험지"
+                    />
+                    <span>실험지</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="../assets/images/page/default_step02_img03.png"
+                      alt="실험재료"
+                    />
+                    <span>실험재료</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      src="../assets/images/page/default_step02_img04.png"
+                      alt="실험기구상자"
+                    />
+                    <span>실험기구상자</span>
+                  </li>
+                </ul>
+              </dd>
+              <dd>
+                <p>
+                  - 초등 1~2학년을 대상으로 과학의 기본 원리를 배우고 창의적
+                  사고를 기르는 실험 활동을 제공합니다.
+                </p>
+              </dd>
+            </dl>
+            <dl data-sec="sec03">
+              <dt class="color03">사이언스 MAP / 사이언스 RUN (3~4학년)</dt>
+              <dd>
+                <div
+                  class="circle type02 color03"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
+                >
+                  <p>사이언스맵</p>
+                  <span>MAP</span>
+                  <p>사이언스런</p>
+                  <span>RUN</span>
+                </div>
+                <ul>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      src="../assets/images/page/default_step03_img01.png"
+                      alt="워크북"
+                    />
+                    <span>워크북</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="../assets/images/page/default_step03_img02.png"
+                      alt="실험지"
+                    />
+                    <span>실험지</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="../assets/images/page/default_step03_img03.png"
+                      alt="실험재료"
+                    />
+                    <span>실험재료</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      src="../assets/images/page/default_step03_img04.png"
+                      alt="실험기구상자"
+                    />
+                    <span>실험기구상자</span>
+                  </li>
+                </ul>
+              </dd>
+              <dd>
+                <p>
+                  - 초등 3,4학년을 위한 단계로, 각 학년별 과학 교과와 상위 학년
+                  과학 교과를 연계한 심화 학습을 통해 응용력을 키웁니다.
+                </p>
+              </dd>
+            </dl>
+            <dl data-sec="sec04">
+              <dt class="color04">사이언스 UP 심화과정 (5학년)</dt>
+              <dd>
+                <div
+                  class="circle type01 color04"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
+                >
+                  <p>사이언스업</p>
+                  <span>UP</span>
+                </div>
+                <ul>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      src="../assets/images/page/default_step04_img01.png"
+                      alt="워크북"
+                    />
+                    <span>워크북</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="../assets/images/page/default_step04_img02.png"
+                      alt="실험지"
+                    />
+                    <span>실험지</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="../assets/images/page/default_step04_img03.png"
+                      alt="실험재료"
+                    />
+                    <span>실험재료</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      src="../assets/images/page/default_step04_img04.png"
+                      alt="실험기구상자"
+                    />
+                    <span>실험기구상자</span>
+                  </li>
+                </ul>
+              </dd>
+              <dd>
+                <p>
+                  - 초등 5학년을 위한 단계로, 각 학년별 과학 교과와 중등 과학
+                  교과를 연계한 기본 학습을 통해 응용력을 키웁니다.
+                </p>
+              </dd>
+            </dl>
+            <dl data-sec="sec05">
+              <dt class="color05">사이언스 ALL 응용 심화 실험 (6학년)</dt>
+              <dd>
+                <div
+                  class="circle type01 color05"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
+                >
+                  <p>사이언스올</p>
+                  <span>ALL</span>
+                </div>
+                <ul>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      src="../assets/images/page/default_step05_img01.png"
+                      alt="워크북"
+                    />
+                    <span>워크북</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="../assets/images/page/default_step05_img02.png"
+                      alt="실험지"
+                    />
+                    <span>실험지</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="../assets/images/page/default_step05_img03.png"
+                      alt="실험재료"
+                    />
+                    <span>실험재료</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      src="../assets/images/page/default_step05_img04.png"
+                      alt="실험기구상자"
+                    />
+                    <span>실험기구상자</span>
+                  </li>
+                </ul>
+              </dd>
+              <dd>
+                <p>
+                  - 예비 중학생들을 위해 6학년 교과와 중등 과학을 잇는 통합
+                  프로그램을 제공하여 중학교 과학 학습을 준비합니다.
+                </p>
+              </dd>
+            </dl>
+            <dl data-sec="sec06">
+              <dt class="color06">
+                사이언스 TOP (중등 전학년) / 통합과학 (중고등)
+              </dt>
+              <dd>
+                <div
+                  class="circle type03 color06"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
+                >
+                  <p>사이언스탑</p>
+                  <span>TOP</span>
+                  <span>통합과학</span>
+                </div>
+                <ul>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      src="../assets/images/page/default_step06_img01.png"
+                      alt="워크북"
+                    />
+                    <span>워크북</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="../assets/images/page/default_step06_img02.png"
+                      alt="실험지"
+                    />
+                    <span>워크북 및 실험 보고서</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <div class="imgs">
+                      <img
+                        src="../assets/images/page/default_step06_img03.png"
+                        alt="실험지"
+                      />
+                      <img
+                        src="../assets/images/page/default_step06_img04.png"
+                        alt="실험재료"
+                      />
+                    </div>
+                    <span>실험재료</span>
+                  </li>
+                  <li
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      src="../assets/images/page/default_step06_img05.png"
+                      alt="실험기구상자"
+                    />
+                    <span>실험기구상자</span>
+                  </li>
+                </ul>
+              </dd>
+              <dd>
+                <p>
+                  - 사이언스 TOP : 수행평가 완벽 대비 / 기출문제 내신 대비 /
+                  최상위권 문제 수록 / 통합과학 연계 / 마인드 맵 정리
+                </p>
+                <p>
+                  - 통합과학 : 수능 공통 과목인 통합과학 교과 실험을 모두 탄탄비
+                  준비될 수 있도록 구성 / 수행평가 및 내신 대비 / 통합과학(수능)
+                  기출문제 수록
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- // CONTENTS -->
+
+    <!-- 임시 FOOTER | 프론트 연동 시 삭제 -->
+    <div id="footer_temp_area"></div>
+    <script>
+      $("#header_temp_area").load("../assets/header.html");
+      $("#footer_temp_area").load("../assets/footer.html");
+
+      // 스크롤 이동
+      const handleMoveSection = (sec) => {
+        const space = 20;
+        const divOffset =
+          $(`.default_con03 dl[data-sec=${sec}]`).offset().top - space;
+        $("html, body").animate({ scrollTop: divOffset }, 500);
+      };
+    </script>
+  </body>
+</html>
