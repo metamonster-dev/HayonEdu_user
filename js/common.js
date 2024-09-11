@@ -12,5 +12,15 @@ $(document).ready(function () {
     checkbox.prop("checked", !checkbox.prop("checked"));
   });
 
+  // SELECT CUSTOM
+  $(".select_wrap > button").on("click", function () {
+    $(this).next("ul").toggleClass("on");
+  });
+  $(".select_wrap ul li button").on("click", function () {
+    $(this).parents("ul").removeClass("on");
+    $(this).parents("ul").prev("button").text($(this).text());
+  });
+
+  // aos
   AOS.init();
 });

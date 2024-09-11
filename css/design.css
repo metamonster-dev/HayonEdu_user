@@ -43,10 +43,10 @@ P{font-size:24px;font-weight:500;line-height:1.5;color:var(--gray1);letter-spaci
 .m_only_f{display:none !important;}
 
 /*input*/
-input{width:100%;height:46px;line-height:46px;padding:0 16px;border:1px solid var(--border1);color:var(--black);font-size:14px;font-weight:500;border-radius:4px;}
-input:focus{border:1px solid var(--main2);}
-input::placeholder{color:var(--gray3)}
-input:disabled{background:#eee;color:var(--gray2);}
+input[type='text']{width:100%;height:46px;line-height:46px;padding:0 16px;border:1px solid var(--border1);color:var(--black);font-size:14px;font-weight:500;border-radius:4px;}
+input[type='text']:focus{border:1px solid var(--main2);}
+input[type='text']::placeholder{color:var(--gray3)}
+input[type='text']:disabled{background:#eee;color:var(--gray2);}
 
 /*input[type='checkbox']*/
 label input[type='checkbox']{display:none;}
