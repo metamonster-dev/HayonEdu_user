@@ -42,7 +42,7 @@
     </div>
     <section class="sub_last_con">
       <div class="inner">
-        <div class="detail_wrap">
+        <div class="view_wrap">
           <div class="title_area">
             <div class="tit">
               <span class="tag">중요</span>
@@ -58,8 +58,18 @@
           <div class="content_area">
             <p>등록한 내용이 노출됩니다.</p>
           </div>
+          <!-- TODO: 등록한 파일 존재할 경우, 해당 영역 노출 -->
+          <div class="file_area">
+            <a href="javascript:;" download>
+              <i></i>
+              <span>파일첨부명.jpg</span>
+            </a>
+          </div>
           <div class="btn_wrap">
-            <a href="./news.html" class="btn btn_style03 h_56">목록으로</a>
+            <a href="./news.html" class="btn btn_style03 h_56 m_full">
+              목록으로
+            </a>
+            <!-- TODO: 관리자 계정일 경우, 수정/삭제 버튼 노출 -->
             <a href="./news_detail.html" class="btn btn_style02 h_56">수정</a>
             <button type="button" class="btn btn_style02 h_56">삭제</button>
           </div>

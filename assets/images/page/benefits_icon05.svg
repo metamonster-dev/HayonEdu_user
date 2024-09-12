@@ -1,0 +1,9 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 17L20.0029 2L36 17" fill="white"/>
+<path d="M4 17L20.0029 2L36 17" stroke="black" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M11 17H5V38H11V17Z" fill="white" stroke="black" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M35 17H29V38H35V17Z" fill="white" stroke="black" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M1 38H39" stroke="black" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M1 17H39" stroke="black" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M20 13C21.1046 13 22 12.1046 22 11C22 9.89543 21.1046 9 20 9C18.8954 9 18 9.89543 18 11C18 12.1046 18.8954 13 20 13Z" fill="#FF8522"/>
+</svg>

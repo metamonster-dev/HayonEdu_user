@@ -27,11 +27,18 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .table_style01 table tbody td {padding: 25px 0; color: var(--gray2);}
 .table_style01 table tbody td.title {text-align: left;}
 .table_style01 table tbody td.title > div {display: flex; align-items: center; gap: 16px;}
+.table_style01 table tbody td.title > div a {flex: 0 1 auto; flex-basis: auto; max-width: calc(100% - 56px);}
 .table_style01 table tbody td.title .tag {display: flex; align-items: center; justify-content: center; width: 41px; padding: 4px 0; border-radius: 4px; background-color: var(--main2); font-size: 14px; color: var(--white); font-weight: 700;}
-.table_style01 table tbody td.title a {display: block; flex: 0 1 auto; flex-basis: auto; max-width: calc(100% - 56px); color: var(--black); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.table_style01 table tbody td.title a {display: inline-block; max-width: 100%; color: var(--black); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .table_style01 table ul.text01 {display: flex; align-items: center;}
 .table_style01 table ul.text01 li:nth-of-type(1) {width: calc(100% / 3 * 2);}
 .table_style01 table ul.text01 li:nth-of-type(2) {width: calc(100% / 3);}
+
+.table_style02 {border-top: 1px solid var(--black);}
+.table_style02 .col_w01 {width: 190px;}
+.table_style02 table tr {border-bottom: 1px solid var(--border1);}
+.table_style02 table th {height: 94px; padding: 24px 40px; background-color: var(--wh_gray); font-size: 16px; color: var(--black); font-weight: 500; text-align: left;}
+.table_style02 table td {height: 94px; padding: 24px 40px; font-size: 16px; color: var(--gray1); font-weight: 500;}
 
 .list_style01 ul {display: flex; flex-wrap: wrap; gap: 60px 31px;}
 .list_style01 ul li {width: calc((100% - 31px * 2) / 3);}
@@ -48,10 +55,27 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .btn.btn_style02 {border: 1px solid var(--border4); border-radius: 4px; background-color: var(--white); color: var(--black); font-weight: 700;}
 .btn.btn_style03 {border-radius: 4px; background-color: var(--main2); color: var(--white); font-weight: 700;}
 
+.chk_radio_list {display: flex; align-items: center; gap: 24px;}
+
 .chk_style01 input {display: none; width: 0; height: 0; padding: 0; margin: 0; border: 0; opacity: 0; visibility: hidden; overflow: hidden;}
 .chk_style01 label {display: inline-flex; align-items: center; gap: 8px; cursor: pointer;}
 .chk_style01 label::before {content: ''; display: block; width: 24px; height: 24px; border: 1px solid var(--border4); border-radius: 4px; background: var(--white) url('../assets/icons/check.svg') no-repeat center;}
 .chk_style01 input:checked + label::before {border-color: var(--main2);background: var(--main2) url('../assets/icons/check_on.svg') no-repeat center;}
+
+.radio_style01 input {display: none; width: 0; height: 0; padding: 0; margin: 0; border: 0; opacity: 0; visibility: hidden; overflow: hidden;}
+.radio_style01 label {display: inline-flex; align-items: center; gap: 8px; cursor: pointer;}
+.radio_style01 label::before {content: ''; display: block; width: 24px; height: 24px; border: 1px solid var(--border4); border-radius: 50%; background-color: var(--white);}
+.radio_style01 input:checked + label::before {border: 7px solid var(--main2);}
+
+.file_style01 {display: flex; align-items: center; gap: 16px; flex-wrap: wrap;}
+.file_style01 .file_btn {position: relative; display: block; width: 100px; height: 40px; border: 1px solid var(--border4); border-radius: 4px; font-size: 14px !important; color: var(--black) !important; font-weight: 700 !important; overflow: hidden;}
+.file_style01 .file_btn input {position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; padding: 0; padding-left: 100px; border: 0; opacity: 0; cursor: pointer;}
+.file_style01 .no_file {font-size: 14px !important; color: var(--gray3) !important; font-weight: 500;}
+.file_style01 .is_file {display: none; align-items: center; gap: 8px;}
+.file_style01 .is_file span {flex: 1; font-size: 14px !important; color: var(--gray1) !important; font-weight: 500; text-decoration: underline; word-break: break-all;}
+.file_style01 .cancel_btn {width: 16px;}
+.file_style01.isFile .no_file {display: none;}
+.file_style01.isFile .is_file {display: flex;}
 
 .select_wrap {position: relative;}
 .select_wrap button.selected {position: relative; display: flex; align-items: center; width: 100%; height: 46px; padding: 0 40px 0 16px; border: 1px solid var(--border1); border-radius: 4px; font-size: 14px; color: var(--gray1); font-weight: 500;}
@@ -85,26 +109,50 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .page_btn_wrap .btn_wrap {position: absolute; top: 0; right: 0;}
 .page_btn_wrap .btn_wrap button, .page_btn_wrap .btn_wrap a {width: 240px;}
 
-.detail_wrap .title_area {padding: 40px; border-top: 1px solid var(--black); border-bottom: 1px solid var(--border1);}
-.detail_wrap .title_area .tit {display: flex; gap: 16px;}
-.detail_wrap .title_area .tit .tag {display: flex; align-items: center; justify-content: center; width: 41px; padding: 4px 0; margin-top: 2px; border-radius: 4px; background-color: var(--main2); font-size: 14px; color: var(--white); font-weight: 700;}
-.detail_wrap .title_area .tit h5 {flex: 1;}
-.detail_wrap .title_area ul {display: flex; align-items: center; gap: 12px; margin-top: 16px;}
-.detail_wrap .title_area ul li {display: flex; align-items: center; font-size: 16px; color: var(--gray2); font-weight: 500;}
-.detail_wrap .title_area ul li:not(:last-of-type)::after {content: ''; display: block; width: 1px; height: 12px; background-color: var(--border1); margin-left: 12px;}
-.detail_wrap .content_area {min-height: 545px; padding: 40px; border-bottom: 1px solid var(--border1); font-size: 18px;}
-.detail_wrap .content_area * {font-size: 18px;}
-.detail_wrap .content_area img {max-width: 100%;}
+.view_wrap .title_area {padding: 40px; border-top: 1px solid var(--black); border-bottom: 1px solid var(--border1);}
+.view_wrap .title_area .tit {display: flex; gap: 16px;}
+.view_wrap .title_area .tit .tag {display: flex; align-items: center; justify-content: center; width: 41px; padding: 4px 0; margin-top: 2px; border-radius: 4px; background-color: var(--main2); font-size: 14px; color: var(--white); font-weight: 700;}
+.view_wrap .title_area .tit h5 {flex: 1;}
+.view_wrap .title_area ul {display: flex; align-items: center; gap: 12px; margin-top: 16px;}
+.view_wrap .title_area ul li {display: flex; align-items: center; font-size: 16px; color: var(--gray2); font-weight: 500;}
+.view_wrap .title_area ul li:not(:last-of-type)::after {content: ''; display: block; width: 1px; height: 12px; background-color: var(--border1); margin-left: 12px;}
+.view_wrap .content_area {min-height: 545px; padding: 40px; border-bottom: 1px solid var(--border1); font-size: 18px;}
+.view_wrap .content_area * {font-size: 18px;}
+.view_wrap .content_area img {max-width: 100%;}
+.view_wrap .file_area {padding: 40px; border-bottom: 1px solid var(--border1);}
+.view_wrap .file_area a {display: inline-flex; gap: 8px;}
+.view_wrap .file_area a i {display: block; width: 16px; height: 16px; background: url('../assets/icons/icon_file.svg') no-repeat center / contain;}
+.view_wrap .file_area a span {flex: 1; display: block; font-size: 16px; color: var(--gray1); font-weight: 500; text-decoration: underline;}
+.view_wrap .btn_wrap {display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 60px;}
+.view_wrap .btn_wrap .btn {max-width: 240px;}
+
+.detail_top_text_area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;}
+.detail_top_text_area p {font-size: 14px; color: var(--gray1); font-weight: 500;}
+.detail_wrap {border-top: 1px solid var(--black);}
+.detail_wrap .content_area dl {display: flex; align-items: center; min-height: 94px; padding: 24px 40px; border-bottom: 1px solid var(--border1);}
+.detail_wrap .content_area dl dt {width: 150px; font-size: 16px; color: var(--black); font-weight: 500;}
+.detail_wrap .content_area dl dd {flex: 1; }
+.detail_wrap .content_area dl dd, 
+.detail_wrap .content_area dl dd * {font-size: 16px; color: var(--gray1); font-weight: 500;}
+.detail_wrap .content_area dl.top_type {align-items: flex-start;}
+.detail_wrap .content_area dl.top_type dt {padding-top: 12px;}
+.detail_wrap .agree_area {display: flex; align-items: center; gap: 16px; margin-top: 24px;}
+.detail_wrap .agree_area .chk_style01 label {font-size: 16px;}
+.detail_wrap .agree_area button {font-size: 16px;}
 .detail_wrap .btn_wrap {display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 60px;}
 .detail_wrap .btn_wrap .btn {max-width: 240px;}
 
-.view_wrap {border-top: 1px solid var(--black);}
-.view_wrap .content_area dl {display: flex; align-items: center; min-height: 94px; padding: 24px 40px; border-bottom: 1px solid var(--border1);}
-.view_wrap .content_area dl dt {width: 150px; font-size: 16px; color: var(--black); font-weight: 500;}
-.view_wrap .content_area dl dd {flex: 1; }
-.view_wrap .content_area dl dd, .view_wrap .content_area dl dd * {font-size: 16px; color: var(--gray1); font-weight: 500;}
-.view_wrap .btn_wrap {display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 60px;}
-.view_wrap .btn_wrap .btn {max-width: 240px;}
+.modal_wrap {position: fixed; top: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.5s;}
+.modal_wrap.show {opacity: 1; visibility: visible;}
+.modal_wrap .modal_area {width: calc(100% - 32px); max-width: 1000px; height: 86%; max-height: 610px; padding: 40px 40px 60px; border-radius: 10px; background-color: var(--white); overflow: hidden;}
+.modal_wrap .modal_area .modal_title {display: flex; align-items: center; justify-content: space-between; padding-bottom: 40px;}
+.modal_wrap .modal_area .modal_title p {font-size: 32px; color: var(--black); font-weight: 700;}
+.modal_wrap .modal_area .modal_content {height: calc(100% - 88px);}
+.modal_wrap .modal_area .modal_content .scroll_area {height: 100%; overflow-y: auto; -ms-overflow-style: none;}
+.modal_wrap .modal_area .modal_content .scroll_area::-webkit-scrollbar {display: none;}
+.modal_wrap .modal_area .modal_content .scroll_area * {font-size: 16px; color: var(--gray1); font-weight: 500;}
+.modal_wrap .modal_area .modal_content .scroll_area p b {color: var(--black);}
+.modal_wrap .modal_area .modal_content .scroll_area * + * {margin-top: 16px;}
 
 /*=============================================================*/
 /*                          COMPANY                            */
@@ -315,6 +363,56 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 
 
 /*=============================================================*/
+/*                         OPENING                             */
+/*=============================================================*/.opening_banner {display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 200px; margin-bottom: 200px; padding: 0 80px; border-radius: 10px; background-color: var(--main5);}
+.opening_banner .tit_text_wrap h5 {margin-bottom: 16px; font-size: 20px; color: var(--black); font-weight: 700; line-height: 1.4;}
+.opening_banner .tit_text_wrap .text_area {display: flex; align-items: center; gap: 40px;}
+.opening_banner .tit_text_wrap .text_area a {display: inline-block; font-size: 56px; color: var(--main2); font-weight: 700;}
+.opening_banner .tit_text_wrap .text_area span {display: block; font-size: 16px; color: var(--gray1); font-weight: 500; line-height: 1.6;}
+.opening_banner .btn {max-width: 240px;}
+
+.training_con01 {margin-bottom: 40px; padding: 80px; border-radius: 10px; background-color: var(--yellow2);}
+.training_con01 .top_text_wrap {display: flex; align-items: flex-end; justify-content: space-between; gap: 12px;}
+.training_con01 .top_text_wrap .text_area {flex: 1; padding-bottom: 40px;}
+.training_con01 .top_text_wrap .text_area h3 {color: var(--main2);}
+.training_con01 .top_text_wrap .text_area p {margin-top: 24px;}
+.training_con01 .top_text_wrap .img_area {width: 40%; max-width: 440px;}
+.training_con01 ul {position: relative; padding: 16px 60px; border-radius: 10px; background-color: var(--white); z-index: 1;}
+.training_con01 ul li {display: flex; gap: 16px; padding: 24px 0;}
+.training_con01 ul li + li {border-top: 1px solid var(--border1);}
+.training_con01 ul li i {display: block; width: 24px; height: 24px; margin-top: 4px; background: url('../assets/icons/icon_check.svg') no-repeat center / contain;}
+.training_con01 ul li p {flex: 1;}
+.training_con01 ul li p b {color: var(--black);}
+
+.benefits_con01 {padding-bottom: 100px;}
+.benefits_con01 h4 {margin-bottom: 30px;}
+.benefits_con01 .title_area {display: flex; align-items: center; justify-content: center; height: 120px; border-radius: 10px; background-color: var(--yellow2);}
+.benefits_con01 .title_area h4 {margin: 0; color: var(--main2);}
+.benefits_con01 ul {display: flex; flex-wrap: wrap; gap: 30px; margin-top: 40px;}
+.benefits_con01 ul li {position: relative; width: calc((100% - 30px * 2) / 3); padding: 40px; border: 1px solid var(--border1); border-radius: 10px;}
+.benefits_con01 ul li img {position: absolute; top: 40px; right: 40px;}
+.benefits_con01 ul li span {display: block; font-size: 24px; color: var(--main2); font-weight: 700; }
+.benefits_con01 ul li h5 {margin-top: 26px;}
+.benefits_con01 ul li p {margin-top: 8px;}
+
+.benefits_con02 {padding-bottom: 100px;}
+.benefits_con02 h4 {margin-bottom: 30px;}
+.benefits_con02 ul {display: flex; gap: 30px; flex-wrap: wrap;}
+.benefits_con02 ul li {width: calc((100% - 30px * 2) / 3); padding: 40px 0; border-radius: 10px; background-color: var(--wh_gray); text-align: center;}
+.benefits_con02 ul li h5 {margin-bottom: 16px;}
+
+.benefits_con03 {padding-bottom: 100px;}
+.benefits_con03 h4 {margin-bottom: 30px;}
+.benefits_con03 .list_wrap {display: flex; flex-wrap: wrap;}
+.benefits_con03 ul {width: 50%;}
+.benefits_con03 ul li {display: flex; gap: 16px;}
+.benefits_con03 ul li + li {margin-top: 16px;}
+.benefits_con03 ul li i {display: block; width: 24px; height: 24px; margin-top: 4px; background: url('../assets/icons/icon_check.svg') no-repeat center / contain;}
+.benefits_con03 ul li span {display: block; font-size: 20px; color: var(--gray3); font-weight: 500;}
+
+
+
+/*=============================================================*/
 /*                         TEACHERS                            */
 /*=============================================================*/
 .teachers_banner_wrap { width: 100%; max-width: 360px; height: 128px; padding: 0 30px; margin: 0 auto 40px; border-radius: 10px; background-color: var(--green3);}
@@ -338,6 +436,15 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
   .guide_con02 .box_wrap .text_area {width: calc(100% - 280px);}
   .guide_con02 .box_wrap .text_area ul {padding: 16px 40px;}
   .guide_con02 .box_wrap .img_area {width: 240px;}
+
+  .opening_banner {padding: 0 40px;}
+  .opening_banner .tit_text_wrap .text_area {gap: 8px;}
+  .training_con01 {padding: 40px 24px;}
+  .training_con01 ul {padding: 16px 40px;}
+  .benefits_con01 ul {gap: 16px;}
+  .benefits_con01 ul li {width: calc(50% - 8px);}
+  .benefits_con02 ul {gap: 16px;}
+  .benefits_con02 ul li {width: calc((100% - 16px * 2) / 3);}
 }
 
 @media (max-width: 1024px) {
@@ -357,11 +464,15 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
   .table_style01 table tbody td {display: block; padding: 0;}
   .table_style01 table tbody td.num {display: none;}
   .table_style01 table tbody td.title > div {align-items: flex-start; flex-direction: column; gap: 8px;}
+  .table_style01 table tbody td.title > div a {max-width: 100%;}
   .table_style01 table tbody td.title .tag {width: 39px; font-size: 13px;}
-  .table_style01 table tbody td.title a {max-width: 100%;}
   .table_style01 table ul.text01 {gap: 8px; margin-top: 8px;}
   .table_style01 table ul.text01 li {display: flex; align-items: center; width: auto !important; font-size: 14px; font-weight: 500;}
   .table_style01 table ul.text01 li:not(:last-of-type)::after {content:''; display: block; width: 1px; height: 12px; margin-left: 8px; background-color: var(--border1);}
+  
+  .table_style02 .col_w01 {width: 120px;}
+  .table_style02 table th {height: 78px; padding: 16px;}
+  .table_style02 table td {height: 78px; padding: 16px;}
 
   .list_style01 ul {gap: 40px 24px;}
   .list_style01 ul li {width: calc(50% - 12px);}
@@ -385,25 +496,39 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
   .page_btn_wrap .btn_wrap {position: static; margin-top: 40px;}
   .page_btn_wrap .btn_wrap button, .page_btn_wrap .btn_wrap a {width: 100%;}
 
-  .detail_wrap .title_area {padding: 24px 0;}
-  .detail_wrap .title_area .tit {flex-direction: column; gap: 8px;}
-  .detail_wrap .title_area .tit .tag {width: 39px; font-size: 13px;}
-  .detail_wrap .title_area ul {margin-top: 8px; gap: 8px;}
-  .detail_wrap .title_area ul li:not(:last-of-type)::after {margin-left: 8px;}
-  .detail_wrap .title_area ul li {font-size: 14px;}
-  .detail_wrap .content_area {min-height: 428px; padding: 40px 0; font-size: 16px;}
-  .detail_wrap .content_area * {font-size: 16px;}
-  .detail_wrap .btn_wrap {flex-wrap: wrap; gap: 16px 8px; margin-top: 24px;}
-  .detail_wrap .btn_wrap .btn {width: calc(50% - 4px); max-width: 100%;}
-  .detail_wrap .btn_wrap .btn_style03 {width: 100%;}
-
-  .view_wrap .content_area {display: flex; flex-direction: column; gap: 24px; padding-top: 24px;}
-  .view_wrap .content_area dl {flex-direction: column; gap: 8px; min-height: 0; padding: 0; border-bottom: 0;}
-  .view_wrap .content_area dl dt {width: 100%;}
-  .view_wrap .content_area dl dd {width: 100%;}
-  .view_wrap .content_area dl dd, .view_wrap .content_area dl dd * {font-size: 14px;}
+  .view_wrap .title_area {padding: 24px 0;}
+  .view_wrap .title_area .tit {flex-direction: column; gap: 8px;}
+  .view_wrap .title_area .tit .tag {width: 39px; font-size: 13px;}
+  .view_wrap .title_area ul {margin-top: 8px; gap: 8px;}
+  .view_wrap .title_area ul li:not(:last-of-type)::after {margin-left: 8px;}
+  .view_wrap .title_area ul li {font-size: 14px;}
+  .view_wrap .content_area {min-height: 428px; padding: 40px 0; font-size: 16px;}
+  .view_wrap .content_area * {font-size: 16px;}
+  .view_wrap .file_area {padding: 24px 0;}
+  .view_wrap .file_area a span {font-size: 14px;}
   .view_wrap .btn_wrap {flex-wrap: wrap; gap: 16px 8px; margin-top: 40px;}
   .view_wrap .btn_wrap .btn {width: calc(50% - 4px); max-width: 100%;}
+  .view_wrap .btn_wrap .btn.m_full {width: 100%;}
+
+  .detail_top_text_area p {font-size: 13px;}
+  .detail_wrap .content_area {display: flex; flex-direction: column; gap: 24px; padding-top: 24px;}
+  .detail_wrap .content_area dl {flex-direction: column; gap: 8px; min-height: 0; padding: 0; border-bottom: 0;}
+  .detail_wrap .content_area dl dt {width: 100%;}
+  .detail_wrap .content_area dl dd {width: 100%;}
+  .detail_wrap .content_area dl dd, .detail_wrap .content_area dl dd * {font-size: 14px;}
+  .detail_wrap .content_area dl.top_type dt {padding-top: 0;}
+  .detail_wrap .agree_area {align-items: flex-start; flex-direction: column;}
+  .detail_wrap .agree_area .chk_style01 label {font-size: 14px;}
+  .detail_wrap .agree_area button {font-size: 14px;}
+  .detail_wrap .btn_wrap {flex-wrap: wrap; gap: 16px 8px; margin-top: 40px;}
+  .detail_wrap .btn_wrap .btn {width: calc(50% - 4px); max-width: 100%;}
+  .detail_wrap .btn_wrap .btn.m_full {width: 100%;}
+
+  .modal_wrap .modal_area {padding: 24px;}
+  .modal_wrap .modal_area .modal_title {padding-bottom: 24px;}
+  .modal_wrap .modal_area .modal_title p {font-size: 22px;}
+  .modal_wrap .modal_area .modal_content {height: calc(100% - 57px);}
+  .modal_wrap .modal_area .modal_content .scroll_area * {font-size: 14px;}
 
   .story_con01 .inner {flex-direction: column; gap: 40px;}
   .story_con01 .text_area {width: 100%;}
@@ -511,6 +636,36 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
   .guide_con02 .box_wrap .img_area img {margin: 24px 0;}
   .guide_con02 .box_wrap .img_area span {font-size: 15px;}
 
+  .opening_banner {height: auto; padding: 24px; margin-bottom: 100px;}
+  .opening_banner .tit_text_wrap h5 {margin-bottom: 8px; font-size: 15px;}
+  .opening_banner .tit_text_wrap .text_area a {font-size: 30px;}
+  .opening_banner .tit_text_wrap .text_area span {font-size: 14px; line-height: 1.4;}
+  .opening_banner .btn {max-width: 160px;}
+  .training_con01 {padding: 24px; margin-bottom: 24px;}
+  .training_con01 .top_text_wrap .text_area p {margin-top: 16px;}
+  .training_con01 ul {padding: 0 16px;}
+  .training_con01 ul li {gap: 8px; padding: 16px 0;}
+  .training_con01 ul li i {width: 16px; height: 16px; margin-top: 2px;}
+  .benefits_con01 {padding-bottom: 60px;}
+  .benefits_con01 h4 {margin-bottom: 24px;}
+  .benefits_con01 .title_area {height: auto; padding: 24px 8px; text-align: center;}
+  .benefits_con01 ul {margin-top: 16px;}
+  .benefits_con01 ul li {padding: 24px;}
+  .benefits_con01 ul li img {top: 24px; right: 24px;}
+  .benefits_con01 ul li span {display: inline-flex; align-items: center; height: 24px; padding: 0 10px; border-radius: 30px; background-color: var(--main2); font-size: 13px; color: var(--white);}
+  .benefits_con01 ul li h5 {margin-top: 24px;}
+  .benefits_con01 ul li p {margin-top: 4px;}
+  .benefits_con02 {padding-bottom: 60px;}
+  .benefits_con02 h4 {margin-bottom: 24px;}
+  .benefits_con02 ul li {padding: 24px 0;}
+  .benefits_con02 ul li h5 {margin-bottom: 4px;}
+  .benefits_con03 {padding-bottom: 60px;}
+  .benefits_con03 h4 {margin-bottom: 24px;}
+  .benefits_con03 ul li {gap: 8px;}
+  .benefits_con03 ul li + li {margin-top: 8px;}
+  .benefits_con03 ul li i {width: 16px; height: 16px; margin-top: 2px;}
+  .benefits_con03 ul li span {font-size: 14px;}
+
   .teachers_banner_wrap {max-width: 100%; height: 80px;}
   .teachers_banner_wrap a span {font-size: 18px;}
   .teachers_banner_wrap a span i {width: 16px; height: 16px;}
@@ -538,4 +693,16 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
   .guide_con02 .box_wrap .img_area {width: 100%; max-width: 253px;}
   .guide_con02 .box_wrap .img_area .talk_area {width: calc(100% + 4px); margin: -2px; padding: 19px 0 34px; background-image: url('../assets/images/page/guide_talk_m.png');}
   .guide_con02 .box_wrap.type01 {flex-direction: column;}
+  
+  .opening_banner {flex-direction: column;}
+  .opening_banner .tit_text_wrap {width: 100%;}
+  .opening_banner .tit_text_wrap .text_area {align-items: flex-start; flex-direction: column;}
+  .opening_banner .btn {max-width: 100%;}
+  .training_con01 .top_text_wrap {align-items: stretch; flex-direction: column; gap: 16px;}
+  .training_con01 .top_text_wrap .text_area {padding-bottom: 0;}
+  .training_con01 .top_text_wrap .img_area {width: 100%; margin: 0 auto;}
+  .benefits_con01 ul li {width: 100%;}
+  .benefits_con02 ul li {width: 100%;}
+  .benefits_con03 ul {width: 100%;}
+  .benefits_con03 ul + ul {margin-top: 8px;}
 }

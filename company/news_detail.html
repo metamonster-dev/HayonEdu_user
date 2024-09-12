@@ -42,46 +42,94 @@
     </div>
     <section class="sub_last_con">
       <div class="inner">
-        <div class="view_wrap">
-          <div class="content_area">
-            <dl>
-              <dt>
-                <label class="required">제목</label>
-              </dt>
-              <dd>
-                <input type="text" placeholder="제목을 입력하세요" />
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <label class="required">작성자</label>
-              </dt>
-              <dd>
-                <p>운영자</p>
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <label class="required">내용</label>
-              </dt>
-              <dd>에디터</dd>
-            </dl>
-            <dl>
-              <dt>
-                <label>공지글</label>
-              </dt>
-              <dd>
-                <div class="chk_style01">
-                  <input type="checkbox" id="isNotice" />
-                  <label for="isNotice">공지글 설정</label>
-                </div>
-              </dd>
-            </dl>
-          </div>
-          <div class="btn_wrap">
-            <button type="button" class="btn btn_style02 h_56">저장</button>
-            <button type="button" class="btn btn_style03 h_56">등록</button>
-          </div>
+        <div class="detail_wrap">
+          <form>
+            <div class="content_area">
+              <dl>
+                <dt>
+                  <label class="required">제목</label>
+                </dt>
+                <dd>
+                  <input type="text" placeholder="제목을 입력하세요" />
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <label class="required">작성자</label>
+                </dt>
+                <dd>
+                  <p>운영자</p>
+                </dd>
+              </dl>
+              <dl class="top_type">
+                <dt>
+                  <label class="required">내용</label>
+                </dt>
+                <dd>
+                  <!-- TODO: 에디터 영역 -->
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="에디터"
+                  ></textarea>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <label>공지글</label>
+                </dt>
+                <dd>
+                  <div class="chk_style01">
+                    <input type="checkbox" id="isNotice" />
+                    <label for="isNotice"><span>공지글 설정</span></label>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <label>파일 첨부</label>
+                </dt>
+                <dd>
+                  <!-- 
+                    TODO: 
+                    - 파일 첨부시, 
+                      file_style01 클래스에 isFile 이라는 클래스 추가됨
+                    - 파일 첨부 기준
+                      accept: 엑셀, 이미지(jpg, gif, png 등), pdf, 한글
+                      size: 15MB
+                  -->
+                  <div class="file_style01">
+                    <button type="button" class="file_btn">
+                      파일 첨부
+                      <input
+                        type="file"
+                        accept=".xlsx, .jpg, .jpeg, .gif, .png, .pdf, .hwp"
+                      />
+                    </button>
+                    <span class="no_file">파일을 첨부하실 수 있습니다.</span>
+                    <div class="is_file">
+                      <span class="file_name"></span>
+                      <button type="button" class="cancel_btn">
+                        <img
+                          src="../assets/icons/icon_close.svg"
+                          alt="파일 첨부 취소"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="btn_wrap">
+              <!-- TODO: 수정일 경우, 저장 버튼 | 등록일 경우 등록 버튼 노출 -->
+              <!-- <button type="button" class="btn btn_style02 h_56 m_full">저장</button> -->
+              <button type="submit" class="btn btn_style03 h_56 m_full">
+                등록
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>개설문의</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <!-- JS -->
+    <script src="../js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 임시 HEADER | 프론트 연동 시 삭제 -->
+    <div id="header_temp_area"></div>
+
+    <!-- CONTENTS -->
+    <div class="sub_title">
+      <div class="inner">
+        <h2>개설문의</h2>
+      </div>
+    </div>
+    <section class="sub_last_con">
+      <div class="inner">
+        <div class="detail_top_text_area">
+          <p>
+            <span class="important">
+              ＊ 내용을 입력해 주시면 자세한 상담이 가능합니다.
+            </span>
+          </p>
+          <p><span class="important">*</span> 필수입력</p>
+        </div>
+        <div class="detail_wrap">
+          <div class="content_area">
+            <dl>
+              <dt>
+                <label class="required">이름</label>
+              </dt>
+              <dd>
+                <input type="text" placeholder="이름 입력" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label>성별</label>
+              </dt>
+              <dd>
+                <div class="chk_radio_list">
+                  <div class="radio_style01">
+                    <input type="radio" name="gender" id="gender01" checked />
+                    <label for="gender01"><span>여자</span></label>
+                  </div>
+                  <div class="radio_style01">
+                    <input type="radio" name="gender" id="gender02" />
+                    <label for="gender02"><span>남자</span></label>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">휴대폰 번호</label>
+              </dt>
+              <dd>
+                <input type="text" placeholder="휴대폰 번호 입력" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">최종 학력</label>
+              </dt>
+              <dd>
+                <input type="text" placeholder="최종 학력 입력" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">전공</label>
+              </dt>
+              <dd>
+                <input type="text" placeholder="전공 입력" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">경력</label>
+              </dt>
+              <dd>
+                <input type="text" placeholder="경력 입력" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">현재 하는 일</label>
+              </dt>
+              <dd>
+                <input type="text" placeholder="현재 하는 일 입력" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label>
+                  하연 과학을 알게 <br class="pc_only_b" />된 경로
+                  <span class="required"></span>
+                </label>
+              </dt>
+              <dd>
+                <input
+                  type="text"
+                  placeholder="하연 과학을 알게 된 경로 입력"
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">희망 교습 형태</label>
+              </dt>
+              <dd>
+                <input
+                  type="text"
+                  placeholder="하고 싶은 교습 형태(홈스쿨, 교습소 등)"
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">희망 교습 지역</label>
+              </dt>
+              <dd>
+                <input type="text" placeholder="희망 교습 지역 입력" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label>
+                  교습 예정 장소 <br class="pc_only_b" />해당 초등학교
+                  <span class="required"></span>
+                </label>
+              </dt>
+              <dd>
+                <input
+                  type="text"
+                  placeholder="교습 예정 장소의 해당 초등학교명 입력"
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label class="required">추천 교사</label>
+              </dt>
+              <dd>
+                <input
+                  type="text"
+                  placeholder="교사 추천일 경우 하연과학 추천 교사명 입력"
+                />
+              </dd>
+            </dl>
+            <dl class="top_type">
+              <dt>
+                <label>기타</label>
+              </dt>
+              <dd>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="6"
+                  class="textarea"
+                  placeholder="경력 중심의 기타 내용 입력"
+                ></textarea>
+              </dd>
+            </dl>
+          </div>
+          <div class="agree_area">
+            <div class="chk_style01">
+              <input type="checkbox" id="agree" />
+              <label for="agree">
+                <span
+                  >개인정보 수집 및 이용에 동의합니다.
+                  <span class="important">(필수)</span>
+                </span>
+              </label>
+            </div>
+            <button
+              type="button"
+              class="important underline"
+              onClick="modalOpen('mdAgree')"
+            >
+              전체 약관 보기
+            </button>
+          </div>
+          <div class="btn_wrap">
+            <button type="button" class="btn btn_style03 h_56 m_full">
+              등록
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal_wrap" id="mdAgree">
+      <div class="modal_area">
+        <div class="modal_title">
+          <p>개인정보 수집 및 이용 동의</p>
+          <button type="button" onClick="modalClose('mdAgree')">
+            <img src="../assets/icons/icon_close.svg" alt="모달 닫기" />
+          </button>
+        </div>
+        <div class="modal_content">
+          <div class="scroll_area">
+            <p>
+              <b>
+                당사는 귀하의 개인정보보호를 매우 중요시하며, [개인정보보호법]
+                상의 개인정보보호 규정을 준수하고 있습니다.
+              </b>
+            </p>
+            <p>
+              1. 개인정보의 수집·이용 목적 <br />
+              - 홈페이지 내 무료상담신청 메뉴를 통한 수집 <br />
+              - 맞춤식 종합 교육서비스의 제공
+            </p>
+            <p>
+              2. 수집·이용하는 개인정보 항목 <br />
+              - 홈페이지 내 무료상담신청 메뉴를 통한 수집 <br />
+              - 맞춤식 종합 교육서비스의 제공
+            </p>
+            <p>3. 개인정보의 보유 및 이용기간</p>
+            <p>
+              <b>
+                회사는 개인정보의 수집 및 이용 목적을 달성할 때까지 고객이
+                제공한 모든 개인 정보를 보유 및 이용하게 되며 고객이 이용 동의를
+                철회하는 경우에는 고객의 개인 정보를 재생 불가능한 방법으로 지체
+                없이 저장 장치에서 삭제하여 어떠한 방법으로도 열람 또는 이용할
+                수 없도록 만듭니다. 다만, 관계법령에서 일정한 보관기간을 정한
+                경우에는 예외로 합니다. 이 경우 회사는 보관하는 정보를 그 보관의
+                목적으로만 이용하며 보존기간은 아래와 같습니다.
+              </b>
+            </p>
+            <p>
+              - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 <br />
+              - 방문에 관한 기록 : 3개월
+            </p>
+            <p>
+              <b>
+                당사는 귀하의 개인정보보호를 매우 중요시하며, [개인정보보호법]
+                상의 개인정보보호 규정을 준수하고 있습니다.
+              </b>
+            </p>
+            <p>
+              1. 개인정보의 수집·이용 목적 <br />
+              - 홈페이지 내 무료상담신청 메뉴를 통한 수집 <br />
+              - 맞춤식 종합 교육서비스의 제공
+            </p>
+            <p>
+              2. 수집·이용하는 개인정보 항목 <br />
+              - 홈페이지 내 무료상담신청 메뉴를 통한 수집 <br />
+              - 맞춤식 종합 교육서비스의 제공
+            </p>
+            <p>3. 개인정보의 보유 및 이용기간</p>
+            <p>
+              <b>
+                회사는 개인정보의 수집 및 이용 목적을 달성할 때까지 고객이
+                제공한 모든 개인 정보를 보유 및 이용하게 되며 고객이 이용 동의를
+                철회하는 경우에는 고객의 개인 정보를 재생 불가능한 방법으로 지체
+                없이 저장 장치에서 삭제하여 어떠한 방법으로도 열람 또는 이용할
+                수 없도록 만듭니다. 다만, 관계법령에서 일정한 보관기간을 정한
+                경우에는 예외로 합니다. 이 경우 회사는 보관하는 정보를 그 보관의
+                목적으로만 이용하며 보존기간은 아래와 같습니다.
+              </b>
+            </p>
+            <p>
+              - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 <br />
+              - 방문에 관한 기록 : 3개월
+            </p>
+            <p>
+              <b>
+                당사는 귀하의 개인정보보호를 매우 중요시하며, [개인정보보호법]
+                상의 개인정보보호 규정을 준수하고 있습니다.
+              </b>
+            </p>
+            <p>
+              1. 개인정보의 수집·이용 목적 <br />
+              - 홈페이지 내 무료상담신청 메뉴를 통한 수집 <br />
+              - 맞춤식 종합 교육서비스의 제공
+            </p>
+            <p>
+              2. 수집·이용하는 개인정보 항목 <br />
+              - 홈페이지 내 무료상담신청 메뉴를 통한 수집 <br />
+              - 맞춤식 종합 교육서비스의 제공
+            </p>
+            <p>3. 개인정보의 보유 및 이용기간</p>
+            <p>
+              <b>
+                회사는 개인정보의 수집 및 이용 목적을 달성할 때까지 고객이
+                제공한 모든 개인 정보를 보유 및 이용하게 되며 고객이 이용 동의를
+                철회하는 경우에는 고객의 개인 정보를 재생 불가능한 방법으로 지체
+                없이 저장 장치에서 삭제하여 어떠한 방법으로도 열람 또는 이용할
+                수 없도록 만듭니다. 다만, 관계법령에서 일정한 보관기간을 정한
+                경우에는 예외로 합니다. 이 경우 회사는 보관하는 정보를 그 보관의
+                목적으로만 이용하며 보존기간은 아래와 같습니다.
+              </b>
+            </p>
+            <p>
+              - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 <br />
+              - 방문에 관한 기록 : 3개월
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // CONTENTS -->
+
+    <!-- 임시 FOOTER | 프론트 연동 시 삭제 -->
+    <div id="footer_temp_area"></div>
+    <script>
+      $("#header_temp_area").load("../assets/header.html");
+      $("#footer_temp_area").load("../assets/footer.html");
+    </script>
+  </body>
+</html>

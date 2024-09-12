@@ -12,6 +12,28 @@ $(document).ready(function () {
     checkbox.prop("checked", !checkbox.prop("checked"));
   });
 
+  // SELECT CUSTOM
+  $(".select_wrap > button").on("click", function () {
+    $(this).next("ul").toggleClass("on");
+  });
+  $(".select_wrap ul li button").on("click", function () {
+    $(this).parents("ul").removeClass("on");
+    $(this).parents("ul").prev("button").text($(this).text());
+  });
+
+  // FILE CUSTOM
+  $(".file_style01 .file_btn input[type=file]").on("change", function () {
+    const fileName = $(this).val().split("\\").pop();
+
+    $(this).parents(".file_style01").addClass("isFile");
+    $(this).parents(".file_style01").find(".file_name").text(fileName);
+  });
+  $(".file_style01 .cancel_btn").on("click", function () {
+    $(this).parents(".file_style01").removeClass("isFile");
+    $(this).parents(".file_style01").find(".file_btn input[type=file]").val("");
+    $(this).parents(".file_style01").find(".file_name").text("");
+  });
+
   // TAB
   $(".tabs button").on("click", function () {
     const idx = $(this).index();
@@ -24,15 +46,16 @@ $(document).ready(function () {
     AOS.init();
   });
 
-  // SELECT CUSTOM
-  $(".select_wrap > button").on("click", function () {
-    $(this).next("ul").toggleClass("on");
-  });
-  $(".select_wrap ul li button").on("click", function () {
-    $(this).parents("ul").removeClass("on");
-    $(this).parents("ul").prev("button").text($(this).text());
-  });
-
-  // aos
+  // AOS
   AOS.init();
 });
+
+// MODAL
+const modalOpen = (modalId) => {
+  $(`#${modalId}`).addClass("show");
+  $("body").addClass("hidden");
+};
+const modalClose = (modalId) => {
+  $(`#${modalId}`).removeClass("show");
+  $("body").removeClass("hidden");
+};
