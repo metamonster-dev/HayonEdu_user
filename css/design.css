@@ -149,7 +149,6 @@ button.type03{background:#fff;border:1px solid  var(--main2);color:var(--main2)}
 /*영역*/
 .btn_area{width:100%;;display:flex;justify-content:center;align-items:center;gap:24px}
 .label_chk_wrap{display:flex;align-items:center;gap:8px}
-.tit_area{display:flex;justify-content:space-between;align-items:flex-start;width:100%;padding-bottom:24px;border-bottom:1px solid #000;}
 
 /*form_table*/
 .form_table{width:100%;}
@@ -259,7 +258,6 @@ footer .add_wrap{display:flex;gap:16px;}
     .md_contents{padding:0 16px}
     /*영역*/
     .btn_area{gap:8px}
-    .tit_area{padding-bottom:16px;border-bottom:1px solid #000;}
 
     /*form_table*/
     .form_table .flex_box button{min-width:100px;width:100px;}

@@ -1,3 +1,5 @@
+.tit_area{display:flex;justify-content:space-between;align-items:flex-start;width:100%;padding-bottom:24px;border-bottom:1px solid #000;}
+
 /*회원가입*/
 .signupcommon .signup_step{display:flex;gap:100px;margin:60px auto 40px}
 .signupcommon .signup_step li{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#999;}
@@ -59,6 +61,8 @@
 
 
 @media (max-width: 1020px) {
+    .tit_area{padding-bottom:16px;border-bottom:1px solid #000;}
+    
     /*회원가입 (모바일)*/
     .signupcommon .signup_step{margin:40px auto;gap:68px}
     .signupcommon .signup_step li:not(:last-child)::after{top:32.5px;left:72px}

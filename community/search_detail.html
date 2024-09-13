@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>포토갤러리</title>
+    <title>하연과학 찾기</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- FONT -->
     <link
@@ -37,7 +37,7 @@
     <!-- CONTENTS -->
     <div class="sub_title">
       <div class="inner">
-        <h2>포토갤러리</h2>
+        <h2>하연과학 찾기</h2>
       </div>
     </div>
     <section class="sub_last_con">
@@ -82,6 +82,17 @@
               </dl>
               <dl>
                 <dt>
+                  <label>공지글</label>
+                </dt>
+                <dd>
+                  <div class="chk_style01">
+                    <input type="checkbox" id="isNotice" />
+                    <label for="isNotice"><span>공지글 설정</span></label>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
                   <label>파일 첨부</label>
                 </dt>
                 <dd>
@@ -95,15 +106,13 @@
                   -->
                   <div class="file_style01">
                     <button type="button" class="file_btn">
-                      대표 이미지
+                      파일 첨부
                       <input
                         type="file"
                         accept=".xlsx, .jpg, .jpeg, .gif, .png, .pdf, .hwp"
                       />
                     </button>
-                    <span class="no_file">
-                      대표 이미지를 첨부하실 수 있습니다.
-                    </span>
+                    <span class="no_file">파일을 첨부하실 수 있습니다.</span>
                     <div class="is_file">
                       <span class="file_name"></span>
                       <button type="button" class="cancel_btn">

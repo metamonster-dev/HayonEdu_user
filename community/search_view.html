@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>하연과학 찾기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <!-- JS -->
+    <script src="../js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 임시 HEADER | 프론트 연동 시 삭제 -->
+    <div id="header_temp_area"></div>
+
+    <!-- CONTENTS -->
+    <div class="sub_title">
+      <div class="inner">
+        <h2>하연과학 찾기</h2>
+      </div>
+    </div>
+    <section class="sub_last_con">
+      <div class="inner">
+        <div class="view_wrap">
+          <div class="title_area">
+            <div class="tit">
+              <span class="tag">중요</span>
+              <h5>하연과학 찾기 게시판 제목 영역입니다.</h5>
+            </div>
+            <ul>
+              <li>2021-09-22 12:33</li>
+              <li>조회수 3</li>
+            </ul>
+          </div>
+          <div class="content_area">
+            <img src="../assets/images/temp_img.jpg" alt="임시 이미지" />
+            <p style="margin-top: 24px">등록한 내용이 노출됩니다.</p>
+          </div>
+          <!-- TODO: 등록한 파일 존재할 경우, 해당 영역 노출 -->
+          <div class="file_area">
+            <a href="javascript:;" download>
+              <i></i>
+              <span>파일첨부명.jpg</span>
+            </a>
+          </div>
+          <div class="btn_wrap">
+            <a href="./search.html" class="btn btn_style03 h_56 m_full">
+              목록으로
+            </a>
+            <!-- TODO: 관리자 계정일 경우, 수정/삭제 버튼 노출 -->
+            <a href="./search_detail.html" class="btn btn_style02 h_56">수정</a>
+            <button type="button" class="btn btn_style02 h_56">삭제</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // CONTENTS -->
+
+    <!-- 임시 FOOTER | 프론트 연동 시 삭제 -->
+    <div id="footer_temp_area"></div>
+    <script>
+      $("#header_temp_area").load("../assets/header.html");
+      $("#footer_temp_area").load("../assets/footer.html");
+    </script>
+  </body>
+</html>
