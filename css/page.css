@@ -53,6 +53,7 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .table_style02 table th {height: 94px; padding: 24px 40px; background-color: var(--wh_gray); font-size: 16px; color: var(--black); font-weight: 500; text-align: left;}
 .table_style02 table td {height: 94px; padding: 24px 40px; font-size: 16px; color: var(--gray1); font-weight: 500;}
 
+.list_style01 .nodata {font-size: 16px; color: var(--gray2); text-align: center;}
 .list_style01 ul {display: flex; flex-wrap: wrap; gap: 60px 31px;}
 .list_style01 ul li {width: calc((100% - 31px * 2) / 3);}
 .list_style01 ul li .img_area {position: relative; padding-bottom: 67%; border-radius: 10px; overflow: hidden;}
@@ -171,9 +172,11 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .modal_wrap .modal_area .modal_content {height: calc(100% - 88px);}
 .modal_wrap .modal_area .modal_content .scroll_area {height: 100%; overflow-y: auto; -ms-overflow-style: none;}
 .modal_wrap .modal_area .modal_content .scroll_area::-webkit-scrollbar {display: none;}
-.modal_wrap .modal_area .modal_content .scroll_area * {font-size: 16px; color: var(--gray1); font-weight: 500;}
+.modal_wrap .modal_area .modal_content .scroll_area div + div {margin-top: 24px;}
+.modal_wrap .modal_area .modal_content .scroll_area p {font-size: 16px; color: var(--gray1); font-weight: 500; line-height: 24px;}
+.modal_wrap .modal_area .modal_content .scroll_area p + p {margin-top: 16px;}
 .modal_wrap .modal_area .modal_content .scroll_area p b {color: var(--black);}
-.modal_wrap .modal_area .modal_content .scroll_area * + * {margin-top: 16px;}
+.modal_wrap .modal_area .modal_content .scroll_area p span {display: block; padding-left: 12px;}
 
 /*=============================================================*/
 /*                          COMPANY                            */
@@ -561,7 +564,8 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
   .modal_wrap .modal_area .modal_title {padding-bottom: 24px;}
   .modal_wrap .modal_area .modal_title p {font-size: 22px;}
   .modal_wrap .modal_area .modal_content {height: calc(100% - 57px);}
-  .modal_wrap .modal_area .modal_content .scroll_area * {font-size: 14px;}
+  .modal_wrap .modal_area .modal_content .scroll_area p {font-size: 14px; line-height: 20px;}
+  .modal_wrap .modal_area .modal_content .scroll_area p span {padding-left: 10px;}
 
   .story_con01 .inner {flex-direction: column; gap: 40px;}
   .story_con01 .text_area {width: 100%;}

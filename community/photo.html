@@ -32,7 +32,7 @@
   </head>
   <body>
     <!-- 임시 HEADER | 프론트 연동 시 삭제 -->
-    <!-- <div id="header_temp_area"></div> -->
+    <div id="header_temp_area"></div>
 
     <!-- CONTENTS -->
     <div class="sub_title">
@@ -43,7 +43,24 @@
     <section class="sub_last_con">
       <div class="inner">
         <div class="list_style01">
+          <!-- TODO: 데이터 없을 경우,
+          <div class="nodata">
+            <span>등록된 게시물이 없습니다.</span>
+          </div> -->
           <ul>
+            <li>
+              <a href="javascript:;">
+                <!-- 이미지 없을 경우 -->
+                <div class="img_area">
+                  <img
+                    src="../assets/images/page/no_img.jpg"
+                    alt="포토갤러리 이미지"
+                  />
+                </div>
+                <p>6월 단오 떡메치기 하연이</p>
+                <span>2024-08-01</span>
+              </a>
+            </li>
             <li>
               <a href="javascript:;">
                 <div class="img_area">
