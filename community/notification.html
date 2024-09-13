@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>개설문의</title>
+    <title>소식알림</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- FONT -->
     <link
@@ -37,7 +37,7 @@
     <!-- CONTENTS -->
     <div class="sub_title">
       <div class="inner">
-        <h2>개설문의</h2>
+        <h2>소식알림</h2>
       </div>
     </div>
     <section class="sub_last_con">
@@ -73,13 +73,9 @@
               <col style="width: 300px" />
             </colgroup>
             <thead>
-              <!-- TODO: 데이터 없을 경우,              
-              <tr>
-                <td colspan="3" class="nodata">등록된 게시물이 없습니다.</td>
-              </tr> -->
               <tr>
                 <th>번호</th>
-                <th>이름</th>
+                <th>제목</th>
                 <th>
                   <ul class="text01">
                     <li>등록일</li>
@@ -89,10 +85,19 @@
               </tr>
             </thead>
             <tbody>
+              <!-- TODO: 데이터 없을 경우,              
+              <tr>
+                <td colspan="3" class="nodata">등록된 게시물이 없습니다.</td>
+              </tr> -->
               <tr>
                 <td class="num">2</td>
                 <td class="title">
-                  <a href="./inquiry_view.html">홍길동</a>
+                  <div>
+                    <span class="tag">중요</span>
+                    <a href="./notification_view.html">
+                      대체공휴일 휴무 안내
+                    </a>
+                  </div>
                 </td>
                 <td>
                   <ul class="text01">
@@ -107,7 +112,9 @@
               <tr>
                 <td class="num">1</td>
                 <td class="title">
-                  <a href="./inquiry_view.html">홍길동</a>
+                  <a href="./notification_view.html">
+                    북부 유선숙 선생님 인터뷰(시선뉴스)
+                  </a>
                 </td>
                 <td>
                   <ul class="text01">
@@ -122,24 +129,32 @@
             </tbody>
           </table>
         </div>
-        <div class="page_wrap">
-          <a href="javascript:;">
-            <img src="../assets/icons/icon_page_first.svg" alt="처음" />
-          </a>
-          <a href="javascript:;">
-            <img src="../assets/icons/icon_page_prev.svg" alt="이전" />
-          </a>
-          <a href="javascript:;" class="active">1</a>
-          <a href="javascript:;">2</a>
-          <a href="javascript:;">3</a>
-          <a href="javascript:;">4</a>
-          <a href="javascript:;">5</a>
-          <a href="javascript:;">
-            <img src="../assets/icons/icon_page_next.svg" alt="다음" />
-          </a>
-          <a href="javascript:;">
-            <img src="../assets/icons/icon_page_last.svg" alt="마지막" />
-          </a>
+        <div class="page_btn_wrap">
+          <div class="page_wrap">
+            <a href="javascript:;">
+              <img src="../assets/icons/icon_page_first.svg" alt="처음" />
+            </a>
+            <a href="javascript:;">
+              <img src="../assets/icons/icon_page_prev.svg" alt="이전" />
+            </a>
+            <a href="javascript:;" class="active">1</a>
+            <a href="javascript:;">2</a>
+            <a href="javascript:;">3</a>
+            <a href="javascript:;">4</a>
+            <a href="javascript:;">5</a>
+            <a href="javascript:;">
+              <img src="../assets/icons/icon_page_next.svg" alt="다음" />
+            </a>
+            <a href="javascript:;">
+              <img src="../assets/icons/icon_page_last.svg" alt="마지막" />
+            </a>
+          </div>
+          <!-- TODO: 관리자 계정일 경우, 등록 버튼 노출 -->
+          <div class="btn_wrap">
+            <a href="./notification_detail.html" class="btn btn_style01 h_56"
+              >등록</a
+            >
+          </div>
         </div>
       </div>
     </section>

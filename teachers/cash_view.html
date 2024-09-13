@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>보도자료</title>
+    <title>하연과학 실험</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- FONT -->
     <link
@@ -35,23 +35,24 @@
     <div id="header_temp_area"></div>
 
     <!-- CONTENTS -->
-    <div class="sub_title">
-      <div class="inner">
-        <h2>보도자료</h2>
+    <div class="inner">
+      <div class="sub_title">
+        <h2>하연과학 실험</h2>
       </div>
+      <!-- 하연과학 실험 공통 TAB -->
+      <div id="tab_area"></div>
     </div>
     <section class="sub_last_con">
       <div class="inner">
         <div class="view_wrap">
           <div class="title_area">
             <div class="tit">
-              <span class="tag">중요</span>
-              <h5>
-                [서울신문] 하연교육, 연세대 세브란스 어린이 병원에 1500만원 기부
-              </h5>
+              <span class="tag02">현금영수증</span>
+              <h5>게시판 제목 텍스트 영역입니다</h5>
             </div>
             <ul>
               <li>2021-09-22 12:33</li>
+              <li>운영자</li>
               <li>조회수 3</li>
             </ul>
           </div>
@@ -67,11 +68,11 @@
             </a>
           </div>
           <div class="btn_wrap">
-            <a href="./news.html" class="btn btn_style03 h_56 m_full">
+            <a href="./cash.html" class="btn btn_style03 h_56 m_full">
               목록으로
             </a>
             <!-- TODO: 관리자 계정일 경우, 수정/삭제 버튼 노출 -->
-            <a href="./news_detail.html" class="btn btn_style02 h_56">수정</a>
+            <a href="./cash_detail.html" class="btn btn_style02 h_56">수정</a>
             <button type="button" class="btn btn_style02 h_56">삭제</button>
           </div>
         </div>
@@ -84,6 +85,12 @@
     <script>
       $("#header_temp_area").load("../assets/header.html");
       $("#footer_temp_area").load("../assets/footer.html");
+
+      $("#tab_area").load("./teachers_tab.html");
+      $(document).ready(function () {
+        $(".tab_slide li").eq(4).addClass("active");
+        tabSlide.slideTo(4);
+      });
     </script>
   </body>
 </html>

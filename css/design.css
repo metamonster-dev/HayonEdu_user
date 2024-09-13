@@ -80,6 +80,7 @@
 }
 
 .hidden {overflow:hidden;}
+.mw-526 {width: 100%; max-width:526px;}
 
 /*기본 텍스트 스타일*/
 *{font-family:'Pretendard';}
@@ -96,7 +97,7 @@ P{font-size:24px;font-weight:500;line-height:1.5;color:var(--gray1);letter-spaci
 .soundOnly{font-size:0;display:none;}
 .required{position:relative;display:inline;}
 .required::after{position:absolute;top:0;right:-16px;content:'*';color:var(--main2);width:10px;height:10px;}
-.important{color:var(--main2)}
+.important{color:var(--main2) !important;}
 .underline{text-decoration:underline;}
 
 /*PC요소&모바일요소*/
@@ -225,6 +226,8 @@ footer .add_wrap{display:flex;gap:16px;}
 
 
 @media (max-width: 1024px) {
+    .mw-526 {max-width:100%;}
+
     /* 하연교육 디자인 에셋(모바일)*/
     h2{font-size:30px;font-weight:700;line-height:40px;color:var(--black)}
     h3{font-size:24px;font-weight:700;line-height:36px;color:var(--black)}

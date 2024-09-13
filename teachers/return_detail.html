@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>보도자료</title>
+    <title>하연과학 실험</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- FONT -->
     <link
@@ -35,10 +35,12 @@
     <div id="header_temp_area"></div>
 
     <!-- CONTENTS -->
-    <div class="sub_title">
-      <div class="inner">
-        <h2>보도자료</h2>
+    <div class="inner">
+      <div class="sub_title">
+        <h2>하연과학 실험</h2>
       </div>
+      <!-- 하연과학 실험 공통 TAB -->
+      <div id="tab_area"></div>
     </div>
     <section class="sub_last_con">
       <div class="inner">
@@ -50,11 +52,14 @@
                   <label class="required">제목</label>
                 </dt>
                 <dd>
-                  <input
-                    type="text"
-                    placeholder="제목을 입력하세요"
-                    class="mw-526"
-                  />
+                  <div class="input_text_wrap">
+                    <input
+                      type="text"
+                      placeholder="[지국명] 포함하여 입력해주세요"
+                      class="mw-526"
+                    />
+                    <span class="info">＊ 지국명 입력</span>
+                  </div>
                 </dd>
               </dl>
               <dl>
@@ -63,6 +68,37 @@
                 </dt>
                 <dd>
                   <p>운영자</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <label class="required">반품유형</label>
+                </dt>
+                <dd>
+                  <!-- SELECT_CUSTOM -->
+                  <div class="select_wrap mw-526">
+                    <button type="button" class="selected">선택</button>
+                    <ul>
+                      <li><button type="button" value="">지국반품</button></li>
+                      <li>
+                        <button type="button" value="">개인반품</button>
+                      </li>
+                      <li>
+                        <button type="button" value="">교사간사용</button>
+                      </li>
+                      <li>
+                        <button type="button" value="">수거신청</button>
+                      </li>
+                    </ul>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <label class="required">월호</label>
+                </dt>
+                <dd>
+                  <input type="text" class="mw-526" />
                 </dd>
               </dl>
               <dl class="top_type">
@@ -76,7 +112,8 @@
                     id=""
                     cols="30"
                     rows="10"
-                    placeholder="에디터"
+                    placeholder="* 교사간 사용 시 작성 양식 *&#13;&#10;
+                    oo지국 ooo선생님 o월 o학년 o개를&#13;&#10;oo지국 ooo선생님이 받았습니다."
                   ></textarea>
                 </dd>
               </dl>
@@ -144,6 +181,12 @@
     <script>
       $("#header_temp_area").load("../assets/header.html");
       $("#footer_temp_area").load("../assets/footer.html");
+
+      $("#tab_area").load("./teachers_tab.html");
+      $(window).on("load", function () {
+        $(".tab_slide li").eq(2).addClass("active");
+        tabSlide.slideTo(2);
+      });
     </script>
   </body>
 </html>

@@ -14,10 +14,10 @@ $(document).ready(function () {
 
   // SELECT CUSTOM
   $(".select_wrap > button").on("click", function () {
-    $(this).next("ul").toggleClass("on");
+    $(this).parents(".select_wrap").toggleClass("on");
   });
   $(".select_wrap ul li button").on("click", function () {
-    $(this).parents("ul").removeClass("on");
+    $(this).parents(".select_wrap").removeClass("on");
     $(this).parents("ul").prev("button").text($(this).text());
   });
 
@@ -35,9 +35,17 @@ $(document).ready(function () {
   });
 
   // TAB
-  $(".tabs button").on("click", function () {
-    const idx = $(this).index();
-    $(this).addClass("active").siblings().removeClass("active");
+  const tabSlide = new Swiper(".tab_slide", {
+    slidesPerView: "auto",
+    // spaceBetween: 24,
+    // centeredSlides: true,
+  });
+  $(".tab_event button").on("click", function () {
+    const idx = $(this).parents("li").index();
+    $(this).parents("li").addClass("active").siblings().removeClass("active");
+    if ($(this).parents(".tab_event").hasClass("tab_slide")) {
+      tabSlide.slideTo(idx);
+    }
     $(".sub_contents > div")
       .eq(idx)
       .addClass("on")
@@ -48,6 +56,8 @@ $(document).ready(function () {
 
   // AOS
   AOS.init();
+
+  window.tabSlide = tabSlide;
 });
 
 // MODAL
