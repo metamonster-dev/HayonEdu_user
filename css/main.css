@@ -85,7 +85,7 @@
 #Main_banner3 .review_wraper .main03_list02{display:flex;width:100%;}
 #Main_banner3 .review_wraper .main03_list02 li{height:auto;padding:30px 40px;background:#fff;border-radius:20px;text-align:left;}
 #Main_banner3 .review_wraper .main03_list02 li .top_txt{display:flex;align-items:center;justify-content:space-between;}
-#Main_banner3 .review_wraper .main03_list02 li .top_txt p{font-size:18px;color:#999999}
+#Main_banner3 .review_wraper .main03_list02 li .top_txt p{font-size:18px;color:#999999;font-weight:700;}
 #Main_banner3 .review_wraper .main03_list02 li .txt_review{margin-top:20px;font-size:24px;line-height:34px;font-weight:700;color:#555;letter-spacing:-0.085rem;}
 #Main_banner3 .particles.p07{top:-50px;right:157px;}
 #Main_banner3 .particles.p08{top:99px;left:102px;}
@@ -123,7 +123,7 @@
 #Main_banner5 .banner_wraper .student,
 #Main_banner5 .banner_wraper .teacher{display:inline-block;padding:0 8px;height:27px;line-height:25px;background:#fff;border-radius:4px;font-size:14px;font-weight:700;}
 #Main_banner5 .banner_wraper .student{color:var(--main2);border:1px solid var(--main2)}
-#Main_banner5 .banner_wraper .teacher{color:var(--green);border:1px solid var(--green)}
+#Main_banner5 .banner_wraper .teacher{color:var(--green2);border:1px solid var(--green2)}
 #Main_banner5 .banner_wraper .readMore{margin-top:24px;font-size:18px;font-weight:700;color:var(--gray2);display:flex;align-items:center;}
 #Main_banner5 .banner_wraper .readMore::after{content:'';display:inline-block;width:32px;height:32px;margin-left:16px;background:url(../assets/icons/icon_readMore.svg)no-repeat center;}
 #Main_banner5 .particles.p09{top:31px;right:16px;z-index:-1;}
