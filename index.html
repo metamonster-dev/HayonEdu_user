@@ -388,10 +388,14 @@
           </article>
           <div class="banner_wraper">
             <div class="left_area">
-              <a>
+              <!-- TODO
+                최고 관리자 계정일 경우, ./education/inquiry.html 목록 페이지로 이동
+                그 외 계정일 경우, ./education/inquiry_detail.html 등록 페이지로 이동
+              -->
+              <a href="javascript:;">
                 <div class="txt_area">
                   <div class="title">
-                    <p class="tit">화연과학 찾기</p>
+                    <p class="tit">교육 상담 문의하기</p>
                     <span class="student">회원</span>
                   </div>
                   <p class="readMore">바로가기</p>
@@ -403,7 +407,11 @@
                   />
                 </div>
               </a>
-              <a>
+              <!-- TODO
+                최고 관리자 계정일 경우, ./opening/inquiry.html 목록 페이지로 이동
+                그 외 계정일 경우, ./opening/inquiry_detail.html 등록 페이지로 이동
+              -->
+              <a href="javascript:;">
                 <div class="txt_area">
                   <div class="title">
                     <p class="tit">개설 상담 문의하기</p>
@@ -562,18 +570,24 @@
     <!-- FIXED BUTTON -->
     <ul id="index_fiexed_btn">
       <li>
-        <a
-          ><img src="./assets/images/btm_button01.png" class="pc_only_b" /><img
-            src="./assets/images/btm_button01_m.png"
-            class="m_only_b"
-        /></a>
+        <!-- TODO
+          최고 관리자 계정일 경우, ./education/inquiry.html 목록 페이지로 이동
+          그 외 계정일 경우, ./education/inquiry_detail.html 등록 페이지로 이동
+        -->
+        <a href="javascript:;">
+          <img src="./assets/images/btm_button01.png" class="pc_only_b" />
+          <img src="./assets/images/btm_button01_m.png" class="m_only_b" />
+        </a>
       </li>
       <li>
-        <a
-          ><img src="./assets/images/btm_button02.png" class="pc_only_b" /><img
-            src="./assets/images/btm_button02_m.png"
-            class="m_only_b"
-        /></a>
+        <!-- TODO
+          최고 관리자 계정일 경우, ./opening/inquiry.html 목록 페이지로 이동
+          그 외 계정일 경우, ./opening/inquiry_detail.html 등록 페이지로 이동
+        -->
+        <a href="javascript:;">
+          <img src="./assets/images/btm_button02.png" class="pc_only_b" />
+          <img src="./assets/images/btm_button02_m.png" class="m_only_b" />
+        </a>
       </li>
     </ul>
     <!-- // CONTENTS -->
@@ -581,8 +595,8 @@
     <!-- 임시 FOOTER | 프론트 연동 시 삭제 -->
     <div id="footer_temp_area"></div>
     <script>
-      $("#header_temp_area").load("../assets/header.html");
-      $("#footer_temp_area").load("../assets/footer.html");
+      $("#header_temp_area").load("./assets/header.html");
+      $("#footer_temp_area").load("./assets/footer.html");
       $(window).on("load", function () {
         $("#LNB").remove();
       });

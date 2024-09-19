@@ -144,7 +144,7 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .view_wrap .btn_wrap {display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 60px;}
 .view_wrap .btn_wrap .btn {max-width: 240px;}
 
-.detail_top_text_area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;}
+.detail_top_text_area {display: flex; align-items: center; justify-content: space-between; gap: 4px; flex-wrap: wrap; margin-bottom: 16px;}
 .detail_top_text_area p {font-size: 14px; color: var(--gray1); font-weight: 500;}
 .detail_wrap {border-top: 1px solid var(--black);}
 .detail_wrap .content_area dl {display: flex; align-items: center; min-height: 94px; padding: 24px 40px; border-bottom: 1px solid var(--border1);}
