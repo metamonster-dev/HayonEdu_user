@@ -152,6 +152,7 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .detail_wrap .content_area dl dd {flex: 1; }
 .detail_wrap .content_area dl dd, 
 .detail_wrap .content_area dl dd * {font-size: 16px; color: var(--gray1); font-weight: 500;}
+.detail_wrap .content_area dl dd input {font-size: 14px;}
 .detail_wrap .content_area dl.top_type {align-items: flex-start;}
 .detail_wrap .content_area dl.top_type dt {padding-top: 12px;}
 .detail_wrap .agree_area {display: flex; align-items: center; gap: 16px; margin-top: 24px;}
@@ -248,7 +249,7 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .intro_con01 .banner_wrap .img_area img {position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; object-position: center; transform: translate(-50%, -50%);}
 .intro_con01 .banner_wrap .text_area {display: flex; align-items: center; width: calc(100% - 466px); padding: 0 80px; background-color: var(--main3);}
 .intro_con01 .banner_wrap .text_area p {color: var(--white); word-break: keep-all;}
-.intro_con01 .banner_wrap .text_area p b {font-weight: 800;}
+.intro_con01 .banner_wrap .text_area p b {font-weight: 900;}
 
 .intro_con02 {padding: 40px 0 200px; background-color: var(--wh_gray);}
 .intro_con02 ul {display: flex; flex-wrap: wrap; border-radius: 10px; background-color: var(--white); overflow: hidden;}
@@ -258,10 +259,11 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .intro_con02 ul li::before {content: ''; display: block; padding-bottom: 100%;}
 .intro_con02 ul li .title_area {position: absolute; top: 50%; left: 0; width: 100%; padding: 0 16px; object-fit: contain; object-position: center; transform: translateY(-50%);}
 .intro_con02 ul li .title_area img {width: 150px; margin: 0 auto;}
-.intro_con02 ul li .title_area h4 {margin-top: 24px; font-weight: 500; word-break: keep-all;}
-.intro_con02 ul li .title_area h4 b {font-weight: 800;}
+.intro_con02 ul li .title_area h4 {margin-top: 24px; color: var(--gray1); font-weight: 500; word-break: keep-all;}
+.intro_con02 ul li .title_area h4 b {color: var(--black); font-weight: 900;}
 .intro_con02 ul li .text_area {position: absolute; top: -100%; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 0 16px; transition: all 0.5s;}
 .intro_con02 ul li .text_area p {color: var(--white); word-break: keep-all;}
+.intro_con02 ul li .text_area p b {font-weight: 900;}
 .intro_con02 ul li:hover .text_area {top: 0;}
 .intro_con02 ul li .logo {position: absolute; top: 50%; left: 50%; width: 80%; max-width: 318px; object-position: center; transform: translate(-50%, -50%); }
 .intro_con02 ul li:nth-of-type(2) .text_area {background-color: var(--point1);}
@@ -364,7 +366,7 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .guide_con02 .box_wrap .text_area ul li + li {border-top: 1px solid var(--border1);}
 .guide_con02 .box_wrap .text_area ul li i {display: block; width: 24px; height: 24px; margin-top: 4px; background: url('../assets/icons/icon_check.svg') no-repeat center / contain;}
 .guide_con02 .box_wrap .text_area ul li p {flex: 1;}
-.guide_con02 .box_wrap .text_area ul li p b {color: var(--black);}
+.guide_con02 .box_wrap .text_area ul li p b {color: var(--black); font-weight: 900;}
 .guide_con02 .box_wrap .text_area ul li p span {display: inline-block; vertical-align: middle; font-size: 16px; color: var(--gray3); font-weight: 500;}
 .guide_con02 .box_wrap .img_area {width: 280px; text-align: center;}
 .guide_con02 .box_wrap .img_area .talk_area {position: relative; width: calc(100% + 8px); margin: -4px; padding: 27px 0 42px; background: url('../assets/images/page/guide_talk_pc.png') no-repeat center / contain; z-index: 1;}
@@ -404,7 +406,7 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .training_con01 ul li + li {border-top: 1px solid var(--border1);}
 .training_con01 ul li i {display: block; width: 24px; height: 24px; margin-top: 4px; background: url('../assets/icons/icon_check.svg') no-repeat center / contain;}
 .training_con01 ul li p {flex: 1;}
-.training_con01 ul li p b {color: var(--black);}
+.training_con01 ul li p b {color: var(--black); font-weight: 900;}
 
 .benefits_con01 {padding-bottom: 100px;}
 .benefits_con01 h4 {margin-bottom: 30px;}
@@ -623,7 +625,8 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
   .intro_con02 ul li .text_area,
   .intro_con02 ul li .logo {position: static; top: auto; left: auto; transform: none;}
   .intro_con02 ul li .title_area img {width: 80px;}
-  .intro_con02 ul li .title_area h4 {margin-top: 16px; font-size: 18px; font-weight: 700; line-height: 27px;}
+  .intro_con02 ul li .title_area h4 {margin-top: 16px; font-size: 18px; color: var(--black); font-weight: 700; line-height: 27px;}
+  .intro_con02 ul li .title_area h4 b {font-weight: 700;}
   .intro_con02 ul li .text_area {background-color: transparent !important;}
   .intro_con02 ul li .text_area p {color: var(--gray1);}
   .intro_con02 ul li .text_area p b {font-weight: 500;}
