@@ -12,7 +12,7 @@
 
     /*===== INITIALIZATION =====*/
     html{font-size:10px;}
-    body{font-family:'Noto Sans KR', sans-serif; font-size:1.6rem; color:#000; font-weight:400;}
+    body{font-family:'Pretendard'; font-size:1.6rem; color:#000; font-weight:400;}
     html, body, h1, h2, h3, h4, h5, h6, p, form, fieldset, img{margin:0; padding:0; border:0;}
     ol, ul, dl, dt, dd, button, input, select, textarea{margin:0; padding:0;}
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
@@ -20,7 +20,7 @@
     hr{display:none;}
     ol, ul, dl, dt, dd{list-style:none;}
     label, input, button, select, img{vertical-align:middle;}
-    button, input, select, textarea, label{font-family:'Noto Sans KR', sans-serif; margin:0;}
+    button, input, select, textarea, label{font-family:'Pretendard'; margin:0;}
     button, input[type="submit"]{cursor:pointer;}
     button:disabled{cursor:default;}
     input[type="text"], input[type="password"], textarea{transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; outline:none;}

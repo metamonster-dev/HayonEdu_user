@@ -81,6 +81,7 @@
 
 .hidden {overflow:hidden;}
 .mw-526 {width: 100%; max-width:526px;}
+.inner {width: 100%; max-width: 1432px; padding: 0 16px; margin: 0 auto;}
 
 /*기본 텍스트 스타일*/
 *{font-family:'Pretendard';}

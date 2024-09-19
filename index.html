@@ -1,451 +1,591 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>하연교육</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- FONT -->
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
-<!-- CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-<link rel="stylesheet" href="./css/custom.css" />
-<link rel="stylesheet" href="./css/design.css" />
-<link rel="stylesheet" href="./css/main.css" /> <!--메인CSS-->
-<!-- JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-<script src="./js/common.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>하연교육</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/design.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--메인CSS-->
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <!-- 임시 HEADER | 프론트 연동 시 삭제 -->
+    <div id="header_temp_area"></div>
 
-</head>
-<body>
-<!------------contents----------->
-<div id="Index_wrapper">
-    <section id="Main_banner1" class="full_wrap">
-            <div class="txt_area">
-                <p class="txt01">스스로 생각하고</p>
-                <p class="txt01 pc_only_b">자신있게 문제를 해결해 가는</p>
-                <p class="txt01 pc_only_b"><span>하연과학</span></p>
-                <p class="txt01 m_only_b">자신있게 문제를</p>
-                <p class="txt01 m_only_b">해결해 가는 <span>하연과학</span></p>
-                <div class="txt02_area">
-                    <p class="txt02">미래의 글로벌 리더를 키우는</p>
-                    <p class="txt02">STEAM 융합과학교육</p>
-                </div>
-            </div>
+    <!------------contents----------->
+    <div id="Index_wrapper">
+      <section id="Main_banner1" class="full_wrap">
+        <div class="inner">
+          <p class="txt01">
+            스스로 생각하고 <br />
+            자신있게 문제를 <br class="m_only_b" />해결해 가는
+            <br class="pc_only_b" />
+            <span>하연과학</span>
+          </p>
+          <div class="txt02_area">
+            <p class="txt02">미래의 글로벌 리더를 키우는</p>
+            <p class="txt02">STEAM 융합과학교육</p>
+          </div>
+          <div class="img_wrap">
             <div class="img01_box">
-                <img src="./assets/images/main/main01_img01.png" alt="하연과학 메인이미지" >
+              <img
+                src="./assets/images/main/main01_img01.png"
+                alt="하연과학 메인이미지"
+              />
             </div>
-            <img src="./assets/images/main/main01_particles01.png" class="particles p01" alt="전구파티클">
-            <img src="./assets/images/main/main01_particles02.png" class="particles p02" alt="블록파티클">
-            <article id="ScrollDown">
-                <p class="pc_only_b">SCROLL DOWN</p>
-                <img src="./assets/icons/icon_scrolldown.svg" alt="스크롤다운">
-            </article>
-    </section>
-
-    <img src="./assets/images/main/main01_particles03.png" class="particles p03 pc_only_b" alt="도넛파티클">
-    
-    <section id="Main_banner2" class="full_wrap">
-        <img src="./assets/images/main/main02_particles01.png"  class="particles p04" alt="마시멜로우파티클">
-        <div class="banner_contetns">
-            <article class="tit_area">
-                <p class="sub_tit">창의사고력 학습 NO.1</p>
-                <P class="tit">하연과학 창의 탐구 교육</P>
-            </article>
-            <ul>
-                <li >
-                    <div class="item_circle"><img src="./assets/images/main/main02_item01.png"></div>
-                    <p>SINCE 1998부터<br/>축적된 노하우</p>
-                </li>
-                <li>
-                    <div class="item_circle"><img src="./assets/images/main/main02_item02.png"></div>
-                    <p>과학 실험 전문교사<br/>질 높은 수업</p>
-                </li>
-                <li>
-                    <div class="item_circle"><img src="./assets/images/main/main02_item03.png"></div>
-                    <p>학부모와 학생이 선택한<br/>최고의 교육 파트너</p>
-                </li>
-                <li>
-                    <div class="item_circle"><img src="./assets/images/main/main02_item04.png"></div>
-                    <p>4차 산업혁명 시대<br/>최고 인재 양성</p>
-                </li>
-            </ul>
+            <img
+              src="./assets/images/main/main01_particles01.png"
+              class="particles p01"
+              alt="전구파티클"
+            />
+            <img
+              src="./assets/images/main/main01_particles02.png"
+              class="particles p02"
+              alt="블록파티클"
+            />
+          </div>
         </div>
-    </section>
+        <article id="ScrollDown">
+          <p class="pc_only_b">SCROLL DOWN</p>
+          <img src="./assets/icons/icon_scrolldown.svg" alt="스크롤다운" />
+        </article>
+      </section>
 
-    <section id="Main_banner3" class="full_wrap">
-        <img src="./assets/images/main/main03_particles01.png"  class="particles p05" alt="학사모파티클">
-        <img src="./assets/images/main/main03_particles02.png"  class="particles p06" alt="화성파티클">
-        <div class="banner_contetns b01">
+      <section id="Main_banner2" class="full_wrap">
+        <div class="inner">
+          <img
+            src="./assets/images/main/main01_particles03.png"
+            class="particles p03 pc_only_b"
+            alt="도넛파티클"
+          />
+          <img
+            src="./assets/images/main/main02_particles01.png"
+            class="particles p04"
+            alt="마시멜로우파티클"
+          />
+          <article class="tit_area">
+            <p class="sub_tit">창의사고력 학습 NO.1</p>
+            <p class="tit">하연과학 창의 탐구 교육</p>
+          </article>
+          <ul>
+            <li>
+              <div class="item_circle">
+                <img src="./assets/images/main/main02_item01.png" />
+              </div>
+              <p>SINCE 1998부터<br />축적된 노하우</p>
+            </li>
+            <li>
+              <div class="item_circle">
+                <img src="./assets/images/main/main02_item02.png" />
+              </div>
+              <p>과학 실험 전문교사<br />질 높은 수업</p>
+            </li>
+            <li>
+              <div class="item_circle">
+                <img src="./assets/images/main/main02_item03.png" />
+              </div>
+              <p>학부모와 학생이 선택한<br />최고의 교육 파트너</p>
+            </li>
+            <li>
+              <div class="item_circle">
+                <img src="./assets/images/main/main02_item04.png" />
+              </div>
+              <p>4차 산업혁명 시대<br />최고 인재 양성</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="Main_banner3" class="full_wrap">
+        <div class="Main_banner3_1">
+          <div class="inner">
             <article class="tit_area">
-                <p class="sub_tit">과학과 예술, 기술이 융합된 STEAM 교육</p>
-                <P class="tit pc_only_b">스스로 생각하고,<br/>창의적 문제 해결을 위한 STEAM 교육</P>
-                <p class="tit m_only_b">스스로 생각하고,<br/>창의적 문제 해결을 위한<br/>STEAM 교육</p>
+              <p class="sub_tit">과학과 예술, 기술이 융합된 STEAM 교육</p>
+              <p class="tit">
+                스스로 생각하고,<br />창의적 문제 해결을 위한<br
+                  class="m_only_b"
+                />STEAM 교육
+              </p>
             </article>
             <ul class="main03_list01">
-                <li>
-                    <div class="item_circle"><img src="./assets/images/main/main03_item01.jfif"></div>
-                    <p class="tit">교과실험</p>
-                    <p>학년에 맞는 체계적인<br/>교과 실험</p>
-                </li>
-                <li>
-                    <div class="item_circle"><img src="./assets/images/main/main03_item02.jfif"></div>
-                    <p class="tit">응용 실험</p>
-                    <p>생물 관찰, 전자키트, 과학 상자<br/>심화 학습</p>
-                </li>
-                <li>
-                    <div class="item_circle"><img src="./assets/images/main/main03_item03.jfif"></div>
-                    <p class="tit">토론학습과 실험 보고서</p>
-                    <p>학생 스스로 결론 도출<br/>논술 작성 능력 강화</p>
-                </li>
+              <li>
+                <img
+                  src="./assets/images/main/main03_particles02.png"
+                  class="particles p06"
+                  alt="화성파티클"
+                />
+                <div class="item_circle">
+                  <img src="./assets/images/main/main03_item01.png" />
+                </div>
+                <p class="tit">교과실험</p>
+                <p>학년에 맞는 체계적인<br />교과 실험</p>
+              </li>
+              <li>
+                <div class="item_circle">
+                  <img src="./assets/images/main/main03_item02.png" />
+                </div>
+                <p class="tit">응용 실험</p>
+                <p>생물 관찰, 전자키트, 과학 상자<br />심화 학습</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/main/main03_particles01.png"
+                  class="particles p05"
+                  alt="학사모파티클"
+                />
+                <div class="item_circle">
+                  <img src="./assets/images/main/main03_item03.png" />
+                </div>
+                <p class="tit">토론학습과 실험 보고서</p>
+                <p>학생 스스로 결론 도출<br />논술 작성 능력 강화</p>
+              </li>
             </ul>
+          </div>
         </div>
-        <div class="banner_contetns b02">
-            <img src="./assets/images/main/main03_particles03.png"  class="particles p07 pc_only_b" alt="오렌지파티클">
-            <img src="./assets/images/main/main03_particles04.png"  class="particles p08" alt="트로피파티클">
+        <div class="Main_banner3_2">
+          <div class="inner">
             <article class="tit_area">
-                <p class="sub_tit">만족도 높은 학부모 리뷰</p>
-                <P class="tit pc_only_b">학부모 리뷰로 인증된 교육 효과</P>
-                <p class="tit m_only_b">학부모 리뷰로 인증된<br/>교육 효과</p>
+              <img
+                src="./assets/images/main/main03_particles03.png"
+                class="particles p07 pc_only_b"
+                alt="오렌지파티클"
+              />
+              <img
+                src="./assets/images/main/main03_particles04.png"
+                class="particles p08"
+                alt="트로피파티클"
+              />
+              <p class="sub_tit">만족도 높은 학부모 리뷰</p>
+              <p class="tit pc_only_b">학부모 리뷰로 인증된 교육 효과</p>
+              <p class="tit m_only_b">학부모 리뷰로 인증된<br />교육 효과</p>
             </article>
             <div class="review_wraper">
-                <p class="tit">하연교육과 함께한 <span>후기</span></p>
-                <div class="review_swiper swiper pc_only_b">
-                    <ul class="main03_list02 swiper-wrapper">
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji01.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 너무 좋아해요!<br/>
-                                다녀오면 오늘 배운 내용 모두 쏟아내고 잠들어요! 200% 만족이에요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>이ㅇㅇ 어머님</p>
-                                <p class="location_tag">구로디지털점</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji02.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 과학에 대한 자신감이 대단해요! 선생님과 함께 참여하고 토론도 하는 과정이 있어서 너무 좋은것 같아요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>홍ㅇㅇ 어머님</p>
-                                <p class="location_tag">송파점</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji01.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 너무 좋아해요!<br/>
-                                다녀오면 오늘 배운 내용 모두 쏟아내고 잠들어요! 200% 만족이에요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>김ㅇㅇ 어머님</p>
-                                <p class="location_tag">목동점</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji02.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 과학에 대한 자신감이 대단해요! 선생님과 함께 참여하고 토론도 하는 과정이 있어서 너무 좋은것 같아요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>홍ㅇㅇ 어머님</p>
-                                <p class="location_tag">송파점</p>
-                            </div>
-                        </li>
-                    </ul>
+              <p class="tit">하연교육과 함께한 <span>후기</span></p>
+              <div class="review_swiper swiper">
+                <ul class="main03_list02 swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="top_txt">
+                      <img
+                        src="./assets/images/main/main03_emoji01.png"
+                        alt="웃는 이모지"
+                      />
+                      <p>김ㅇ찬 학부모님</p>
+                    </div>
+                    <p class="txt_review">
+                      하연과학은 실험 후 보고서 작성 및 부교재로 복습,수업 관련
+                      독서를 통해 배경지식 확장시키는 체계적인 수업이 마음에
+                      들고, 집에서 하기 힘든 실험을 직접 보고 체험해 볼 수
+                      있어서 좋습니다.
+                    </p>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="top_txt">
+                      <img
+                        src="./assets/images/main/main03_emoji02.png"
+                        alt="웃는 이모지"
+                      />
+                      <p>김ㅇ유 학부모님</p>
+                    </div>
+                    <p class="txt_review">
+                      하연과학을 배우면서 사용하는 과학 어휘력이 많이 늘었고
+                      집에 와서도 설명하는 모습이 기특합니다.집에서 과학도서를
+                      스스로 찾아 읽는 모습을 봤을 때 잘 하고 있구나 하는 생각을
+                      합니다.
+                    </p>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="top_txt">
+                      <img
+                        src="./assets/images/main/main03_emoji01.png"
+                        alt="웃는 이모지"
+                      />
+                      <p>김ㅇ훈 학부모님</p>
+                    </div>
+                    <p class="txt_review">
+                      초등 4학년 남아인 저희 아이의 실험보고서의 수준이 크게
+                      향상되었습니다. 학교에서 과학 시간에 간단한 보고서를
+                      작성하였는데 서론-본론-결론과 그림까지 완벽하게 제출하여
+                      뿌듯하였습니다.
+                    </p>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="top_txt">
+                      <img
+                        src="./assets/images/main/main03_emoji02.png"
+                        alt="웃는 이모지"
+                      />
+                      <p>김ㅇ훈 학부모님</p>
+                    </div>
+                    <p class="txt_review">
+                      수학과 역사, 문학을 좋아하고 과학을 너무 어렵게 생각했던
+                      아이가 지금은 실험관찰도 좋아하고 과학에 대해서 스스로
+                      설명도 해주고 과학 과목에 대해서 자신감을 가진 부분이 참
+                      감사합니다.
+                    </p>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="top_txt">
+                      <img
+                        src="./assets/images/main/main03_emoji01.png"
+                        alt="웃는 이모지"
+                      />
+                      <p>김ㅇ훈 학부모님</p>
+                    </div>
+                    <p class="txt_review">
+                      아이가 하연과학 선생님을 정말 좋아합니다. 학생들의 성장을
+                      위해 마음을 다해 수업해 주시는 열정과 진심이 느껴집니다.
+                      추천해 주신 문제집을 서점에 달려가서 구매하고 잘 때까지
+                      푸는 모습이 기특했습니다.
+                    </p>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="top_txt">
+                      <img
+                        src="./assets/images/main/main03_emoji02.png"
+                        alt="웃는 이모지"
+                      />
+                      <p>김ㅇ훈 학부모님</p>
+                    </div>
+                    <p class="txt_review">
+                      초등 2학년이라 아직 과학은 생소한데 과학용어를 척척 설명해
+                      놀랐고, 집에 가져온 결과물로 질문 했을 때 척척 잘
+                      대답하고, 왜 그런 현상이 생기는건지 원리를 제법 잘
+                      이해하고 있어 신기했답니다.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide_btns">
+                <div class="swiper-button-prev">
+                  <img
+                    src="./assets/icons/swiper_prev.png"
+                    alt="리뷰 이전으로 넘기기"
+                  />
                 </div>
-
-                <div class="review_swiper2 swiper m_only_b">
-                    <ul class="main03_list02 swiper-wrapper">
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji01.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 너무 좋아해요!<br/>
-                                다녀오면 오늘 배운 내용 모두 쏟아내고 잠들어요! 200% 만족이에요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>이ㅇㅇ 어머님</p>
-                                <p class="location_tag">구로디지털점</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji02.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 과학에 대한 자신감이 대단해요! 선생님과 함께 참여하고 토론도 하는 과정이 있어서 너무 좋은것 같아요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>홍ㅇㅇ 어머님</p>
-                                <p class="location_tag">송파점</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji01.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 너무 좋아해요!<br/>
-                                다녀오면 오늘 배운 내용 모두 쏟아내고 잠들어요! 200% 만족이에요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>김ㅇㅇ 어머님</p>
-                                <p class="location_tag">목동점</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img src="./assets/images/main/main03_emoji02.png" alt="웃는 이모지">
-                            <p class="txt_review">
-                                아이들이 과학에 대한 자신감이 대단해요! 선생님과 함께 참여하고 토론도 하는 과정이 있어서 너무 좋은것 같아요!
-                            </p>
-                            <div class="btm_txt">
-                                <p>홍ㅇㅇ 어머님</p>
-                                <p class="location_tag">송파점</p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="swiper-button-next">
+                  <img
+                    src="./assets/icons/swiper_next.png"
+                    alt="리뷰 다음으로 넘기기"
+                  />
                 </div>
+              </div>
 
-                <div class="swiper-button-next"><img src="./assets/icons/swiper_next.png" alt="리뷰 다음으로 넘기기"></div>
-                <div class="swiper-button-prev"><img src="./assets/icons/swiper_prev.png" alt="리뷰 이전으로 넘기기"></div>
-                <script>
-                    var swiper = new Swiper(".review_swiper", {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    loop: true,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
+              <script>
+                const swiper = new Swiper(".review_swiper", {
+                  slidesPerView: 1.1,
+                  spaceBetween: 16,
+                  centeredSlides: true,
+                  loop: true,
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                  breakpoints: {
+                    1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 16,
+                      centeredSlides: false,
                     },
-                    });
-
-                    document.addEventListener("DOMContentLoaded", function() {
-                        var swiper = new Swiper('.review_swiper2', {
-                            slidesPerView: 1.2,
-                            centeredSlides: true,
-                            spaceBetween: 16,
-                            loop: true,      
-                            on: {
-                                slideChange: function () {
-                                    updateOpacity(this);  // 슬라이드 변경 시 opacity 업데이트
-                                }
-                            },
-                            navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                        });
-
-                        // 중앙 슬라이드의 opacity 업데이트 함수
-                        function updateOpacity(swiper) {
-                            // 모든 슬라이드에서 'active-slide' 클래스를 제거
-                            swiper.slides.forEach(function(slide) {
-                                slide.classList.remove('active-slide');
-                            });
-
-                            // 현재 활성 슬라이드에 'active-slide' 클래스 추가
-                            swiper.slides[swiper.activeIndex].classList.add('active-slide');
-                        }
-
-                        // 초기 로드 시 중앙 슬라이드 설정
-                        updateOpacity(swiper);
-                    });
-                </script>
+                    1200: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                      centeredSlides: false,
+                    },
+                  },
+                });
+              </script>
             </div>
-        </div> 
-    </section>
-
-    <section id="Main_banner4" class="full_wrap">
-        <article class="tit_area">
-            <p class="sub_tit">소식알림</p>
-            <P class="tit pc_only_b">하연교육에서 전하는 소식을 만나보세요</P>
-            <p class="tit m_only_b">하연교육에서 전하는<br/>소식을 만나보세요</p>
-        </article>
-        <div class="Latest_news">
-            <ul>
-                <li>
-                    <div class="img_area"><img src="./assets/images/main/main04_img01.png"></div>
-                    <p class="subject">하연교육 2023 대한민국 브랜드 어워즈에서 과학실험 부문 대상 수상</p>
-                    <p class="date">2024-08-01</p>
-                </li>
-                <li>
-                    <div class="img_area"><img src="./assets/images/main/main04_img02.png"></div>
-                    <p class="subject">3월 2일 금성 목성의 근접</p>
-                    <p class="date">2024-08-01</p>
-                </li>
-                <li>
-                    <div class="img_area"><img src="./assets/images/main/main04_img03.png"></div>
-                    <p class="subject">하연교육 과학 선생님을 찾습니다!</p>
-                    <p class="date">2024-08-01</p>
-                </li>
-            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="Main_banner5" class="full_wrap">
-        <img src="./assets/images/main/main05_particles01.png"  class="particles p09 pc_only_b" alt="초록파티클">
-        <article class="tit_area">
+      <section id="Main_banner4" class="full_wrap">
+        <div class="inner">
+          <article class="tit_area">
+            <p class="sub_tit">소식알림</p>
+            <p class="tit">
+              하연교육에서 전하는 <br class="m_only_b" />소식을 만나보세요
+            </p>
+          </article>
+          <div class="Latest_news">
+            <ul>
+              <li>
+                <a href="javascript:;">
+                  <div class="img_area">
+                    <img src="./assets/images/main/main04_img01.png" />
+                  </div>
+                  <p class="subject">
+                    하연교육 2023 대한민국 브랜드 어워즈에서 과학실험 부문 대상
+                    수상
+                  </p>
+                  <p class="date">2024-08-01</p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <div class="img_area">
+                    <img src="./assets/images/main/main04_img02.png" />
+                  </div>
+                  <p class="subject">3월 2일 금성 목성의 근접</p>
+                  <p class="date">2024-08-01</p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <div class="img_area">
+                    <img src="./assets/images/main/main04_img03.png" />
+                  </div>
+                  <p class="subject">하연교육 과학 선생님을 찾습니다!</p>
+                  <p class="date">2024-08-01</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="Main_banner5" class="full_wrap">
+        <div class="inner">
+          <article class="tit_area">
+            <img
+              src="./assets/images/main/main05_particles01.png"
+              class="particles p09 pc_only_b"
+              alt="초록파티클"
+            />
             <p class="sub_tit">우리 아이 미래를 위한 첫걸음!</p>
-            <P class="tit pc_only_b">창의력과 사고력을 키우는 통합 교육 솔루션</P>
-            <p class="tit m_only_b">창의력과 사고력을 키우는<br/>통합 교육 솔루션</p>
-        </article>
-        <div class="banner_wraper">
+            <p class="tit pc_only_b">
+              창의력과 사고력을 키우는 통합 교육 솔루션
+            </p>
+            <p class="tit m_only_b">
+              창의력과 사고력을 키우는<br />통합 교육 솔루션
+            </p>
+          </article>
+          <div class="banner_wraper">
             <div class="left_area">
-                <a>
-                    <div class="txt_area">
-                        <p class="tit student">교육 상담 문의하기</p>
-                        <p class="readMore">바로가기</p>
-                    </div>
-                    <div class="img_area pc_only_b">
-                        <img src="./assets/images/main/main05_img01.png" alt="교육상담 문의하기">
-                    </div>
-                </a>
-                <a>
-                    <div class="txt_area">
-                        <p class="tit teacher">개설 상담 문의하기</p>
-                        <p class="readMore">바로가기</p>
-                    </div>
-                    <div class="img_area pc_only_b">
-                        <img src="./assets/images/main/main05_img02.png" alt="개설상담 문의하기">
-                    </div>
-                </a>
+              <a>
+                <div class="txt_area">
+                  <div class="title">
+                    <p class="tit">화연과학 찾기</p>
+                    <span class="student">회원</span>
+                  </div>
+                  <p class="readMore">바로가기</p>
+                </div>
+                <div class="img_area pc_only_b">
+                  <img
+                    src="./assets/images/main/main05_img01.png"
+                    alt="교육상담 문의하기"
+                  />
+                </div>
+              </a>
+              <a>
+                <div class="txt_area">
+                  <div class="title">
+                    <p class="tit">개설 상담 문의하기</p>
+                    <span class="teacher">교사</span>
+                  </div>
+                  <p class="readMore">바로가기</p>
+                </div>
+                <div class="img_area pc_only_b">
+                  <img
+                    src="./assets/images/main/main05_img02.png"
+                    alt="개설상담 문의하기"
+                  />
+                </div>
+              </a>
             </div>
             <a>
-                <div class="txt_area">
-                    <p class="tit">학생의 잠재력을 최대한<br/>발휘할 수 있도록 돕는 교육!</p>
-                </div>
-                <div class="img_area">
-                    <img src="./assets/images/main/main05_img03.png" alt="하연과학">
-                </div>
+              <div class="txt_area">
+                <p class="tit">
+                  학생의 잠재력을 최대한<br />발휘할 수 있도록 돕는 교육!
+                </p>
+              </div>
+              <div class="img_area">
+                <img
+                  src="./assets/images/main/main05_img03.png"
+                  alt="하연과학"
+                />
+              </div>
             </a>
+          </div>
         </div>
-    </section>
-    
-    <!--==========(애니메이션)==========-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            gsap.registerPlugin(ScrollTrigger);
-    
-            var tl = gsap.timeline({
+      </section>
+
+      <!--==========(애니메이션)==========-->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          gsap.registerPlugin(ScrollTrigger);
+
+          var tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: "#Main_banner1 .txt_area",
+              start: "top 75%",
+              end: "bottom 25%",
+              toggleActions: "play reverse play reverse",
+            },
+          });
+
+          tl.from("#Main_banner1 .txt01", {
+            opacity: 0,
+            y: -50,
+            duration: 1.2,
+            ease: "power1.out",
+          });
+
+          tl.from("#Main_banner1 .txt02_area", {
+            opacity: 0,
+            y: 50,
+            duration: 1.2,
+            ease: "power1.out",
+          });
+
+          gsap.utils
+            .toArray("#Main_banner2 ul li")
+            .forEach(function (item, index) {
+              gsap.from(item, {
                 scrollTrigger: {
-                    trigger: "#Main_banner1 .txt_area",
-                    start: "top 75%",
-                    end: "bottom 25%",
-                    toggleActions: "play reverse play reverse",
-                }
-            });
-    
-            tl.from("#Main_banner1 .txt01", {
-                opacity: 0,
-                y: -50,
-                duration: 1.2,
-                ease: "power1.out"
-            });
-    
-            tl.from("#Main_banner1 .txt02_area", {
-                opacity: 0,
-                y: 50,
-                duration: 1.2,
-                ease: "power1.out",
-            });
-    
-            gsap.utils.toArray("#Main_banner2 ul li").forEach(function(item, index) {
-                gsap.from(item, {
-                    scrollTrigger: {
-                        trigger: "#Main_banner2 ul",
-                        start: "top 75%",
-                        end: "bottom 25%",
-                        toggleActions: "play reverse play reverse",
-                    },
-                    opacity: 0,
-                    y: 50,
-                    duration: 0.8,
-                    ease: "power1.out",
-                    delay: index * 0.5
-                });
-            });
-    
-            gsap.from(".img01_box", {
-                scrollTrigger: {
-                    trigger: "#Main_banner1",
-                    start: "top 80%",
-                    end: "bottom 30%",
-                    toggleActions: "play reverse play reverse",
+                  trigger: "#Main_banner2 ul",
+                  start: "top 75%",
+                  end: "bottom 25%",
+                  toggleActions: "play reverse play reverse",
                 },
                 opacity: 0,
-                scale: 0.8,
-                y: 0,
-                duration: 1,
-                ease: "power1.out"
-            });
-    
-            gsap.utils.toArray(".main03_list01 li").forEach(function(item, index) {
-                gsap.from(item, {
-                    scrollTrigger: {
-                        trigger: "#Main_banner3",
-                        start: "top 85%",
-                        end: "bottom 15%",
-                        toggleActions: "play reverse play reverse",
-                    },
-                    opacity: 0,
-                    y: 50,
-                    duration: 0.8,
-                    ease: "power1.out",
-                    delay: index * 0.1
-                });
-            });
-    
-            gsap.utils.toArray(".main03_list02 li").forEach(function(item) {
-                item.style.willChange = "transform, opacity";
+                y: 50,
+                duration: 0.8,
+                ease: "power1.out",
+                delay: index * 0.5,
+              });
             });
 
-            gsap.utils.toArray(".main03_list02 li").forEach(function(item, index) {
-                gsap.fromTo(item, 
-                    { xPercent: 20 }, 
-                    {
-                        xPercent: 0, 
-                        scrollTrigger: {
-                            trigger:'.b02',
-                            start: "top 75%", 
-                            toggleActions: "play none none none",
-                        },
-                        duration: 0.8, 
-                        ease: "power2.out",
-                        delay: index * 0.15 // delay를 줄여서 전체 애니메이션이 빠르게 처리되도록
-                    }
-                );
+          gsap.from(".img01_box", {
+            scrollTrigger: {
+              trigger: "#Main_banner1",
+              start: "top 80%",
+              end: "bottom 30%",
+              toggleActions: "play reverse play reverse",
+            },
+            opacity: 0,
+            scale: 0.8,
+            y: 0,
+            duration: 1,
+            ease: "power1.out",
+          });
+
+          gsap.utils
+            .toArray(".main03_list01 li")
+            .forEach(function (item, index) {
+              gsap.from(item, {
+                scrollTrigger: {
+                  trigger: "#Main_banner3",
+                  start: "top 85%",
+                  end: "bottom 15%",
+                  toggleActions: "play reverse play reverse",
+                },
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                ease: "power1.out",
+                delay: index * 0.1,
+              });
             });
-    
-            gsap.utils.toArray(".particles").forEach(function(particle) {
-                gsap.from(particle, {
-                    scrollTrigger: {
-                        trigger: particle,
-                        start: "top 100%",
-                        end: "bottom 0%",
-                        toggleActions: "play reverse play reverse",
-                        markers: false,
-                    },
-                    opacity: 0,
-                    scale: 0.5,
-                    y: 100,
-                    duration: 0.6,
-                    ease: "back.out(1.7)"
-                });
+
+          gsap.utils.toArray(".main03_list02 li").forEach(function (item) {
+            item.style.willChange = "transform, opacity";
+          });
+
+          gsap.utils
+            .toArray(".main03_list02 li")
+            .forEach(function (item, index) {
+              gsap.fromTo(
+                item,
+                { xPercent: 20 },
+                {
+                  xPercent: 0,
+                  scrollTrigger: {
+                    trigger: ".b02",
+                    start: "top 75%",
+                    toggleActions: "play none none none",
+                  },
+                  duration: 0.8,
+                  ease: "power2.out",
+                  delay: index * 0.15, // delay를 줄여서 전체 애니메이션이 빠르게 처리되도록
+                }
+              );
             });
+
+          gsap.utils.toArray(".particles").forEach(function (particle) {
+            gsap.from(particle, {
+              scrollTrigger: {
+                trigger: particle,
+                start: "top 100%",
+                end: "bottom 0%",
+                toggleActions: "play reverse play reverse",
+                markers: false,
+              },
+              opacity: 0,
+              scale: 0.5,
+              y: 100,
+              duration: 0.6,
+              ease: "back.out(1.7)",
+            });
+          });
         });
+      </script>
+      <!--==========(애니메이션)==========-->
+    </div>
+
+    <!-- FIXED BUTTON -->
+    <ul id="index_fiexed_btn">
+      <li>
+        <a
+          ><img src="./assets/images/btm_button01.png" class="pc_only_b" /><img
+            src="./assets/images/btm_button01_m.png"
+            class="m_only_b"
+        /></a>
+      </li>
+      <li>
+        <a
+          ><img src="./assets/images/btm_button02.png" class="pc_only_b" /><img
+            src="./assets/images/btm_button02_m.png"
+            class="m_only_b"
+        /></a>
+      </li>
+    </ul>
+    <!-- // CONTENTS -->
+
+    <!-- 임시 FOOTER | 프론트 연동 시 삭제 -->
+    <div id="footer_temp_area"></div>
+    <script>
+      $("#header_temp_area").load("../assets/header.html");
+      $("#footer_temp_area").load("../assets/footer.html");
+      $(window).on("load", function () {
+        $("#LNB").remove();
+      });
     </script>
-    <!--==========(애니메이션)==========-->
-</div> 
-
-<!-- FIXED BUTTON -->
-<ul id="index_fiexed_btn">
-    <li><a><img src="./assets/images/btm_button01.png" class="pc_only_b"><img src="./assets/images/btm_button01_m.png" class="m_only_b"></a></li>
-    <li><a><img src="./assets/images/btm_button02.png" class="pc_only_b"><img src="./assets/images/btm_button02_m.png" class="m_only_b"></a></li>
-</ul>
-
-</body>
+  </body>
 </html>
