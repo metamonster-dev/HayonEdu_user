@@ -152,7 +152,9 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .detail_wrap .content_area dl dd {flex: 1; }
 .detail_wrap .content_area dl dd, 
 .detail_wrap .content_area dl dd * {font-size: 16px; color: var(--gray1); font-weight: 500;}
-.detail_wrap .content_area dl dd input {font-size: 14px;}
+.detail_wrap .content_area dl dd input,
+.detail_wrap .content_area dl dd textarea,
+.detail_wrap .content_area dl dd select {font-size: 14px;}
 .detail_wrap .content_area dl.top_type {align-items: flex-start;}
 .detail_wrap .content_area dl.top_type dt {padding-top: 12px;}
 .detail_wrap .agree_area {display: flex; align-items: center; gap: 16px; margin-top: 24px;}

@@ -280,7 +280,7 @@ footer .add_wrap{display:flex;gap:16px;}
     #M_menu nav .depth1 > a::after{content:'';display:inline-block;width:24px;height:24px;background:url(../assets/icons/icon_dropdown2.svg)center no-repeat;transition:.3s;}
     #M_menu nav .depth1.on > a{background:#FFF6F1;color:#FF8522}
     #M_menu nav .depth1.on > a::after{transform:rotate(-180deg);}
-    #M_menu nav .depth2{display:none;padding:24px;border-bottom:1px solid var(--border1);}
+    #M_menu nav .depth2{display:none;padding:24px;}
     #M_menu nav .depth2 li + li{margin-top:16px;}
     #M_menu nav .depth2 a{font-size:16px;font-weight:600;color:#555;}
     #M_menu.on{opacity:1;visibility:visible;}
