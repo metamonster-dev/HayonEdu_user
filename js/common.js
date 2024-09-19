@@ -40,10 +40,10 @@ $(document).ready(function () {
     // spaceBetween: 24,
     // centeredSlides: true,
   });
-  $(".tab_event button").on("click", function () {
+  $(".tabs_event button").on("click", function () {
     const idx = $(this).parents("li").index();
     $(this).parents("li").addClass("active").siblings().removeClass("active");
-    if ($(this).parents(".tab_event").hasClass("tab_slide")) {
+    if ($(this).parents(".tabs_event").hasClass("tab_slide")) {
       tabSlide.slideTo(idx);
     }
     $(".sub_contents > div")
