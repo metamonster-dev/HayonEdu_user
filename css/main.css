@@ -44,10 +44,10 @@
 #Main_banner2 ul li:nth-child(3):hover{background:#E6F5D0;}
 #Main_banner2 ul li:nth-child(4):hover{background:#FFF1D6;}
 #Main_banner2 ul li p{font-size:26px;line-height:36px;text-align:center;font-weight:700;word-break:keep-all;}
-#Main_banner2 ul li:nth-child(1) p{color:var(--main)}
+#Main_banner2 ul li:nth-child(1) p{color:var(--main2)}
 #Main_banner2 ul li:nth-child(2) p{color:var(--blue)}
-#Main_banner2 ul li:nth-child(3) p{color:var(--green)}
-#Main_banner2 ul li:nth-child(4) p{color:var(--main2)}
+#Main_banner2 ul li:nth-child(3) p{color:var(--green2)}
+#Main_banner2 ul li:nth-child(4) p{color:#EAA31A;}
 #Main_banner2 .particles.p03{top:-194px;right:17px;}
 #Main_banner2 .particles.p04{top:0;left:-45px}
 /*=============================================================*/
@@ -67,7 +67,7 @@
 #Main_banner3 .main03_list01 li:hover .item_circle img{transform:translate(-50%, -50%) scale(1.1);}
 #Main_banner3 .main03_list01 li .tit{font-size:40px;font-weight:700;line-height:50px;margin-bottom:16px;word-break:keep-all;}
 #Main_banner3 .main03_list01 li:nth-child(1) .tit{color:var(--main2)}
-#Main_banner3 .main03_list01 li:nth-child(2) .tit{color:var(--green)}
+#Main_banner3 .main03_list01 li:nth-child(2) .tit{color:var(--green2)}
 #Main_banner3 .main03_list01 li:nth-child(3) .tit{color:var(--blue)}
 #Main_banner3 .particles.p05{top:-88px;right:-36px;width:46%;}
 #Main_banner3 .particles.p06{bottom:190px;left:-79px;width:41%;}
@@ -109,7 +109,7 @@
 /*=============================================================*/
 #Main_banner5{position:relative;background:url(../assets/images/main/bg_line_snow.jpg)no-repeat top left;padding:130px 0;}
 #Main_banner5 .tit_area{position:relative;margin-bottom:60px}
-#Main_banner5 .tit_area .sub_tit{color:var(--green)}
+#Main_banner5 .tit_area .sub_tit{color:var(--green2)}
 #Main_banner5 .tit_area .tit{color:var(--black)}
 #Main_banner5 .banner_wraper{display:flex;justify-content:space-between;align-items:stretch}
 #Main_banner5 .banner_wraper .left_area{display:flex;flex-direction:column;gap:30px;width:calc(50% - 15px);}
@@ -121,7 +121,7 @@
 #Main_banner5 .banner_wraper .title{display:flex;align-items:center;gap:8px 16px;flex-wrap:wrap;}
 #Main_banner5 .banner_wraper .tit{position:relative;font-size:40px;font-weight:700;color:var(--black);line-height:48px;word-break:keep-all;}
 #Main_banner5 .banner_wraper .student,
-#Main_banner5 .banner_wraper .teacher{display:inline-block;padding:0 8px;height:27px;line-height:25px;background:#fff;border-radius:4px;font-size:14px}
+#Main_banner5 .banner_wraper .teacher{display:inline-block;padding:0 8px;height:27px;line-height:25px;background:#fff;border-radius:4px;font-size:14px;font-weight:700;}
 #Main_banner5 .banner_wraper .student{color:var(--main2);border:1px solid var(--main2)}
 #Main_banner5 .banner_wraper .teacher{color:var(--green);border:1px solid var(--green)}
 #Main_banner5 .banner_wraper .readMore{margin-top:24px;font-size:18px;font-weight:700;color:var(--gray2);display:flex;align-items:center;}
