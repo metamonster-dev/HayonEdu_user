@@ -6,7 +6,7 @@
 .tit_area .sub_tit{font-size:26px;font-weight:700;margin-bottom:16px}
 .tit_area .tit{font-size:56px;line-height:72px;font-weight:800;text-align:center;}
 .particles{position:absolute;z-index:20;}
-#index_fiexed_btn{display:flex;flex-direction:column;gap:8px;position:fixed;bottom:60px;right:40px;z-index:50;}
+#index_fiexed_btn{display:flex;flex-direction:column;gap:8px;position:fixed;bottom:60px;right:40px;width:150px;z-index:50;}
 
 /*=============================================================*/
 /*                         Main_banner1                        */
@@ -145,7 +145,7 @@
     /*메인공통*/
     .tit_area .sub_tit{font-size:18px;line-height:21px;margin-bottom:8px}
     .tit_area .tit{font-size:26px;line-height:36px;}
-    #index_fiexed_btn{display:flex;flex-direction:column;gap:4px;position:fixed;bottom:50px;right:0;z-index:99;}
+    #index_fiexed_btn{display:flex;flex-direction:column;gap:4px;position:fixed;bottom:50px;right:0;width:122px;z-index:99;}
     /*=============================================================*/
     /*                         Main_banner1                        */
     /*=============================================================*/
