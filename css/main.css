@@ -79,13 +79,14 @@
 #Main_banner3 .review_wraper .swiper{position:relative;width:100%;}
 #Main_banner3 .review_wraper .swiper-button-next::after,#Main_banner3 .review_wraper .swiper-button-prev::after{display:none;}
 #Main_banner3 .review_wraper .swiper-button-next,
-#Main_banner3 .review_wraper .swiper-button-prev{top:calc(230.5px + (100% - 310.5px) / 2 - 34px);width:auto;height:auto;margin:0;}
+#Main_banner3 .review_wraper .swiper-button-prev{top:calc(230.5px + (100% - 310.5px) / 2 - 34px);width:68px;height:auto;margin:0;}
 #Main_banner3 .review_wraper .swiper-button-next{right:-34px;} 
 #Main_banner3 .review_wraper .swiper-button-prev{left:-34px;}
 #Main_banner3 .review_wraper .main03_list02{display:flex;width:100%;}
 #Main_banner3 .review_wraper .main03_list02 li{height:auto;padding:30px 40px;background:#fff;border-radius:20px;text-align:left;}
 #Main_banner3 .review_wraper .main03_list02 li .top_txt{display:flex;align-items:center;justify-content:space-between;}
 #Main_banner3 .review_wraper .main03_list02 li .top_txt p{font-size:18px;color:#999999;font-weight:700;}
+#Main_banner3 .review_wraper .main03_list02 li .top_txt img{width:40px;}
 #Main_banner3 .review_wraper .main03_list02 li .txt_review{margin-top:20px;font-size:24px;line-height:34px;font-weight:700;color:#555;letter-spacing:-0.085rem;}
 #Main_banner3 .particles.p07{top:-50px;right:157px;}
 #Main_banner3 .particles.p08{top:99px;left:102px;}

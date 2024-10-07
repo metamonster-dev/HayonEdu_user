@@ -170,7 +170,7 @@ button.type03{background:#fff;border:1px solid  var(--main2);color:var(--main2)}
 /*=============================================================*/
 /*                      header - GNB(pc)                       */
 /*=============================================================*/
-header{width:100%;z-index:999;}
+header{width:100%;border-bottom:1px solid var(--border1);z-index:999;}
 header .header_wraper_m{display:none;}
 header .header_wraper_pc{position:relative;display:flex;width:100%;max-width:1432px;height:90px;padding:0 16px;margin:0 auto;justify-content:center;align-items:center;}
 header .header_wraper_pc h1{position: absolute; top: calc(50% - 15px); left: 16px;}
@@ -194,7 +194,7 @@ header .header_wraper_pc .login_menu{position:absolute;top:calc((100% - 37px) / 
 /*=============================================================*/
 /*                      header - LNB(pc)                       */
 /*=============================================================*/
-#LNB{width:100%;height:50px;border-top:1px solid var(--border1);border-bottom:1px solid var(--border1);display:flex;align-items:center;z-index:999;}
+#LNB{width:100%;height:50px;border-bottom:1px solid var(--border1);display:flex;align-items:center;z-index:999;}
 #LNB .Lnb_wraper{width:100%;max-width:1432px;height:100%;padding:0 16px;margin:0 auto;display:flex;justify-content:flex-start;align-items:center;}
 #LNB .Lnb_wraper > li{width:200px;height:100%;border-left:1px solid var(--border1);display:flex;align-items:center;font-size:14px;color:var(--black)}
 #LNB .Lnb_wraper > li:last-child{border-right:1px solid var(--border1);}
@@ -288,7 +288,7 @@ footer .add_wrap{display:flex;gap:16px;}
     #M_menu, #M_menu > *{transition:.5s;}
     #M_menu .menu_bg{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
     #M_menu .menu_wrapper{width:88%;height:100%;position:absolute;right:-1000px;top:0;background:#fff;}
-    #M_menu .topmenu{display:flex;justify-content:space-between;align-items:center;padding:15.5px 16px;border-bottom:1px solid var(--border1)}
+    #M_menu .topmenu{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-bottom:1px solid var(--border1)}
     #M_menu nav .depth1{border-bottom:1px solid var(--border1);}
     #M_menu nav .depth1 > a{display:flex;justify-content:space-between;align-items:center;width:100%;padding:20px;background:#fff;font-size:20px;font-weight:600;line-height:24px;}
     #M_menu nav .depth1 > a::after{content:'';display:inline-block;width:24px;height:24px;background:url(../assets/icons/icon_dropdown2.svg)center no-repeat;transition:.3s;}
