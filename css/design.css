@@ -202,7 +202,7 @@ header .header_wraper_pc .login_menu{position:absolute;top:calc((100% - 37px) / 
 #LNB .Lnb_wraper .home a {display:flex;align-items:center;justify-content:center;width:100%;height:100%;}
 #LNB .Lnb_wraper .depth1{padding:0 16px;color:#777}
 #LNB .Lnb_wraper .depth2{position:relative;z-index:99;}
-#LNB .Lnb_wraper .depth2 > button{display:flex;justify-content:space-between;align-items:center;width:100%;height:100%;padding:0 16px;}
+#LNB .Lnb_wraper .depth2 > button{display:flex;justify-content:space-between;align-items:center;width:100%;height:100%;padding:0 16px;font-size:14px;color:#000;}
 #LNB .Lnb_wraper .depth2 > button::after{content:'';display:inline-block;width:16px;height:16px;background:url(../assets/icons/icon_dropdown.svg)center no-repeat;transition:.3s;}
 #LNB .Lnb_wraper .depth2.active > button::after{transform:rotate(-180deg);}
 #LNB .Lnb_wraper .depth2_option{position:absolute;top:102%;left:0;width:calc(100% + 2px);padding:24px 16px;margin:0 -1px;border:1px solid var(--border1);border-top:0;display:none;background:#fff;}

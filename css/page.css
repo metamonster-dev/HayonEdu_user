@@ -192,6 +192,7 @@ table {width: 100%; border-collapse: collapse; table-layout: fixed;}
 .ci_con01 .text_area .deco02 {position: absolute; bottom: 16%; left: 8%; width: 9.143%;}
 .ci_con01 .img_area {display: flex; align-items: center; justify-content: center; width: 100%; height: 300px; border: 1px solid var(--border1); border-radius: 10px;}
 .ci_con01 .img_area img {height: 210px;}
+.ci_con01 .img_area img.img01 {height: auto;}
 .ci_con01 ul {display: flex; gap: 30px; margin-top: 40px;}
 .ci_con01 ul li {width: calc(50% - 15px);}
 
